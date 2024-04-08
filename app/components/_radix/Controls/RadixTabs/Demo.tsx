@@ -28,9 +28,7 @@ const TabsDemo = () => (
         </label>
         <input className="Input" id="username" defaultValue="@peduarte" />
       </fieldset>
-      <div
-        style={{ display: "flex", marginTop: 20, justifyContent: "flex-end" }}
-      >
+      <div style={{display: "flex", marginTop: 20, justifyContent: "flex-end"}}>
         <button className="Button green">Save changes</button>
       </div>
     </Tabs.Content>
@@ -56,9 +54,7 @@ const TabsDemo = () => (
         </label>
         <input className="Input" id="confirmPassword" type="password" />
       </fieldset>
-      <div
-        style={{ display: "flex", marginTop: 20, justifyContent: "flex-end" }}
-      >
+      <div style={{display: "flex", marginTop: 20, justifyContent: "flex-end"}}>
         <button className="Button green">Change password</button>
       </div>
     </Tabs.Content>

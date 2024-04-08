@@ -3,10 +3,14 @@ import FeaturedCta from "~/modules/Featured/FeaturedCta";
 import SectionContainer from "~/components/SectionContainer";
 import SectionHeader from "~/components/SectionHeader";
 import SectionHeaderContainer from "~/components/SectionHeaderContainer";
-import { FeaturedProject } from "../../../types/Projects";
-import { generateRandomKey } from "~/utils/content";
+import {FeaturedProject} from "../../../types/Projects";
+import {generateRandomKey} from "~/utils/content";
 
-export default function SectionFeaturedProjects({projects}: {projects: FeaturedProject[]}) {
+export default function SectionFeaturedProjects({
+  projects,
+}: {
+  projects: FeaturedProject[];
+}) {
   return (
     <SectionContainer extraClasses="mb-12 lg:mb-24">
       <SectionHeaderContainer>

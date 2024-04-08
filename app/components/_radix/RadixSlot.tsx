@@ -1,5 +1,5 @@
 /* https://www.radix-ui.com/primitives/docs/utilities/slot */
-import { Slot } from "@radix-ui/react-slot";
+import {Slot} from "@radix-ui/react-slot";
 
 export default () => (
   <Slot>

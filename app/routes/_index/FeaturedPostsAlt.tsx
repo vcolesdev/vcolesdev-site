@@ -41,7 +41,7 @@ export default function SectionFeaturedPostsAlt() {
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
                 </p>
-                <a href="/" className="inline-flex items-center">
+                <a href="/public" className="inline-flex items-center">
                   <img
                     alt="blog"
                     src="https://dummyimage.com/103x103"
@@ -77,7 +77,7 @@ export default function SectionFeaturedPostsAlt() {
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
                 </p>
-                <a href="/" className="inline-flex items-center">
+                <a href="/public" className="inline-flex items-center">
                   <img
                     alt="blog"
                     src="https://dummyimage.com/102x102"
@@ -113,7 +113,7 @@ export default function SectionFeaturedPostsAlt() {
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
                 </p>
-                <a href="/" className="inline-flex items-center">
+                <a href="/public" className="inline-flex items-center">
                   <img
                     alt="blog"
                     src="https://dummyimage.com/101x101"

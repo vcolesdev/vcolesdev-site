@@ -17,7 +17,7 @@ const AlertDialogDemo = () => (
           This action cannot be undone. This will permanently delete your
           account and remove your data from our servers.
         </AlertDialog.Description>
-        <div style={{ display: "flex", gap: 25, justifyContent: "flex-end" }}>
+        <div style={{display: "flex", gap: 25, justifyContent: "flex-end"}}>
           <AlertDialog.Cancel asChild>
             <button className="Button mauve">Cancel</button>
           </AlertDialog.Cancel>

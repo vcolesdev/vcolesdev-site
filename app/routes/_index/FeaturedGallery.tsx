@@ -3,9 +3,9 @@ import SectionHeader from "~/components/SectionHeader";
 import SectionHeaderContainer from "~/components/SectionHeaderContainer";
 import FeaturedCta from "~/modules/Featured/FeaturedCta";
 import useFeaturedImages from "~/hooks/useFeaturedImages";
-import { Link } from "@remix-run/react";
-import { useState } from "react";
-import { IconArrowsMaximize } from "@tabler/icons-react";
+import {Link} from "@remix-run/react";
+import {useState} from "react";
+import {IconArrowsMaximize} from "@tabler/icons-react";
 
 function ImageCardOverlay() {
   return (
@@ -17,7 +17,7 @@ function ImageCardOverlay() {
   );
 }
 
-function FeaturedImageCard({ imgSrc }: { imgSrc: string }) {
+function FeaturedImageCard({imgSrc}: {imgSrc: string}) {
   const [overlay, setOverlay] = useState(false);
   return (
     <Link
@@ -33,7 +33,7 @@ function FeaturedImageCard({ imgSrc }: { imgSrc: string }) {
 }
 
 export default function SectionFeaturedGallery() {
-  const { featuredImages } = useFeaturedImages();
+  const {featuredImages} = useFeaturedImages();
   return (
     // eslint-disable-next-line react/jsx-no-undef
     <SectionContainer>

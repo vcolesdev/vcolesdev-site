@@ -9,7 +9,7 @@ const RadioGroupDemo = () => (
       defaultValue="default"
       aria-label="View density"
     >
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div style={{display: "flex", alignItems: "center"}}>
         <RadioGroup.Item className="RadioGroupItem" value="default" id="r1">
           <RadioGroup.Indicator className="RadioGroupIndicator" />
         </RadioGroup.Item>
@@ -17,7 +17,7 @@ const RadioGroupDemo = () => (
           Default
         </label>
       </div>
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div style={{display: "flex", alignItems: "center"}}>
         <RadioGroup.Item className="RadioGroupItem" value="comfortable" id="r2">
           <RadioGroup.Indicator className="RadioGroupIndicator" />
         </RadioGroup.Item>
@@ -25,7 +25,7 @@ const RadioGroupDemo = () => (
           Comfortable
         </label>
       </div>
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div style={{display: "flex", alignItems: "center"}}>
         <RadioGroup.Item className="RadioGroupItem" value="compact" id="r3">
           <RadioGroup.Indicator className="RadioGroupIndicator" />
         </RadioGroup.Item>

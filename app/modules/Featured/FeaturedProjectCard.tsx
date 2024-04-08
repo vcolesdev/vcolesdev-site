@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import {Link} from "@remix-run/react";
 
 function PlaceholderProjectCardIcon() {
   return (
@@ -25,11 +25,11 @@ function PlaceholderProjectCardIcon() {
   );
 }
 
-function ProjectCardTitle({ title }: { title: string }) {
+function ProjectCardTitle({title}: {title: string}) {
   return <h3 className="mt-0.5 text-lg font-medium">{title}</h3>;
 }
 
-function ProjectCardLink({ moreText }: { moreText: string }) {
+function ProjectCardLink({moreText}: {moreText: string}) {
   return (
     <div className="mt-6 inline-flex items-center gap-x-1">
       <span className="text-sm font-medium tracking-tight">{moreText}</span>

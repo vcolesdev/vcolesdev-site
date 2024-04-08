@@ -1,7 +1,7 @@
 import {Link} from "@remix-run/react";
 import {IconArrowRightTail} from "@tabler/icons-react";
 
-export default function LinkBtnFeatureOutline({
+export default function LinkBtnFeature({
   btnText,
   hasIcon,
   href = "/",
@@ -18,25 +18,27 @@ export default function LinkBtnFeatureOutline({
         group
         inline-flex
         items-center
-        gap-1.5
+        gap-2
         rounded-xl
         border-2
         border-melon-400
-        bg-transparent
+        bg-melon-400
         px-4
         py-3
         text-center
         text-base
         font-semibold
         tracking-tight
-        text-melon-400
+        text-melon-900
+        shadow-md
+        shadow-melon-400/20
         hover:bg-melon-400
         hover:text-melon-900
+        hover:shadow-sm
         focus:shadow-none
         focus:outline-none
         focus:ring-4
-        focus:ring-melon-600
-        transition"
+        focus:ring-melon-600"
     >
       <span>{btnText}</span>
       {hasIcon && (
