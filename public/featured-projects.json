@@ -1,0 +1,32 @@
+[
+  {
+    "description": "Personal site for Vanessa Coles (myself).  Built with Remix, TypeScript, TailwindCSS, Markdocs, and more.",
+    "title": "Vanessa Coles Site",
+    "tags": ["Remix"]
+  },
+  {
+    "description": "Scrapes data from the San Diego Farmers Bureau website and saves farm data to JSON format.",
+    "title": "SD Farms Scraper & Automation",
+    "tags": ["Python"]
+  },
+  {
+    "description": "NextJS TypeScript CRUD app that manages clients' information in a simple dashboard interface.",
+    "title": "NextJS Clients App v1",
+    "tags": ["NextJS"]
+  },
+  {
+    "description": "A custom Kanban board built with React and Vite. Features drag and drop functionality and more.",
+    "title": "Sprout Kanban Board",
+    "tags": ["React Vite"]
+  },
+  {
+    "description": "A simple API that converts RSS feeds to JSON format and downloads the results.",
+    "title": "RSS to JSON API",
+    "tags": ["NodeJS Express"]
+  },
+  {
+    "description": "WIP. Custom components for a personal project, Mizu Components. Built with React and Storybook.",
+    "title": "Mizu Storybook Components",
+    "tags": ["Storybook"]
+  }
+]
