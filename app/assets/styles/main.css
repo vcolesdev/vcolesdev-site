@@ -18,3 +18,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Default Focus states for all clickable elements */
+
+*:focus,
+*::before:focus,
+*::after:focus {
+  @apply focus:outline-none focus:ring-4 focus:ring-melon-600;
+}

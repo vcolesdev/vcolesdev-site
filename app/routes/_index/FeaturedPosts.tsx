@@ -4,10 +4,12 @@ import SectionHeaderContainer from "~/components/SectionHeaderContainer";
 import FeaturedPost from "~/modules/Featured/FeaturedPost";
 import FeaturedCta from "~/modules/Featured/FeaturedCta";
 import {FeaturedTestPost} from "~/types/Posts";
+import {generateRandomKey} from "~/utils/content";
 
 export default function SectionFeaturedPosts({posts}: {posts: FeaturedTestPost[]}) {
   const firstTwoPosts = posts.slice(0, 2);
   const lastTwoPosts = posts.slice(2, 4);
+  const key = generateRandomKey();
 
   return (
     <SectionContainer extraClasses="mb-12 lg:mb-24">
@@ -24,14 +26,14 @@ export default function SectionFeaturedPosts({posts}: {posts: FeaturedTestPost[]
         <div className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
           <div>
             {firstTwoPosts.map((post) => (
-              <FeaturedPost key={post.id} post={post} />
+              <FeaturedPost key={key} post={post} />
             ))}
           </div>
         </div>
         <div className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
           <div>
             {lastTwoPosts.map((post) => (
-              <FeaturedPost key={post.id} post={post} />
+              <FeaturedPost key={key} post={post} />
             ))}
           </div>
         </div>
