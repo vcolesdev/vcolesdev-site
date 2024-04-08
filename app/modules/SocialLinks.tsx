@@ -1,19 +1,36 @@
 import useSocialLinks from "~/hooks/useSocialLinks";
-import {Link} from "@remix-run/react";
 
 export default function SocialLinks() {
   const social = useSocialLinks();
 
   const renderLinks = () => {
     return social.map((item) => (
-      <Link
+      <a
         key={item.name}
-        to={item.href}
-        className="text-rosy_brown-300 hover:text-melon-400"
+        href={item.href}
+        className="
+          relative
+          p-1.5
+          rounded-lg
+          bg-melon-900
+          border-2
+          border-melon-900
+          text-rosy_brown-300
+          shadow-lg
+          shadow-melon-300/20
+          hover:border-rosy_brown-300
+          hover:bg-melon-900
+          hover:text-rosy_brown-400
+          active:bg-melon-500
+          active:text-rosy_brown-200
+          active:translate-y-0.5
+          transition-all
+          duration-75
+          "
       >
         <span className="sr-only">{item.name}</span>
-        <item.icon className="h-7 w-7" aria-hidden="true" />
-      </Link>
+        <item.icon aria-hidden="true" />
+      </a>
     ));
   };
 

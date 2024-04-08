@@ -12,7 +12,7 @@ export default function FooterSocialLinks() {
           className="text-rosy_brown-300 hover:text-melon-400"
         >
           <span className="sr-only">{item.name}</span>
-          <item.icon className="h-6 w-6" aria-hidden="true" />
+          <item.icon aria-hidden="true" />
         </a>
       ))}
     </div>

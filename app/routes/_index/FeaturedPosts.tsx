@@ -5,7 +5,7 @@ import FeaturedPost from "~/modules/Featured/FeaturedPost";
 import FeaturedCta from "~/modules/Featured/FeaturedCta";
 import {FeaturedTestPost} from "~/types/Posts";
 
-export default function SectionFeaturedPosts({posts}: {posts: FeaturedTestPost[];}) {
+export default function SectionFeaturedPosts({posts}: {posts: FeaturedTestPost[]}) {
   const firstTwoPosts = posts.slice(0, 2);
   const lastTwoPosts = posts.slice(2, 4);
 
