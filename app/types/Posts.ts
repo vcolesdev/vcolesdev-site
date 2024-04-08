@@ -1,11 +1,11 @@
-export type PostType = {
+export interface FeaturedTestPost {
   id: number;
   title: string;
   href: string;
   description: string;
   date: string;
   datetime: string;
-  category: {
+  category?: {
     title: string;
     href: string;
   };
@@ -14,8 +14,4 @@ export type PostType = {
     href: string;
     imageUrl: string;
   };
-};
-
-export interface FeaturedPostProps {
-  post: PostType;
 }

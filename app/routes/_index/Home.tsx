@@ -4,6 +4,7 @@ import SectionFeaturedProjects from "~/routes/_index/FeaturedProjects";
 import SectionFeaturedGallery from "~/routes/_index/FeaturedGallery";
 import SectionFeaturedAbout from "~/routes/_index/FeaturedAbout";
 import projects from "~/data/featured-projects.json";
+import testPosts from "~/data/featured-test-posts.json";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       {/* Featured About */}
       <SectionFeaturedAbout />
       {/* Recent Posts */}
-      <SectionFeaturedPosts />
+      <SectionFeaturedPosts posts={testPosts} />
       {/* Featured Projects */}
       <SectionFeaturedProjects projects={projects} />
       {/* Gallery */}

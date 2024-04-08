@@ -3,7 +3,7 @@ import FeaturedCta from "~/modules/Featured/FeaturedCta";
 import SectionContainer from "~/components/SectionContainer";
 import SectionHeader from "~/components/SectionHeader";
 import SectionHeaderContainer from "~/components/SectionHeaderContainer";
-import {FeaturedProject} from "../../../types/Projects";
+import {FeaturedProject} from "~/types/Projects";
 import {generateRandomKey} from "~/utils/content";
 
 export default function SectionFeaturedProjects({
