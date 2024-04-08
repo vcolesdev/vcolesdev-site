@@ -4,7 +4,7 @@ import "./styles.css";
 
 const CheckboxDemo = () => (
   <form>
-    <div style={{display: "flex", alignItems: "center"}}>
+    <div style={{ display: "flex", alignItems: "center" }}>
       <Checkbox.Root className="CheckboxRoot" defaultChecked id="c1">
         <Checkbox.Indicator className="CheckboxIndicator">
           <svg

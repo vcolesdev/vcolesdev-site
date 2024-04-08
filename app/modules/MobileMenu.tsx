@@ -1,6 +1,6 @@
 import useNavLinks from "~/hooks/useNavLinks";
-import {Dialog} from "@headlessui/react";
-import {IconMoonStars} from "@tabler/icons-react";
+import { Dialog } from "@headlessui/react";
+import { IconMoonStars } from "@tabler/icons-react";
 
 export default function MobileMenu({
   isOpen,

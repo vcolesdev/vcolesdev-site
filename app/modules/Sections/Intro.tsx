@@ -1,6 +1,6 @@
 import SocialLinks from "~/modules/SocialLinks";
 
-function IntroTitle({title}: {title: string}) {
+function IntroTitle({ title }: { title: string }) {
   return (
     <h2 className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">
       {title}
@@ -8,13 +8,13 @@ function IntroTitle({title}: {title: string}) {
   );
 }
 
-function IntroText({text}: {text: string}) {
+function IntroText({ text }: { text: string }) {
   return (
     <p className="mt-6 text-lg leading-8 text-rosy_brown-200/70">{text}</p>
   );
 }
 
-function IntroFeaturedImage({imgSrc}: {imgSrc: string}) {
+function IntroFeaturedImage({ imgSrc }: { imgSrc: string }) {
   return (
     <div className="mt-16 flow-root sm:mt-24">
       <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">

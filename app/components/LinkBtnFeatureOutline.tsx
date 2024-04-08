@@ -1,5 +1,5 @@
-import {Link} from "@remix-run/react";
-import {IconArrowRightCircle} from "@tabler/icons-react";
+import { Link } from "@remix-run/react";
+import { IconArrowRightCircle } from "@tabler/icons-react";
 
 export default function LinkBtnFeatureOutline({
   btnText,

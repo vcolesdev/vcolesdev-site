@@ -1,5 +1,5 @@
 import * as React from "react";
-import {useHydrated} from "~/hooks/useHydrated";
+import { useHydrated } from "~/hooks/useHydrated";
 /**
  * Render the children only after the JS has loaded client-side. Use an optional
  * fallback component if the JS is not yet loaded.

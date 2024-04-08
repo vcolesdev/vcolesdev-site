@@ -1,5 +1,5 @@
 import useSocialLinks from "~/hooks/useSocialLinks";
-import {Link} from "@remix-run/react";
+import { Link } from "@remix-run/react";
 
 export default function SocialLinks() {
   const social = useSocialLinks();

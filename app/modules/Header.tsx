@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import Navigation from "~/modules/Navigation";
 import MobileMenu from "~/modules/MobileMenu";
 

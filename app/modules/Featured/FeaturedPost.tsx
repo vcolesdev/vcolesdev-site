@@ -1,8 +1,8 @@
-import {FeaturedPostProps} from "../../../types/Posts";
-import {truncateText} from "~/utils/content";
-import {Link} from "@remix-run/react";
+import { FeaturedPostProps } from "../../../types/Posts";
+import { truncateText } from "~/utils/content";
+import { Link } from "@remix-run/react";
 
-function FeaturedPostCategory({categoryText}: {categoryText: string}) {
+function FeaturedPostCategory({ categoryText }: { categoryText: string }) {
   return (
     <div className="mb-5 inline-flex items-center gap-1.5 rounded-full bg-melon-700 px-3 py-1.5 group-hover:bg-melon-900 group-hover:text-rosy_brown-200">
       <span className="text-sm font-medium tracking-tight text-melon-300 group-hover:font-medium group-hover:text-melon-300">
@@ -12,7 +12,7 @@ function FeaturedPostCategory({categoryText}: {categoryText: string}) {
   );
 }
 
-function FeaturedPostTitle({title}: {title: string}) {
+function FeaturedPostTitle({ title }: { title: string }) {
   return (
     <h2 className="mt-2">
       <div className="tracking-tight group-hover:text-white">
@@ -22,7 +22,7 @@ function FeaturedPostTitle({title}: {title: string}) {
   );
 }
 
-function FeaturedPostMore({moreText}: {moreText: string}) {
+function FeaturedPostMore({ moreText }: { moreText: string }) {
   return (
     <div className="mt-6 inline-flex items-center gap-x-1">
       <span className="font-medium tracking-tight group-hover:text-white">
@@ -47,7 +47,7 @@ function FeaturedPostMore({moreText}: {moreText: string}) {
 }
 
 export default function FeaturedPost(props: FeaturedPostProps) {
-  const {post} = props;
+  const { post } = props;
   const getExcerpt = () => truncateText(post.description, 125);
 
   return (

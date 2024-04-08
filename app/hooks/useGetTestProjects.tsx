@@ -15,7 +15,7 @@ const useGetTestProjects = () => {
     }
     return testProjects;
   };
-  return {testProjects};
+  return { testProjects };
 };
 
 export default useGetTestProjects;

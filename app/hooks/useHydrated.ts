@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 let hydrating = true;
 /**
  * Return a boolean indicating if the JS has been hydrated already.

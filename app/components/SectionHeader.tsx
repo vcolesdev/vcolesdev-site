@@ -5,7 +5,7 @@ interface SectionHeaderProps {
   hasEyebrow?: boolean;
 }
 
-function SectionTitle({title}: {title: string}) {
+function SectionTitle({ title }: { title: string }) {
   return (
     <h2 className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">
       {title}
@@ -13,7 +13,7 @@ function SectionTitle({title}: {title: string}) {
   );
 }
 
-function SectionDescription({textContent}: {textContent: string}) {
+function SectionDescription({ textContent }: { textContent: string }) {
   return (
     <p className="mt-6 text-lg leading-8 text-rosy_brown-200/80">
       {textContent}
@@ -22,7 +22,7 @@ function SectionDescription({textContent}: {textContent: string}) {
 }
 
 export default function SectionHeader(props: SectionHeaderProps) {
-  const {eyebrowText, description, hasEyebrow, title} = props;
+  const { eyebrowText, description, hasEyebrow, title } = props;
 
   return (
     <div className="mx-auto max-w-7xl px-6 lg:px-8">

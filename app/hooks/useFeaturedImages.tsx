@@ -31,7 +31,7 @@ const useFeaturedImages = () => {
     image_12,
   ];
 
-  return {featuredImages};
+  return { featuredImages };
 };
 
 export default useFeaturedImages;

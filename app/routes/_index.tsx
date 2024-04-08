@@ -9,7 +9,5 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  return (
-    <Home />
-  );
+  return <Home />;
 }

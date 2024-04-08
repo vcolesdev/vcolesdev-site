@@ -1,27 +1,12 @@
-import {useEffect, useState} from "react";
 import FeaturedProjectCard from "~/modules/Featured/FeaturedProjectCard";
 import FeaturedCta from "~/modules/Featured/FeaturedCta";
 import SectionContainer from "~/components/SectionContainer";
 import SectionHeader from "~/components/SectionHeader";
 import SectionHeaderContainer from "~/components/SectionHeaderContainer";
-import {FeaturedProject} from "../../../types/Projects";
-import {generateRandomKey} from "~/utils/content";
+import { FeaturedProject } from "../../../types/Projects";
+import { generateRandomKey } from "~/utils/content";
 
-export default function SectionFeaturedProjects() {
-  const [projects, setProjects] = useState<FeaturedProject[]>([]);
-
-  const fetchProjects = async () => {
-    const res = await fetch("/featured-projects.json");
-    const data = await res.json();
-    setProjects(data);
-  };
-
-  useEffect(() => {
-    fetchProjects().then(() =>
-      console.log("Featured projects loaded successfully.")
-    );
-  }, []);
-
+export default function SectionFeaturedProjects({projects}: {projects: FeaturedProject[]}) {
   return (
     <SectionContainer extraClasses="mb-12 lg:mb-24">
       <SectionHeaderContainer>

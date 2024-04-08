@@ -4,11 +4,11 @@ import "./styles.css";
 
 const RadixSwitchDemo = () => (
   <form>
-    <div style={{display: "flex", alignItems: "center"}}>
+    <div style={{ display: "flex", alignItems: "center" }}>
       <label
         className="Label"
         htmlFor="airplane-mode"
-        style={{paddingRight: 15}}
+        style={{ paddingRight: 15 }}
       >
         Airplane mode
       </label>

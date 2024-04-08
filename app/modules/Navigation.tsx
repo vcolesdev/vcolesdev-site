@@ -1,7 +1,7 @@
 import useNavLinks from "~/hooks/useNavLinks";
-import {IconMoonStars} from "@tabler/icons-react";
+import { IconMoonStars } from "@tabler/icons-react";
 
-export default function Navigation({handleOpen}: {handleOpen: () => void}) {
+export default function Navigation({ handleOpen }: { handleOpen: () => void }) {
   const navigation = useNavLinks();
 
   return (

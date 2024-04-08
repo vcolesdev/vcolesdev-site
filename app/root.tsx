@@ -5,11 +5,11 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import {cssBundleHref} from "@remix-run/css-bundle";
+import { cssBundleHref } from "@remix-run/css-bundle";
 import Header from "~/modules/Header";
 import Footer from "~/modules/Footer/Footer";
 
-import type {LinksFunction, MetaFunction} from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
 
 // Stylesheets
 import stylesheet from "~/assets/styles/main.css?url";
@@ -20,7 +20,7 @@ import "@fontsource/ibm-plex-sans";
 
 // CSS bundle by Remix
 const cssBundleStyles = cssBundleHref
-  ? [{rel: "stylesheet", href: cssBundleHref}]
+  ? [{ rel: "stylesheet", href: cssBundleHref }]
   : [];
 
 // Links to inject into the head of the document
@@ -46,7 +46,6 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-
 export default function App() {
   return (
     <html lang="en">
@@ -57,7 +56,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-      {/* eslint-disable-next-line react/jsx-no-undef */}
+        {/* eslint-disable-next-line react/jsx-no-undef */}
         <Header />
         <Outlet />
         <Footer />
