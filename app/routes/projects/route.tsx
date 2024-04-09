@@ -12,11 +12,7 @@ export async function loader({params}: LoaderFunctionArgs) {
 export default function ProjectsRoute() {
   return (
     <PageContainer>
-      <PageTitle
-        description="This is the projects page."
-        title="Projects"
-      />
-      <hr />
+      <PageTitle title="Projects" />
       <Outlet context={featuredProjects} />
     </PageContainer>
   )

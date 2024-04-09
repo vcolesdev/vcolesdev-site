@@ -1,5 +1,5 @@
 import {Link} from "@remix-run/react";
-import {IconArrowRightTail} from "@tabler/icons-react";
+import {IconPointer} from "@tabler/icons-react";
 
 export default function LinkBtnFeatureOutline({
   btnText,
@@ -40,8 +40,8 @@ export default function LinkBtnFeatureOutline({
     >
       <span>{btnText}</span>
       {hasIcon && (
-        <div className="group-hover:translate-x-1 group-hover:transition">
-          <IconArrowRightTail stroke={2} />
+        <div className="translate-x-0.5 group-hover:-translate-x-0.5 group-hover:transition">
+          <IconPointer stroke={2} />
         </div>
       )}
     </Link>
