@@ -5,7 +5,7 @@ import {Outlet} from "@remix-run/react";
 import {LoaderFunctionArgs} from "@remix-run/router";
 
 export async function loader({params}: LoaderFunctionArgs) {
-  console.log(params)
+  console.log(params);
   return params;
 }
 

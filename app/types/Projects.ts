@@ -17,3 +17,6 @@ export interface FeaturedProject {
   href?: string;
   tags?: string[];
 }
+
+export type FeaturedProjectType = FeaturedProject;
+export type FeaturedProjects = FeaturedProject[];
