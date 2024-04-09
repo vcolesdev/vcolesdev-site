@@ -14,5 +14,6 @@ export interface FeaturedProject {
   slug: string;
   title: string;
   description?: string;
+  href?: string;
   tags?: string[];
 }
