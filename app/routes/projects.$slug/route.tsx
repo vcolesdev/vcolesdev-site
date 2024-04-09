@@ -11,7 +11,7 @@ export async function loader({params}: LoaderFunctionArgs) {
 const Project = ({title, description, tags}: FeaturedProject) => {
   return (
     <div>
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <p>{description}</p>
       <ul>
         {tags?.map(tag => (
