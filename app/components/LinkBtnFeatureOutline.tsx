@@ -1,5 +1,5 @@
 import {Link} from "@remix-run/react";
-import {IconPointer} from "@tabler/icons-react";
+import {IconCaretRight} from "@tabler/icons-react";
 
 export default function LinkBtnFeatureOutline({
   btnText,
@@ -26,22 +26,21 @@ export default function LinkBtnFeatureOutline({
         px-4
         py-3
         text-center
-        text-base
-        font-semibold
-        tracking-tight
-        text-melon-400
+        transition
+        duration-75
+        ease-in-out-cubic
         hover:bg-melon-400
-        hover:text-melon-900
         focus:shadow-none
         focus:outline-none
         focus:ring-4
-        focus:ring-melon-600
-        transition"
+        focus:ring-melon-600"
     >
-      <span>{btnText}</span>
+      <span className="text-base font-semibold tracking-tight text-melon-400 group-hover:text-melon-900">
+        {btnText}
+      </span>
       {hasIcon && (
-        <div className="translate-x-0.5 group-hover:-translate-x-0.5 group-hover:transition">
-          <IconPointer stroke={2} />
+        <div className="group-hover:translate-x-0.5 group-hover:transition">
+          <IconCaretRight className="text-melon-400 group-hover:text-melon-900" stroke={2} />
         </div>
       )}
     </Link>

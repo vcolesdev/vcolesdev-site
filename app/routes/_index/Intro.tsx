@@ -41,7 +41,7 @@ export default function SectionIntro({
     <div className="px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         <IntroTitle title="Welcome to My Space" />
-        <IntroText text="Welcome to my personal space on the web. I'm a software engineer and web developer with a passion for creating and building things." />
+        <IntroText text="Welcome to my personal space on the web. I'm a software developer and fullstack engineer with a passion for creating and building things." />
       </div>
       <div className="mt-12 flex justify-center">
         <SocialLinks />

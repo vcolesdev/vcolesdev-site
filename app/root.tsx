@@ -1,3 +1,9 @@
+import Header from "~/modules/Header";
+import Footer from "~/modules/Footer/Footer";
+import UnderConstruction from "~/components/UnderConstruction";
+import stylesheet from "~/assets/styles/main.css?url";
+import {cssBundleHref} from "@remix-run/css-bundle";
+import type {LinksFunction, MetaFunction} from "@remix-run/node";
 import {
   Links,
   Meta,
@@ -5,14 +11,6 @@ import {
   Scripts,
   ScrollRestoration, useRouteError,
 } from "@remix-run/react";
-import {cssBundleHref} from "@remix-run/css-bundle";
-import Header from "~/modules/Header";
-import Footer from "~/modules/Footer/Footer";
-
-import type {LinksFunction, MetaFunction} from "@remix-run/node";
-
-// Stylesheets
-import stylesheet from "~/assets/styles/main.css?url";
 
 // Fontsource fonts
 import "@fontsource/satisfy";
@@ -65,6 +63,7 @@ export default function App() {
     </head>
     <body>
       {/* eslint-disable-next-line react/jsx-no-undef */}
+      <UnderConstruction />
       <Header />
       <Outlet />
       <Footer />
