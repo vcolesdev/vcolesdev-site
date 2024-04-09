@@ -4,7 +4,6 @@ import SectionContainer from "~/components/SectionContainer";
 import SectionHeader from "~/components/SectionHeader";
 import SectionHeaderContainer from "~/components/SectionHeaderContainer";
 import {FeaturedProject} from "~/types/Projects";
-import {generateRandomKey} from "~/utils/content";
 
 export default function SectionFeaturedProjects({
   projects,
@@ -22,13 +21,14 @@ export default function SectionFeaturedProjects({
         />
         <FeaturedCta hasIcon ctaText="View All Projects" href="/projects" />
       </SectionHeaderContainer>
-      <div className="container mx-auto grid max-w-7xl grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
+      <div className="container mx-auto grid max-w-7xl grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6 xl:grid-cols-3 xl:gap-8">
         {projects &&
-          projects.map((project: FeaturedProject) => (
+          projects.map((project) => (
             <FeaturedProjectCard
-              key={generateRandomKey()}
-              title={project.title}
+              key={project._id}
+              categorySlug={project["category_slug"]}
               description={project.description || ""}
+              title={project.title}
             />
           ))}
       </div>

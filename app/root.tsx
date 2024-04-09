@@ -3,7 +3,7 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
+  ScrollRestoration, useRouteError,
 } from "@remix-run/react";
 import {cssBundleHref} from "@remix-run/css-bundle";
 import Header from "~/modules/Header";
@@ -49,20 +49,42 @@ export const meta: MetaFunction = () => {
 export default function App() {
   return (
     <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
-        <Links />
-      </head>
-      <body>
-        {/* eslint-disable-next-line react/jsx-no-undef */}
-        <Header />
-        <Outlet />
-        <Footer />
-        <ScrollRestoration />
-        <Scripts />
-      </body>
+    <head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <Meta />
+      <Links />
+    </head>
+    <body>
+      {/* eslint-disable-next-line react/jsx-no-undef */}
+      <Header />
+      <Outlet />
+      <Footer />
+      <ScrollRestoration />
+      <Scripts />
+    </body>
+    </html>
+  );
+}
+
+export function ErrorBoundary() {
+  const error = useRouteError();
+  console.error(error);
+  return (
+    <html lang="en">
+    <head>
+      <title>Oh no!</title>
+      <Meta />
+      <Links />
+    </head>
+    <body>
+      <Header />
+      {/* add the UI you want your users to see */}
+      <h1>Oh no!</h1>
+      <p>Something went wrong.</p>
+      <Footer />
+      <Scripts />
+    </body>
     </html>
   );
 }
