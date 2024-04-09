@@ -30,15 +30,17 @@ function ProjectCardLink({moreText}: {moreText: string}) {
 
 export default function FeaturedProjectCard({
   categorySlug,
-  title,
   description,
+  title,
+  url
 }: {
   categorySlug: FeaturedProjectCategories;
-  title: string;
   description: string;
+  title: string;
+  url: string;
 }) {
   return (
-    <Link className="relative flex" to="/">
+    <Link className="relative flex" to={url}>
       <article
         className="
           group

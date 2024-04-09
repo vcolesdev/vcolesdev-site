@@ -4,46 +4,52 @@
     "category": "Remix",
     "category_slug": "remix",
     "description": "Personal site for Vanessa Coles (myself).  Built with Remix, TypeScript, TailwindCSS, Markdocs, and more.",
-    "title": "Vanessa Coles Site",
-    "tags": ["remix", "typescript", "tailwindcss", "markdocs"]
+    "slug": "vanessa-coles-site",
+    "tags": ["remix", "typescript", "tailwindcss", "markdocs"],
+    "title": "Vanessa Coles Site"
   },
   {
     "_id": "2",
     "category": "Python",
     "category_slug": "python",
     "description": "Scrapes data from the San Diego Farmers Bureau website and saves farm data to JSON format.",
-    "title": "SD Farms Scraper & Automation",
-    "tags": ["python", "selenium", "json", "automation"]
+    "slug": "sd-farms-scraper",
+    "tags": ["python", "selenium", "json", "automation"],
+    "title": "SD Farms Scraper & Automation"
   },
   {
     "_id": "3",
     "category": "NextJS",
     "category_slug": "nextjs",
     "description": "NextJS TypeScript CRUD app that manages clients' information in a simple dashboard interface.",
-    "title": "NextJS Clients App v1",
-    "tags": ["nextjs", "typescript", "tailwindcss"]
+    "slug": "nextjs-clients-app-v1",
+    "tags": ["nextjs", "typescript", "tailwindcss"],
+    "title": "NextJS Clients App v1"
   },
   {
     "_id": "4",
     "category": "Vite",
     "description": "A custom Kanban board built with React and Vite. Features drag and drop functionality and more.",
-    "title": "Sprout Kanban Board",
-    "tags": ["react", "vite", "typescript", "tailwindcss"]
+    "slug": "sprout-kanban-board",
+    "tags": ["react", "vite", "typescript", "tailwindcss"],
+    "title": "Sprout Kanban Board"
   },
   {
     "_id": "5",
     "category": "NodeJS",
     "category_slug": "nodejs",
     "description": "A simple API that converts RSS feeds to JSON format and downloads the results.",
-    "title": "RSS to JSON API",
-    "tags": ["nodejs", "express", "rss-parser", "typescript"]
+    "slug": "rss-to-json-api",
+    "tags": ["nodejs", "express", "rss-parser", "typescript"],
+    "title": "RSS to JSON API"
   },
   {
     "_id": "6",
     "category": "Storybook",
     "category_slug": "storybook",
     "description": "WIP. Custom components for a personal project, Mizu Components. Built with React and Storybook.",
-    "title": "Mizu Storybook Components",
-    "tags": ["storybook", "react", "typescript"]
+    "slug": "mizu-storybook-components",
+    "tags": ["storybook", "react", "typescript"],
+    "title": "Mizu Storybook Components"
   }
 ]

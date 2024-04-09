@@ -29,6 +29,7 @@ export default function SectionFeaturedProjects({
               categorySlug={project["category_slug"]}
               description={project.description || ""}
               title={project.title}
+              url={`/projects/${project.slug}`}
             />
           ))}
       </div>

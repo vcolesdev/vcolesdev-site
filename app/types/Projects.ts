@@ -11,6 +11,7 @@ export interface FeaturedProject {
   _id: string | number;
   category: string;
   category_slug: FeaturedProjectCategories;
+  slug: string;
   title: string;
   description?: string;
   tags?: string[];
