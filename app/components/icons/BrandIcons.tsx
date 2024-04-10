@@ -8,13 +8,13 @@ import {
   IconServer,
 } from "@tabler/icons-react";
 
-const IconNextJs = () => <IconBrandNextjs />
-const IconNodeJs = () => <IconBrandNodejs />
-const IconPython = () => <IconBrandPython />
-const IconRemix = () => <IconServer />
+const IconNextJs = () => <IconBrandNextjs />;
+const IconNodeJs = () => <IconBrandNodejs />;
+const IconPython = () => <IconBrandPython />;
+const IconRemix = () => <IconServer />;
 const IconStorybook = () => <IconBrandStorybook />;
 const IconVite = () => <IconBrandVite />;
-const Placeholder = () => <IconCode />
+const Placeholder = () => <IconCode />;
 
 export {
   IconNextJs,
@@ -24,4 +24,4 @@ export {
   IconStorybook,
   IconVite,
   Placeholder,
-}
+};

@@ -32,7 +32,7 @@ export default function FeaturedProjectCard({
   categorySlug,
   description,
   title,
-  url
+  url,
 }: {
   categorySlug: FeaturedProjectCategories;
   description: string;
@@ -44,11 +44,11 @@ export default function FeaturedProjectCard({
       <article
         className="
           group
+          w-full
           rounded-2xl
           bg-melon-900
           p-4
           transition
-          w-full
           hover:scale-105
           hover:shadow-lg
           hover:shadow-melon-300/10

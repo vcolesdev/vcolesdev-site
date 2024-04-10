@@ -15,6 +15,7 @@ export default function LinkBtnFeatureOutline({
       to={href}
       type="button"
       className="
+        ease-in-out-cubic
         group
         inline-flex
         items-center
@@ -28,7 +29,6 @@ export default function LinkBtnFeatureOutline({
         text-center
         transition
         duration-75
-        ease-in-out-cubic
         hover:bg-melon-400
         focus:shadow-none
         focus:outline-none
@@ -40,7 +40,10 @@ export default function LinkBtnFeatureOutline({
       </span>
       {hasIcon && (
         <div className="group-hover:translate-x-0.5 group-hover:transition">
-          <IconCaretRight className="text-melon-400 group-hover:text-melon-900" stroke={2} />
+          <IconCaretRight
+            className="text-melon-400 group-hover:text-melon-900"
+            stroke={2}
+          />
         </div>
       )}
     </Link>

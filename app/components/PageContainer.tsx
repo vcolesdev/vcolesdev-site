@@ -7,9 +7,5 @@ export default function PageContainer({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <Container.Page {...props}>
-      {children}
-    </Container.Page>
-  )
+  return <Container.Page {...props}>{children}</Container.Page>;
 }

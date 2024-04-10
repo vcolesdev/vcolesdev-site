@@ -26,7 +26,12 @@ export default function SectionFeaturedAbout() {
               title="About Me"
               description="Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
             />
-            <FeaturedCta isOutline hasIcon ctaText="Keep Reading" href="/about" />
+            <FeaturedCta
+              isOutline
+              hasIcon
+              ctaText="Keep Reading"
+              href="/about"
+            />
           </SectionHeaderContainer>
         </div>
       </div>

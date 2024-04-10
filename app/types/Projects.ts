@@ -1,5 +1,5 @@
 export enum FeaturedProjectCategories {
-  nextjs ="nextjs",
+  nextjs = "nextjs",
   nodejs = "nodejs",
   python = "python",
   remix = "remix",

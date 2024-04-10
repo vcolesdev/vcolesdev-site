@@ -1,6 +1,6 @@
 import PageContainer from "~/components/PageContainer";
 import PageTitle from "~/components/PageTitle";
-import featuredProjects from "~/data/featured-projects.json";
+import featuredProjects from "~/assets/data/featured-projects.json";
 import {Outlet} from "@remix-run/react";
 import {LoaderFunctionArgs} from "@remix-run/router";
 
@@ -15,5 +15,5 @@ export default function ProjectsRoute() {
       <PageTitle title="Projects" />
       <Outlet context={featuredProjects} />
     </PageContainer>
-  )
+  );
 }

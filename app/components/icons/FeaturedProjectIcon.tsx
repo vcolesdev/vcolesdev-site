@@ -7,12 +7,13 @@ import {
   IconRemix,
   IconStorybook,
   IconVite,
-  Placeholder
+  Placeholder,
 } from "./BrandIcons";
 
 function FeaturedProjectIconWrapper({children}: {children: React.ReactNode}) {
   return (
-    <span className="
+    <span
+      className="
       relative
       inline-block
       rounded-xl
@@ -21,43 +22,47 @@ function FeaturedProjectIconWrapper({children}: {children: React.ReactNode}) {
       bg-salmon_pink-800
       p-2
       text-rosy_brown-300
-      group-hover:shadow-md
-      group-hover:shadow-melon-300/20
+      group-hover:-translate-y-1
       group-hover:border-melon-300/20
       group-hover:bg-melon-400
       group-hover:text-melon-900
-      group-hover:-translate-y-1
+      group-hover:shadow-md
+      group-hover:shadow-melon-300/20
       "
     >
       {children}
     </span>
-  )
+  );
 }
 
-export default function FeaturedProjectIcon({categorySlug}: {categorySlug: FeaturedProjectCategories}) {
+export default function FeaturedProjectIcon({
+  categorySlug,
+}: {
+  categorySlug: FeaturedProjectCategories;
+}) {
   function CategoryIcon() {
     switch (categorySlug) {
       case FeaturedProjectCategories.nextjs:
-        return <FeaturedProjectIcon.IconNextJs />
+        return <FeaturedProjectIcon.IconNextJs />;
       case FeaturedProjectCategories.nodejs:
-        return <FeaturedProjectIcon.IconNodeJs />
+        return <FeaturedProjectIcon.IconNodeJs />;
       case FeaturedProjectCategories.python:
-        return <FeaturedProjectIcon.IconPython />
+        return <FeaturedProjectIcon.IconPython />;
       case FeaturedProjectCategories.remix:
-        return <FeaturedProjectIcon.IconRemix />
+        return <FeaturedProjectIcon.IconRemix />;
       case FeaturedProjectCategories.storybook:
-        return <FeaturedProjectIcon.IconStorybook />
+        return <FeaturedProjectIcon.IconStorybook />;
       case FeaturedProjectCategories.vite:
-        return <FeaturedProjectIcon.IconVite />
+        return <FeaturedProjectIcon.IconVite />;
       default:
-        return <FeaturedProjectIcon.Placeholder />
+        return <FeaturedProjectIcon.Placeholder />;
     }
   }
   return (
     <FeaturedProjectIconWrapper>
       <CategoryIcon />
     </FeaturedProjectIconWrapper>
-  )
+  );
 }
 
 FeaturedProjectIcon.Placeholder = Placeholder;

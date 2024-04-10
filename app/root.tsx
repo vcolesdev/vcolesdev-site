@@ -9,7 +9,8 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration, useRouteError,
+  ScrollRestoration,
+  useRouteError,
 } from "@remix-run/react";
 
 // Fontsource fonts
@@ -29,11 +30,15 @@ export const links: LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href: "https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap",
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href: "https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap",
+  },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap"
   },
   ...cssBundleStyles,
 ];
@@ -55,21 +60,21 @@ export const meta: MetaFunction = () => {
 export default function App() {
   return (
     <html lang="en">
-    <head>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <Meta />
-      <Links />
-    </head>
-    <body>
-      {/* eslint-disable-next-line react/jsx-no-undef */}
-      <UnderConstruction />
-      <Header />
-      <Outlet />
-      <Footer />
-      <ScrollRestoration />
-      <Scripts />
-    </body>
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        {/* eslint-disable-next-line react/jsx-no-undef */}
+        <UnderConstruction />
+        <Header />
+        <Outlet />
+        <Footer />
+        <ScrollRestoration />
+        <Scripts />
+      </body>
     </html>
   );
 }
@@ -79,19 +84,19 @@ export function ErrorBoundary() {
   console.error(error);
   return (
     <html lang="en">
-    <head>
-      <title>Oh no!</title>
-      <Meta />
-      <Links />
-    </head>
-    <body>
-      <Header />
-      {/* add the UI you want your users to see */}
-      <h1>Oh no!</h1>
-      <p>Something went wrong.</p>
-      <Footer />
-      <Scripts />
-    </body>
+      <head>
+        <title>Oh no!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <Header />
+        {/* add the UI you want your users to see */}
+        <h1>Oh no!</h1>
+        <p>Something went wrong.</p>
+        <Footer />
+        <Scripts />
+      </body>
     </html>
   );
 }

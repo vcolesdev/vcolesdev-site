@@ -12,20 +12,20 @@ export async function loader({params}: LoaderFunctionArgs) {
 function ProjectTags({tags}: {tags: string[]}) {
   return (
     <ul className="flex gap-3">
-      {tags.map(tag => (
+      {tags.map((tag) => (
         <span
           key={tag}
           className="
-            rounded-xl
             block
-            py-1.5
-            px-2.5
-            tracking-tight
-            font-semibold
-            text-sm
-            text-melon-300
+            rounded-xl
             border-2
             border-melon-300/20
+            px-2.5
+            py-1.5
+            text-sm
+            font-semibold
+            tracking-tight
+            text-melon-300
             hover:border-melon-400"
         >
           {tag}
@@ -35,41 +35,49 @@ function ProjectTags({tags}: {tags: string[]}) {
   );
 }
 
-function ProjectTitle({title, description}: {title: string, description?: string}) {
+function ProjectTitle({
+  title,
+  description,
+}: {
+  title: string;
+  description?: string;
+}) {
   return (
     <div className="mb-8">
-      <h2 className="font-kanit mb-6 tracking-tight text-4xl font-semibold">{title}</h2>
+      <h2 className="mb-6 font-kanit text-4xl font-semibold tracking-tight">
+        {title}
+      </h2>
       {description && <p className="text-lg">{description}</p>}
     </div>
-  )
+  );
 }
 
-function ProjectLink({href, linkText}: {href: string, linkText: string}) {
+function ProjectLink({href, linkText}: {href: string; linkText: string}) {
   return (
     <p>
       <a
         href={href}
-        className="font-medium text-melon-300 hover:text-melon-400 cursor-pointer"
+        className="cursor-pointer font-medium text-melon-300 hover:text-melon-400"
         target="_blank"
         rel="noreferrer"
       >
         {linkText}
       </a>
     </p>
-  )
+  );
 }
 
 function Project({href, title, description, tags}: FeaturedProject) {
   return (
     <>
       <ProjectTitle title={title} description={description} />
-      <div className="flex gap-4 items-center mb-6">
+      <div className="mb-6 flex items-center gap-4">
         <div className="text-2xl text-rosy_brown-300">
           <IconBrandGithub height={32} stroke={2} width={32} />
         </div>
         <ProjectLink href={href!} linkText="View Code on Github" />
       </div>
-      <div className="flex gap-4 items-center">
+      <div className="flex items-center gap-4">
         <div className="text-2xl text-rosy_brown-300">
           <IconTags height={32} stroke={2} width={32} />
         </div>
@@ -82,7 +90,9 @@ function Project({href, title, description, tags}: FeaturedProject) {
 export default function SingleProjectRoute() {
   const projects: unknown[] = useOutletContext();
   const slug = useLoaderData<typeof loader>();
-  const currentProject = (projects as FeaturedProject[]).find(project => project.slug === slug);
+  const currentProject = (projects as FeaturedProject[]).find(
+    (project) => project.slug === slug
+  );
 
   if (!currentProject) {
     return <div>Project not found</div>;

@@ -3,8 +3,8 @@ import SectionFeaturedPosts from "~/routes/_index/FeaturedPosts";
 import SectionFeaturedProjects from "~/routes/_index/FeaturedProjects";
 import SectionFeaturedGallery from "~/routes/_index/FeaturedGallery";
 import SectionFeaturedAbout from "~/routes/_index/FeaturedAbout";
-import projects from "~/data/featured-projects.json";
-import testPosts from "~/data/featured-test-posts.json";
+import projects from "~/assets/data/featured-projects.json";
+import testPosts from "~/assets/data/featured-test-posts.json";
 
 export default function Home() {
   return (

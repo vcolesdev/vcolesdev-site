@@ -15,6 +15,7 @@ export default function LinkBtnFeature({
       to={href}
       type="button"
       className="
+        ease-in-out-cubic
         group
         inline-flex
         items-center
@@ -30,7 +31,6 @@ export default function LinkBtnFeature({
         shadow-melon-400/20
         transition
         duration-75
-        ease-in-out-cubic
         hover:bg-melon-400
         hover:shadow-sm
         focus:shadow-none
@@ -43,7 +43,10 @@ export default function LinkBtnFeature({
       </span>
       {hasIcon && (
         <div className="group-hover:translate-x-0.5">
-          <IconCaretRight className="text-white group-active:text-melon-900" stroke={2} />
+          <IconCaretRight
+            className="text-white group-active:text-melon-900"
+            stroke={2}
+          />
         </div>
       )}
     </Link>

@@ -8,13 +8,12 @@ export default function ProjectsIndexRoute() {
   return (
     <div>
       <div className="mb-8">
-        <h2 className="font-kanit mb-6 tracking-tight text-4xl font-semibold">
+        <h2 className="mb-6 font-kanit text-4xl font-semibold tracking-tight">
           Personal Projects
         </h2>
         <p className="text-lg">A list of featured, past, and present works.</p>
       </div>
-      <div
-        className="container mx-auto mb-12 lg:mb-24 grid max-w-7xl grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6 xl:grid-cols-3 xl:gap-8">
+      <div className="container mx-auto mb-12 grid max-w-7xl grid-cols-1 gap-4 lg:mb-24 lg:grid-cols-2 lg:gap-6 xl:grid-cols-3 xl:gap-8">
         {projects &&
           projects.map((project) => (
             <FeaturedProjectCard
@@ -27,7 +26,7 @@ export default function ProjectsIndexRoute() {
           ))}
       </div>
       <div className="mb-8">
-        <h2 className="font-kanit mb-6 tracking-tight text-4xl font-semibold">
+        <h2 className="mb-6 font-kanit text-4xl font-semibold tracking-tight">
           Oldies but Goodies
         </h2>
         <p className="text-lg">
@@ -35,5 +34,5 @@ export default function ProjectsIndexRoute() {
         </p>
       </div>
     </div>
-  )
+  );
 }

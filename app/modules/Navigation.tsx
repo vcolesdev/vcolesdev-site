@@ -1,5 +1,6 @@
 import useNavLinks from "~/hooks/useNavLinks";
 import {IconMoonStars} from "@tabler/icons-react";
+import {NavLink} from "@remix-run/react";
 
 export default function Navigation({handleOpen}: {handleOpen: () => void}) {
   const navigation = useNavLinks();
@@ -10,9 +11,11 @@ export default function Navigation({handleOpen}: {handleOpen: () => void}) {
       aria-label="Global"
     >
       <div className="flex lg:flex-1">
-        <a href="/" className="-m-1.5 p-1.5">
-          <span>Vanessa Coles</span>
-        </a>
+        <NavLink to="/" className="group mt-1.5 p-1.5 tracking-normal transition-all duration-300 ease-in-out-cubic">
+          <span className="font-cursive text-[32px] group-hover:tracking-wide">
+            Vanessa Coles
+          </span>
+        </NavLink>
       </div>
       <div className="flex lg:hidden">
         <button
@@ -38,13 +41,20 @@ export default function Navigation({handleOpen}: {handleOpen: () => void}) {
       </div>
       <div className="hidden lg:flex lg:gap-x-12">
         {navigation.map((item) => (
-          <a
+          <NavLink
             key={item.name}
-            href={item.href}
-            className="text-rose_brown-500 hover:text-rose_brown-700 font-medium leading-6 tracking-tight"
+            to={item.href}
+            className="
+              font-kanit
+              text-lg
+              text-rose_brown-500
+              hover:text-rose_brown-700
+              font-medium
+              leading-6
+              tracking-tight"
           >
             {item.name}
-          </a>
+          </NavLink>
         ))}
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">

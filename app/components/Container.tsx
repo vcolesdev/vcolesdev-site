@@ -20,10 +20,18 @@ export default function Container({
   return <div className={elementClasses()}>{children}</div>;
 }
 
-Container.Page = function PageContainer({ children, ...props }: { children: React.ReactNode }) {
+Container.Page = function PageContainer({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <Container extraClasses="max-w-7xl pt-12 pb:24 md:py-24 lg:py-32" {...props}>
+    <Container
+      extraClasses="max-w-7xl pt-12 pb:24 md:py-24 lg:py-32"
+      {...props}
+    >
       {children}
     </Container>
   );
-}
+};

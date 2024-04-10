@@ -6,7 +6,11 @@ import FeaturedCta from "~/modules/Featured/FeaturedCta";
 import {FeaturedTestPost} from "~/types/Posts";
 import {generateRandomKey} from "~/utils/content";
 
-export default function SectionFeaturedPosts({posts}: {posts: FeaturedTestPost[]}) {
+export default function SectionFeaturedPosts({
+  posts,
+}: {
+  posts: FeaturedTestPost[];
+}) {
   const firstTwoPosts = posts.slice(0, 2);
   const lastTwoPosts = posts.slice(2, 4);
   const key = generateRandomKey();
