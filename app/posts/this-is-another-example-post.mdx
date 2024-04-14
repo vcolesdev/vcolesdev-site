@@ -1,6 +1,19 @@
+import {frontmatter} from "*.mdx";
+
 ---
 title: This is Another Example Post
+description: This is a description of the post
 ---
+
+export const meta = () => {
+  return [
+    { title: frontmatter.title },
+    {
+      name: "description",
+      content: frontmatter.description,
+    },
+  ];
+};
 
 # This is Another Example Post
 

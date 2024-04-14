@@ -1,8 +1,8 @@
 import FeaturedProjectCard from "~/modules/Featured/FeaturedProjectCard";
 import FeaturedCta from "~/modules/Featured/FeaturedCta";
-import SectionContainer from "~/components/SectionContainer";
-import SectionHeader from "~/components/SectionHeader";
-import SectionHeaderContainer from "~/components/SectionHeaderContainer";
+import SectionContainer from "~/components/Section/SectionContainer";
+import SectionHeader from "~/components/Section/SectionHeader";
+import SectionHeaderContainer from "~/components/Section/SectionHeaderContainer";
 import {FeaturedProjectType, FeaturedProjects} from "~/types/Projects";
 
 export default function SectionFeaturedProjects({

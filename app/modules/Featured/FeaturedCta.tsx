@@ -1,5 +1,5 @@
-import LinkBtnFeature from "~/components/LinkBtnFeature";
-import LinkBtnFeatureOutline from "~/components/LinkBtnFeatureOutline";
+import LinkBtnFeature from "~/components/LinkBtn/LinkBtnFeature";
+import LinkBtnFeatureOutline from "~/components/LinkBtn/LinkBtnFeatureOutline";
 
 export default function FeaturedCta({
   hasIcon,

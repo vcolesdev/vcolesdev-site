@@ -1,6 +1,19 @@
+import {frontmatter} from "*.mdx";
+
 ---
 title: Pale Blue Dot
+description: This is a short excerpt from Carl Sagan's book Pale Blue Dot.
 ---
+
+export const meta = () => {
+  return [
+    { title: frontmatter.title },
+    {
+      name: "description",
+      content: frontmatter.description,
+    },
+  ];
+};
 
 # Pale Blue Dot
 

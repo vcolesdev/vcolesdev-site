@@ -1,7 +1,7 @@
 import FeaturedCta from "~/modules/Featured/FeaturedCta";
-import SectionHeader from "~/components/SectionHeader";
-import SectionContainer from "~/components/SectionContainer";
-import SectionHeaderContainer from "~/components/SectionHeaderContainer";
+import SectionHeader from "~/components/Section/SectionHeader";
+import SectionContainer from "~/components/Section/SectionContainer";
+import SectionHeaderContainer from "~/components/Section/SectionHeaderContainer";
 import GithubPhoto from "~/assets/images/vcoles-github.jpeg";
 
 export default function SectionFeaturedAbout() {

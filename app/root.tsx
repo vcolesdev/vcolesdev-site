@@ -1,6 +1,8 @@
+import "@fontsource/satisfy";
+import "@fontsource/ibm-plex-sans";
 import Header from "~/modules/Header";
 import Footer from "~/modules/Footer/Footer";
-import UnderConstruction from "~/components/UnderConstruction";
+import UnderConstruction from "~/modules/UnderConstruction";
 import stylesheet from "~/assets/styles/main.css?url";
 import {cssBundleHref} from "@remix-run/css-bundle";
 import type {LinksFunction, MetaFunction} from "@remix-run/node";
@@ -9,13 +11,9 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
+  ScrollRestoration, useLoaderData,
   useRouteError,
 } from "@remix-run/react";
-
-// Fontsource fonts
-import "@fontsource/satisfy";
-import "@fontsource/ibm-plex-sans";
 
 // CSS bundle by Remix
 const cssBundleStyles = cssBundleHref
@@ -57,7 +55,15 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export async function loader() {
+  return {
+    posts: {},
+  }
+}
+
 export default function App() {
+  const appContext = useLoaderData<typeof loader>();
+
   return (
     <html lang="en">
       <head>
@@ -70,7 +76,7 @@ export default function App() {
         {/* eslint-disable-next-line react/jsx-no-undef */}
         <UnderConstruction />
         <Header />
-        <Outlet />
+        <Outlet context={appContext} />
         <Footer />
         <ScrollRestoration />
         <Scripts />

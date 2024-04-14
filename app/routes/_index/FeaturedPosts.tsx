@@ -1,10 +1,10 @@
-import SectionHeader from "~/components/SectionHeader";
-import SectionContainer from "~/components/SectionContainer";
-import SectionHeaderContainer from "~/components/SectionHeaderContainer";
+import SectionHeader from "~/components/Section/SectionHeader";
+import SectionContainer from "~/components/Section/SectionContainer";
+import SectionHeaderContainer from "~/components/Section/SectionHeaderContainer";
 import FeaturedPost from "~/modules/Featured/FeaturedPost";
 import FeaturedCta from "~/modules/Featured/FeaturedCta";
 import {FeaturedTestPost} from "~/types/Posts";
-import {generateRandomKey} from "~/utils/content";
+import generateRandomKey from "~/utils/generateRandomKey";
 
 export default function SectionFeaturedPosts({
   posts,

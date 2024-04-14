@@ -1,16 +1,18 @@
-import {useOutletContext} from "@remix-run/react";
-
 export default function PostsIndexRoute() {
-  const posts: any[] = useOutletContext();
-
   return (
-    <>
+    <div>
       <div className="mb-8">
         <h2 className="mb-6 font-kanit text-4xl font-semibold tracking-tight">
-          Things I`&apos;`ve Written
+          Recent Posts
         </h2>
-        <p className="text-lg">A list of articles I`&apos;`ve written.</p>
+        <p className="text-lg">
+          A list of recent posts will be displayed here.
+        </p>
       </div>
-    </>
+      <div>
+        {/* This is where the list of posts will go. */}
+        Posts
+      </div>
+    </div>
   );
 }

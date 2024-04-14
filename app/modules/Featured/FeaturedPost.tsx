@@ -1,5 +1,5 @@
+import truncateText from "~/utils/truncateText";
 import {FeaturedPostProps} from "~/types/Posts";
-import {truncateText} from "~/utils/content";
 import {Link} from "@remix-run/react";
 
 function FeaturedPostCategory({categoryText}: {categoryText: string}) {

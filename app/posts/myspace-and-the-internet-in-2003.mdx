@@ -1,6 +1,19 @@
+import {frontmatter} from "*.mdx";
+
 ---
 title: MySpace and the Internet in 2003
+description: Street art banjo labor
 ---
+
+export const meta = () => {
+  return [
+    { title: frontmatter.title },
+    {
+      name: "description",
+      content: frontmatter.description,
+    },
+  ];
+};
 
 # MySpace and the Internet in 2003
 

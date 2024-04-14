@@ -5,7 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/posts/hello-world.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/convertMdxFile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/fetchLocalPosts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/generateRandomKey.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/getPageTitle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/truncateText.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remix.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Layout/Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/LinkBtnFeature.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LinkBtn/LinkBtnFeature.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/LinkBtnFeatureOutline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LinkBtn/LinkBtnFeatureOutline.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/PageContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Page/PageContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/PageTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Page/PageTitle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/SectionContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section/SectionContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/SectionHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section/SectionHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/SectionHeaderContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section/SectionHeaderContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/UnderConstruction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/UnderConstruction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Featured/FeaturedCta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/Featured/FeaturedCta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Featured/FeaturedPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/Featured/FeaturedPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/hello-world/page.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/myspace-and-the-internet-in-2003/page.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/myspace-and-the-internet-in-2003.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/pale-blue-dot/page.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/pale-blue-dot.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/this-is-an-example-post/page.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/this-is-an-example-post.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/this-is-another-example-post/page.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/this-is-another-example-post.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/we-chose-to-go-to-the-moon/page.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/we-chose-to-go-to-the-moon.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/FeaturedAbout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/FeaturedAbout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/FeaturedGallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/FeaturedGallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/FeaturedPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/FeaturedPosts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/FeaturedProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/FeaturedProjects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/about/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/about/route.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/contact/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/contact/route.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/photos/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/photos/route.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/posts.$title/route.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/posts._index/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/posts._index/route.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/posts/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/posts/route.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/projects._index/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/projects._index/route.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/projects/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/projects/route.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/content.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,48 +72,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vcoles/Github/projects/vcolesdev-mysite/app/assets/images/photos&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/typescript/lib&quot;,
-    &quot;use.deno.dismiss&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/vcoles/Github/projects/vcolesdev-mysite/app/routes/posts.$title",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/prettier",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys",
+    "ts.external.directory.path": "/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/typescript/lib",
+    "use.deno.dismiss": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JSON&quot;,
-      &quot;PLAIN_TEXT&quot;,
-      &quot;JavaScript&quot;,
-      &quot;yaml&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON",
+      "PLAIN_TEXT",
+      "JavaScript",
+      "yaml"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/routes/posts.$title" />
       <recent name="$PROJECT_DIR$/app/assets/images/photos" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/assets/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/assets" />
+      <recent name="$PROJECT_DIR$/app/posts" />
+      <recent name="$PROJECT_DIR$/app/routes/posts.$title._index" />
+      <recent name="$PROJECT_DIR$/app/routes" />
       <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/routes/_index" />
-      <recent name="$PROJECT_DIR$/app/data" />
-      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/app/routes/posts" />
     </key>
   </component>
   <component name="SharedIndexes">

@@ -1,5 +1,5 @@
-import PageContainer from "~/components/PageContainer";
-import PageTitle from "~/components/PageTitle";
+import PageContainer from "~/components/Page/PageContainer";
+import PageTitle from "~/components/Page/PageTitle";
 
 export default function AboutRoute() {
   return (

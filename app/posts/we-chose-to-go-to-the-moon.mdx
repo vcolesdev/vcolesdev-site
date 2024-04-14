@@ -1,6 +1,19 @@
+import {frontmatter} from "*.mdx";
+
 ---
 title: We Chose to Go to the Moon
+description: This is the speech that President John F. Kennedy gave at Rice University on September 12, 1962. It is one of the most famous speeches of the 20th century.
 ---
+
+export const meta = () => {
+  return [
+    { title: frontmatter.title },
+    {
+      name: "description",
+      content: frontmatter.description,
+    },
+  ];
+};
 
 # We Chose to Go to the Moon
 
