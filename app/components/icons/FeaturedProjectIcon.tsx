@@ -10,7 +10,7 @@ import {
   Placeholder,
 } from "./BrandIcons";
 
-function FeaturedProjectIconWrapper({children}: {children: React.ReactNode}) {
+function FeaturedProjectCategoryIconWrapper({children}: {children: React.ReactNode}) {
   return (
     <span
       className="
@@ -35,7 +35,7 @@ function FeaturedProjectIconWrapper({children}: {children: React.ReactNode}) {
   );
 }
 
-export default function FeaturedProjectIcon({
+export default function FeaturedProjectCategoryIcon({
   categorySlug,
 }: {
   categorySlug: FeaturedProjectCategories;
@@ -43,32 +43,32 @@ export default function FeaturedProjectIcon({
   function CategoryIcon() {
     switch (categorySlug) {
       case FeaturedProjectCategories.nextjs:
-        return <FeaturedProjectIcon.IconNextJs />;
+        return <FeaturedProjectCategoryIcon.IconNextJs />;
       case FeaturedProjectCategories.nodejs:
-        return <FeaturedProjectIcon.IconNodeJs />;
+        return <FeaturedProjectCategoryIcon.IconNodeJs />;
       case FeaturedProjectCategories.python:
-        return <FeaturedProjectIcon.IconPython />;
+        return <FeaturedProjectCategoryIcon.IconPython />;
       case FeaturedProjectCategories.remix:
-        return <FeaturedProjectIcon.IconRemix />;
+        return <FeaturedProjectCategoryIcon.IconRemix />;
       case FeaturedProjectCategories.storybook:
-        return <FeaturedProjectIcon.IconStorybook />;
+        return <FeaturedProjectCategoryIcon.IconStorybook />;
       case FeaturedProjectCategories.vite:
-        return <FeaturedProjectIcon.IconVite />;
+        return <FeaturedProjectCategoryIcon.IconVite />;
       default:
-        return <FeaturedProjectIcon.Placeholder />;
+        return <FeaturedProjectCategoryIcon.Placeholder />;
     }
   }
   return (
-    <FeaturedProjectIconWrapper>
+    <FeaturedProjectCategoryIconWrapper>
       <CategoryIcon />
-    </FeaturedProjectIconWrapper>
+    </FeaturedProjectCategoryIconWrapper>
   );
 }
 
-FeaturedProjectIcon.Placeholder = Placeholder;
-FeaturedProjectIcon.IconNextJs = IconNextJs;
-FeaturedProjectIcon.IconNodeJs = IconNodeJs;
-FeaturedProjectIcon.IconPython = IconPython;
-FeaturedProjectIcon.IconRemix = IconRemix;
-FeaturedProjectIcon.IconStorybook = IconStorybook;
-FeaturedProjectIcon.IconVite = IconVite;
+FeaturedProjectCategoryIcon.Placeholder = Placeholder;
+FeaturedProjectCategoryIcon.IconNextJs = IconNextJs;
+FeaturedProjectCategoryIcon.IconNodeJs = IconNodeJs;
+FeaturedProjectCategoryIcon.IconPython = IconPython;
+FeaturedProjectCategoryIcon.IconRemix = IconRemix;
+FeaturedProjectCategoryIcon.IconStorybook = IconStorybook;
+FeaturedProjectCategoryIcon.IconVite = IconVite;

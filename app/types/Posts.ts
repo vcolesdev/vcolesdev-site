@@ -1,4 +1,6 @@
-export interface FeaturedTestPost {
+import {FeaturedProjectIconProps} from "~/types/Projects";
+
+export interface FeaturedTestPostInterface {
   id: number;
   title: string;
   href: string;
@@ -15,3 +17,11 @@ export interface FeaturedTestPost {
     imageUrl: string;
   };
 }
+
+export type FeaturedTestPost = {
+  post: FeaturedTestPostInterface;
+};
+
+export type FeaturedTestPosts = FeaturedTestPostInterface[];
+
+export interface FeaturedPostIconProps extends FeaturedProjectIconProps {};

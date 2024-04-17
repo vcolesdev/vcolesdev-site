@@ -11,9 +11,9 @@ body {
 }
 
 body {
- @apply bg-melon-800 text-rosy_brown-200;
+  @apply bg-melon-800 text-rosy_brown-200;
 
- /* @apply bg-no-repeat bg-fixed bg-left-top bg-gradient-to-b from-melon-500 to-melon-900 text-rosy_brown-200; */
+  /* @apply bg-no-repeat bg-fixed bg-left-top bg-gradient-to-b from-melon-500 to-melon-900 text-rosy_brown-200; */
 
   text-rendering: optimizeLegibility;
 

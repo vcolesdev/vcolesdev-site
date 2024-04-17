@@ -1,7 +1,7 @@
 import "@fontsource/satisfy";
 import "@fontsource/ibm-plex-sans";
 import Header from "~/modules/Header";
-import Footer from "~/modules/Footer/Footer";
+import Footer from "~/modules/Footer";
 import UnderConstruction from "~/modules/UnderConstruction";
 import stylesheet from "~/assets/styles/main.css?url";
 import {cssBundleHref} from "@remix-run/css-bundle";
@@ -11,7 +11,8 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration, useLoaderData,
+  ScrollRestoration,
+  useLoaderData,
   useRouteError,
 } from "@remix-run/react";
 
@@ -97,6 +98,7 @@ export function ErrorBoundary() {
       </head>
       <body>
         <Header />
+
         {/* add the UI you want your users to see */}
         <h1>Oh no!</h1>
         <p>Something went wrong.</p>

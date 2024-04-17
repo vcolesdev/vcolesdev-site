@@ -1,20 +1,15 @@
 import React from "react";
 import classNames from "classnames";
+import styles from "./styles.module";
+import {ContainerProps} from "~/types/Layout";
 
 export default function Container({
   children,
   extraClasses,
   noPadding,
-}: {
-  children: React.ReactNode;
-  extraClasses?: string;
-  noPadding?: boolean;
-}) {
-  const defaultClasses = "container mx-auto px-4 sm:px-6 lg:px-8";
-  const defaultClassesNoPadding = "container mx-auto";
-
+}: ContainerProps) {
   const elementClasses = () => {
-    const classes = noPadding ? defaultClassesNoPadding : defaultClasses;
+    const classes = noPadding ? styles.container.noPadding : styles.container.styles;
     return classNames(classes, extraClasses && extraClasses);
   };
   return <div className={elementClasses()}>{children}</div>;
@@ -27,10 +22,7 @@ Container.Page = function PageContainer({
   children: React.ReactNode;
 }) {
   return (
-    <Container
-      extraClasses="max-w-7xl pt-12 pb:24 md:py-24 lg:py-32"
-      {...props}
-    >
+    <Container extraClasses={styles.container.extraClasses}{...props}>
       {children}
     </Container>
   );

@@ -1,3 +1,6 @@
+import React from "react";
+import {IconSettings} from "~/types/Settings";
+
 export enum FeaturedProjectCategories {
   nextjs = "nextjs",
   nodejs = "nodejs",
@@ -5,6 +8,19 @@ export enum FeaturedProjectCategories {
   remix = "remix",
   storybook = "storybook",
   vite = "vite",
+}
+
+export interface FeaturedProjectCardProps {
+  categorySlug: FeaturedProjectCategories;
+  description: string;
+  title: string;
+  url: string;
+}
+
+export interface FeaturedProjectIconProps {
+  children: React.ReactNode;
+  iconStyles: string;
+  iconSettings: IconSettings;
 }
 
 export interface FeaturedProject {
