@@ -25,7 +25,7 @@ export default {
       "focus:ring-melon-600"
     ]),
     textContent: classNames([
-      "text-base",
+      "text-lg",
       "font-semibold",
       "tracking-tight",
       "text-white",
@@ -62,7 +62,7 @@ export default {
       "focus:ring-melon-600"
     ]),
     textContent: classNames([
-      "text-base",
+      "text-lg",
       "font-semibold",
       "tracking-tight",
       "text-melon-400",

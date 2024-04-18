@@ -1,8 +1,8 @@
 import SectionIntro from "~/routes/_index/Intro";
-import SectionFeaturedPosts from "~/routes/_index/featured/FeaturedPosts";
-import SectionFeaturedProjects from "~/routes/_index/featured/FeaturedProjects";
-import SectionFeaturedGallery from "~/routes/_index/featured/FeaturedGallery";
-import SectionFeaturedAbout from "~/routes/_index/featured/FeaturedAbout";
+import FeaturedPosts from "~/routes/_index/featured/_Posts";
+import FeaturedProjects from "~/routes/_index/featured/_Projects";
+import FeaturedGallery from "~/routes/_index/featured/_Gallery";
+import FeaturedAbout from "~/routes/_index/featured/_About";
 import projects from "~/assets/data/featured-projects.json";
 import testPosts from "~/assets/data/featured-test-posts.json";
 
@@ -12,13 +12,13 @@ export default function Home() {
       {/* Intro Content */}
       <SectionIntro />
       {/* Featured About */}
-      <SectionFeaturedAbout />
+      <FeaturedAbout />
       {/* Recent Posts */}
-      <SectionFeaturedPosts posts={testPosts} />
+      <FeaturedPosts posts={testPosts} />
       {/* Featured Projects */}
-      <SectionFeaturedProjects projects={projects} />
+      <FeaturedProjects projects={projects} />
       {/* Gallery */}
-      <SectionFeaturedGallery />
+      <FeaturedGallery />
     </>
   );
 }

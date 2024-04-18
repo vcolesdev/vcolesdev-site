@@ -15,18 +15,19 @@ export default function FeaturedProjectCard({
   title,
   url,
 }: FeaturedProjectCardProps) {
-  const projectStyles = styles.project.styles;
-  const descClasses = styles.project.description;
-
   return (
     <Link className="relative flex" to={url}>
-      <article className={projectStyles}>
+      <article className={styles.project.styles}>
+        <div>
         <FeaturedProjectCategoryIcon categorySlug={categorySlug} />
         <ProjectCardTitle title={title} />
-        <p className={descClasses}>
+        <p className={styles.project.description}>
           {description}
         </p>
-        <ProjectCardLink moreText="View Project" />
+        </div>
+        <div>
+          <ProjectCardLink moreText="View Project" />
+        </div>
       </article>
     </Link>
   );

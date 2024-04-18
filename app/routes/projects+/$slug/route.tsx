@@ -22,7 +22,7 @@ function ProjectTags({tags}: {tags: string[]}) {
             border-melon-300/20
             px-2.5
             py-1.5
-            text-sm
+            text-base
             font-semibold
             tracking-tight
             text-melon-300
@@ -57,7 +57,7 @@ function ProjectLink({href, linkText}: {href: string; linkText: string}) {
     <p>
       <a
         href={href}
-        className="cursor-pointer font-semibold text-melon-300 hover:text-melon-400"
+        className="cursor-pointer font-medium tracking-tight text-melon-300 hover:text-melon-400"
         target="_blank"
         rel="noreferrer"
       >

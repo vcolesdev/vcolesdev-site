@@ -10,3 +10,10 @@ export interface ContainerProps {
   extraClasses?: string;
   noPadding?: boolean;
 }
+
+export interface SectionHeaderProps {
+  title: string;
+  description?: string;
+  eyebrowText?: string;
+  hasEyebrow?: boolean;
+}

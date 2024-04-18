@@ -17,14 +17,23 @@ export default {
       "lg:gap-x-12"
     ]),
     link: classNames([
-      "font-kanit",
+      "block",
+      "relative",
       "text-lg",
       "text-rose_brown-500",
       "hover:text-rose_brown-700",
-      "font-medium",
+      "font-semibold",
       "leading-6",
-      "tracking-tight"
-    ])
+    ]),
+    activeLink: classNames([
+      "absolute",
+      "-bottom-1",
+      "left-0",
+      "w-full",
+      "h-[3px]",
+      "bg-melon-300",
+      "z-10"
+    ]),
   },
   logoWrapper: classNames([
     "flex",

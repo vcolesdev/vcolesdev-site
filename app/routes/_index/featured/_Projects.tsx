@@ -3,12 +3,12 @@ import FeaturedCta from "~/modules/FeaturedCta/FeaturedCta";
 import SectionContainer from "~/components/Section/_Container";
 import SectionHeader from "~/components/Section/_Header";
 import SectionHeaderContainer from "~/components/Section/_HeaderContainer";
-import {FeaturedProjectType, FeaturedProjects} from "~/types/Projects";
+import {FeaturedProject, FeaturedProjectType} from "~/types/Projects";
 
-export default function SectionFeaturedProjects({
+export default function FeaturedProjects({
   projects,
 }: {
-  projects: FeaturedProjects;
+  projects: FeaturedProject[]
 }) {
   return (
     <SectionContainer extraClasses="mb-12 lg:mb-24">
@@ -22,7 +22,7 @@ export default function SectionFeaturedProjects({
         <FeaturedCta hasIcon ctaText="View All Projects" href="/projects" />
       </SectionHeaderContainer>
       <div className="container mx-auto grid max-w-7xl grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6 xl:grid-cols-3 xl:gap-8">
-        {projects &&
+        {projects && Array.isArray(projects) && projects.length > 0 &&
           projects.map((project: FeaturedProjectType) => (
             <FeaturedProjectCard
               key={project._id}

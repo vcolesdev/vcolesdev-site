@@ -1,19 +1,15 @@
 import SectionHeader from "~/components/Section/_Header";
 import SectionContainer from "~/components/Section/_Container";
 import SectionHeaderContainer from "~/components/Section/_HeaderContainer";
-import FeaturedPost from "~/modules/FeaturedPost";
+//import FeaturedPost from "~/modules/FeaturedPost";
 import FeaturedCta from "~/modules/FeaturedCta/FeaturedCta";
 //import {FeaturedTestPost} from "~/types/Posts";
-import {generateRandomKey} from "~/utils";
+//import {generateRandomKey} from "~/utils";
 
-export default function SectionFeaturedPosts({
-  posts,
-}: {
-  posts: any[];
-}) {
-  const firstTwoPosts = posts.slice(0, 2);
-  const lastTwoPosts = posts.slice(2, 4);
-  const key = generateRandomKey();
+export default function FeaturedPosts({posts}: {posts: any[]}) {
+  //const firstTwoPosts = posts.slice(0, 2);
+  //const lastTwoPosts = posts.slice(2, 4);
+  //const key = generateRandomKey();
 
   return (
     <SectionContainer extraClasses="mb-12 lg:mb-24">
@@ -26,6 +22,10 @@ export default function SectionFeaturedPosts({
         />
         <FeaturedCta hasIcon ctaText="View All Posts" href="/posts" />
       </SectionHeaderContainer>
+      <div className="mx-auto max-w-7xl px-8">
+        <p className="text-xl font-semibold">Coming Soon... 👋</p>
+      </div>
+      {/* Featured Posts
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-12 lg:grid-cols-2 lg:gap-y-12">
         <div className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
           <div>
@@ -42,6 +42,7 @@ export default function SectionFeaturedPosts({
           </div>
         </div>
       </div>
+      */}
     </SectionContainer>
   );
 }

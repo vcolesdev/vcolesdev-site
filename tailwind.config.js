@@ -35,12 +35,12 @@ export default {
     colors: defaultColors,
     extend: {
       fontFamily: {
-        satisfy: ['"Satisfy"', "cursive"],
         anek: ['"Anek Tamil"', "sans-serif"],
         kanit: ['"Kanit"', "sans-serif"],
-        sans: ['"IBM Plex Sans"', "system-ui", "sans-serif"],
+        sans: ['"Jost"', "system-ui", "sans-serif"],
         serif: ['"Merriweather"', "Georgia", "serif"],
         mono: ['"Fira Code"', "monospace"],
+        satisfy: ['"Satisfy"', "cursive"],
         cursive: ['"Just Another Hand"', "cursive"],
       },
       colors: {

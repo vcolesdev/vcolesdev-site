@@ -1,4 +1,4 @@
-export default function SectionFeaturedPostsAlt() {
+export default function FeaturedPostsAlt() {
   return (
     <section>
       <div className="container mx-auto max-w-7xl px-5 py-24">

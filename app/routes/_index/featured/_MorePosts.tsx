@@ -1,6 +1,6 @@
 //import SingleColPosts from "~/modules/SingleColPosts";
 
-export default function SectionFeaturedMorePosts() {
+export default function FeaturedMorePosts() {
   return (
     <section className="body-font overflow-hidden text-gray-600">
       <div className="mx-auto max-w-7xl py-24 sm:py-32">

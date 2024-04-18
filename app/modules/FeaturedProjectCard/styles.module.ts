@@ -9,10 +9,10 @@ export default {
       "gap-x-1",
     ]),
     span: classNames([
-      "text-[15px]",
-      "font-semibold",
+      "text-base",
+      "font-medium",
       "text-rosy_brown-300",
-      "group-hover:font-bold",
+      "group-hover:font-semiibold",
     ]),
     svg: classNames([
       "mt-[1px]",
@@ -26,8 +26,11 @@ export default {
   project: {
     styles: classNames([
       "group",
+      "flex",
+      "flex-col",
+      "justify-between",
       "w-full",
-      "rounded-2xl",
+      "rounded-3xl",
       "bg-melon-900",
       "p-4",
       "transition",
@@ -50,9 +53,9 @@ export default {
     description: classNames([
       "mt-2",
       "line-clamp-3",
-      "text-sm/relaxed",
+      "text-base/relaxed",
       "text-rosy_brown-200/80",
-      "font-medium"
+      "opacity-80",
     ])
   }
 }

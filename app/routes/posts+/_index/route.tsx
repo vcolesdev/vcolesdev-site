@@ -11,7 +11,7 @@ export default function PostsIndexRoute() {
       </div>
       <div>
         {/* This is where the list of posts will go. */}
-        Posts
+        Coming Soon...
       </div>
     </div>
   );

@@ -6,14 +6,14 @@ import UnderConstruction from "~/modules/UnderConstruction";
 import stylesheet from "~/assets/styles/main.css?url";
 import {cssBundleHref} from "@remix-run/css-bundle";
 import type {LinksFunction, MetaFunction} from "@remix-run/node";
+import {useInView} from "@react-spring/web";
 import {
   Links,
   Meta,
-  Outlet,
   Scripts,
   ScrollRestoration,
-  useLoaderData,
   useRouteError,
+  useOutlet,
 } from "@remix-run/react";
 
 // CSS bundle by Remix
@@ -26,6 +26,10 @@ export const links: LinksFunction = () => [
   {
     rel: "stylesheet",
     href: stylesheet,
+  },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap",
   },
   {
     rel: "stylesheet",
@@ -56,14 +60,25 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export async function loader() {
-  return {
-    posts: {},
-  }
-}
-
 export default function App() {
-  const appContext = useLoaderData<typeof loader>();
+  const outlet = useOutlet();
+
+  const [ref, springs] = useInView(
+    () => ({
+      from: {
+        opacity: 0,
+        scale: 0.9
+      },
+      to: {
+        opacity: 1,
+        scale: 1
+      },
+      config: { duration: 1000 },
+    }),
+    {
+      once: true,
+    }
+  );
 
   return (
     <html lang="en">
@@ -77,7 +92,7 @@ export default function App() {
         {/* eslint-disable-next-line react/jsx-no-undef */}
         <UnderConstruction />
         <Header />
-        <Outlet context={appContext} />
+        {outlet}
         <Footer />
         <ScrollRestoration />
         <Scripts />
@@ -98,7 +113,6 @@ export function ErrorBoundary() {
       </head>
       <body>
         <Header />
-
         {/* add the UI you want your users to see */}
         <h1>Oh no!</h1>
         <p>Something went wrong.</p>

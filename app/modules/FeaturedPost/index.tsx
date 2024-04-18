@@ -3,15 +3,9 @@ import styles from "./styles.module";
 import PostCategory from "./parts/PostCategory";
 import PostTitle from "./parts/PostTitle";
 import PostMore from "./parts/PostMore";
-import PostHover from "./parts/PostHover";
 import {Link} from "@remix-run/react";
 import {truncateText} from "~/utils";
 import {FeaturedTestPost} from "~/types/Posts";
-
-/**
- * HoverElement component
- */
-
 
 /**
  * FeaturedPost module
@@ -30,7 +24,6 @@ export default function FeaturedPost(props: FeaturedTestPost) {
   return (
     <Link to={post.href}>
       <article key={post.id} className={featuredPostClasses}>
-        <PostHover />
         <div data-name="featured-post-content" className={featuredPostContentClasses}>
           <PostCategory categoryText={post.category!.title} />
           <PostTitle title={post.title} />

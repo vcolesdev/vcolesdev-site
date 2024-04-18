@@ -9,7 +9,7 @@ export default function SectionHeaderContainer({
   noMarginBottom?: boolean;
 }) {
   const elementClasses = classNames({
-    ["mb-12 lg:mb-24"]: !noMarginBottom,
+    ["mb-12 lg:mb-20"]: !noMarginBottom,
   });
 
   return <div className={elementClasses}>{children}</div>;

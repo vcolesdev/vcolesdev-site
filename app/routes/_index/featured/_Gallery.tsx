@@ -32,7 +32,7 @@ function FeaturedImageCard({imgSrc}: {imgSrc: string}) {
   );
 }
 
-export default function SectionFeaturedGallery() {
+export default function FeaturedGallery() {
   const {featuredImages} = useFetchFeaturedImages();
   return (
     // eslint-disable-next-line react/jsx-no-undef

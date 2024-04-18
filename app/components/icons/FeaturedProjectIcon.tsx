@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import {FeaturedProjectCategories} from "~/types/Projects";
 import {
   IconNextJs,
@@ -10,28 +11,32 @@ import {
   Placeholder,
 } from "./BrandIcons";
 
+const styles = {
+  wrapper: classNames([
+    "relative",
+    "inline-block",
+    "rounded-xl",
+    "border",
+    "border-transparent",
+    "bg-salmon_pink-800",
+    "p-2",
+    "text-rosy_brown-300",
+    "group-hover:-translate-y-1",
+    "group-hover:border-melon-300/20",
+    "group-hover:bg-melon-400",
+    "group-hover:text-melon-900",
+    "group-hover:shadow-md",
+    "group-hover:shadow-melon-300/20",
+  ])
+}
+
 function FeaturedProjectCategoryIconWrapper({children}: {children: React.ReactNode}) {
   return (
-    <span
-      className="
-      relative
-      inline-block
-      rounded-xl
-      border
-      border-transparent
-      bg-salmon_pink-800
-      p-2
-      text-rosy_brown-300
-      group-hover:-translate-y-1
-      group-hover:border-melon-300/20
-      group-hover:bg-melon-400
-      group-hover:text-melon-900
-      group-hover:shadow-md
-      group-hover:shadow-melon-300/20
-      "
-    >
-      {children}
-    </span>
+    <div>
+      <span className={styles.wrapper}>
+        {children}
+      </span>
+    </div>
   );
 }
 

@@ -29,10 +29,10 @@ export interface FeaturedProject {
   category_slug: FeaturedProjectCategories;
   slug: string;
   title: string;
-  description?: string;
-  href?: string;
-  tags?: string[];
+  description: string;
+  href: string;
+  tags: string[];
 }
 
 export type FeaturedProjectType = FeaturedProject;
-export type FeaturedProjects = FeaturedProject[];
+export type FeaturedProjects = FeaturedProject | FeaturedProject[];

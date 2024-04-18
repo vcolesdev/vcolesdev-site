@@ -1,8 +1,8 @@
-interface SectionFeaturedImageProps {
+interface FeaturedImageProps {
   imgSrc: string;
 }
 
-export default function SectionFeaturedImage(props: SectionFeaturedImageProps) {
+export default function FeaturedImage(props: FeaturedImageProps) {
   return (
     <section className="relative isolate mb-12 min-h-screen overflow-hidden lg:mb-24">
       <img

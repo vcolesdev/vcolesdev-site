@@ -10,7 +10,7 @@ function IntroTitle({title}: {title: string}) {
 
 function IntroText({text}: {text: string}) {
   return (
-    <p className="mt-6 text-lg leading-8 text-rosy_brown-200/70">{text}</p>
+    <p className="mt-6 text-xl leading-8 text-rosy_brown-200/70">{text}</p>
   );
 }
 
