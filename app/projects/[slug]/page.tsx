@@ -1,0 +1,27 @@
+import featuredProjects from "@/assets/data/featured-projects.json";
+
+import Project from "./Project";
+import PageContainer from "@/components/Page/_Container";
+import PageTitle from "@/components/Page/_Title";
+import {FeaturedProject} from "@/types/Projects";
+
+export default function Page({params}: {params: {slug: string}}) {
+  const projects: unknown[] = featuredProjects;
+
+  const slug = params.slug;
+
+  const currentProject = (projects as FeaturedProject[]).find(
+    (project) => project.slug === slug
+  );
+
+  if (!currentProject) {
+    return <div>Project not found</div>;
+  }
+
+  return (
+    <PageContainer>
+      <PageTitle title="Projects" />
+      <Project {...currentProject} />
+    </PageContainer>
+  );
+}

@@ -1,7 +1,0 @@
-html {
-  --text-colour: #333333;
-  --background-colour: white;
-
-  color: var(--text-colour);
-  background-color: var(--background-colour);
-}

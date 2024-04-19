@@ -5,41 +5,155 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/.client/AnimatedDiv.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.client/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Motion/MotionDiv.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Section/_Description.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Section/_Title.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/projects/[slug]/Project.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/projects/[slug]/ProjectLink.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/projects/[slug]/ProjectTags.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/projects/[slug]/ProjectTitle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/projects/[slug]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Footer/Icon&#10;" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/LinkBtn/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LinkBtn/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Section/_Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section/_Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Section/_HeaderContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section/_HeaderContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/icons/FeaturedProjectIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/FeaturedProjectIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/entry.client.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/entry.client.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedPost/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/FeaturedPost/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedProjectCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/FeaturedProjectCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedProjectCard/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/FeaturedProjectCard/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/parts/_Links.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/Navigation/parts/_Links.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/Navigation/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/_index/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/_index/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/Intro.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/FeaturedAbout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/featured/_About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/FeaturedGallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/featured/_Gallery.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/FeaturedImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/featured/_Image.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/FeaturedMorePosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/featured/_MorePosts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/FeaturedPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/featured/_Posts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/FeaturedPostsAlt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/featured/_PostsAlt.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/FeaturedProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/_index/featured/_Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/posts+/_index/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/posts+/_index/route.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/projects+/$slug/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/projects+/$slug/route.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/types/Layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/types/Layout.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/types/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/types/Projects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.client/AnimatedDiv.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.client/Layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/data/featured-projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data/featured-projects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/data/featured-test-posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data/featured-test-posts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/data/social-links-list.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/fonts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data/social-links-list.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/featured-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/featured-image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/01.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/01.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/02.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/02.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/03.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/03.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/04.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/04.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/05.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/05.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/06.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/06.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/07.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/07.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/08.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/08.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/09.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/09.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/10.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/10.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/11.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/11.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/photos/12.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/photos/12.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/vcoles-github.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/vcoles-github.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/styles/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/styles/theme/dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/styles/theme/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Layout/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Layout/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/LinkBtn/_Feature.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LinkBtn/_Feature.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/LinkBtn/_FeatureOutline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LinkBtn/_FeatureOutline.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/LinkBtn/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/LinkBtn/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Motion/MotionDiv.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Page/_Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Page/_Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Page/_Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Page/_Title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section/_Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Section/_Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section/_Description.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Section/_Description.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section/_Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Section/_Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section/_HeaderContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Section/_HeaderContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section/_Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Section/_Title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/icons/BrandIcons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/icons/BrandIcons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/icons/FeaturedProjectIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/icons/FeaturedProjectIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/entry.client.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/entry.server.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/components/useIconSettings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/components/useIconSettings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/fetchers/useFetchFeaturedImages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/fetchers/useFetchFeaturedImages.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/fetchers/useFetchNavLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/fetchers/useFetchNavLinks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/fetchers/useFetchSocialLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/fetchers/useFetchSocialLinks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/fetchers/useFetchTestPosts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/fetchers/useFetchTestPosts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/fetchers/useFetchTestProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/fetchers/useFetchTestProjects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/utils/useMousePosition.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/utils/useMousePosition.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/utils/usePreferredReducedMotion.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/utils/usePreferredReducedMotion.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedCta/FeaturedCta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedCta/FeaturedCta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedPost/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedPost/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedPost/parts/PostCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedPost/parts/PostCategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedPost/parts/PostHover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedPost/parts/PostHover.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedPost/parts/PostIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedPost/parts/PostIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedPost/parts/PostMore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedPost/parts/PostMore.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedPost/parts/PostTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedPost/parts/PostTitle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedPost/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedPost/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedProjectCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedProjectCard/parts/CardIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/parts/CardIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedProjectCard/parts/CardLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/parts/CardLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedProjectCard/parts/CardTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/parts/CardTitle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/FeaturedProjectCard/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Footer/parts/_Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Footer/parts/_Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Footer/parts/_Copyright.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Footer/parts/_Copyright.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Footer/parts/_NavLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Footer/parts/_NavLinks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Footer/parts/_SocialLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Footer/parts/_SocialLinks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Footer/slots/CopyrightSlot.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Footer/slots/CopyrightSlot.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Footer/slots/SocialLinksSlot.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Footer/slots/SocialLinksSlot.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Footer/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Footer/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/MobileMenu/MobileMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MobileMenu/MobileMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/parts/BtnMobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/parts/BtnMobile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/parts/IconMobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/parts/IconMobile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/parts/SiteLogo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/parts/SiteLogo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/parts/_Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/parts/_Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/parts/_Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/parts/_Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/parts/_Links.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/parts/_Links.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/slots/BtnMobileSlot.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/slots/BtnMobileSlot.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/slots/LogoSlot.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/slots/LogoSlot.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/Navigation/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/SocialLinks/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/SocialLinks/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/SocialLinks/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/SocialLinks/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/ThemeChanger/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ThemeChanger/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/UnderConstruction/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/UnderConstruction/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/UnderConstruction/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/UnderConstruction/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/hello-world.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/$title/hello-world.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/myspace-and-the-internet-in-2003.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/$title/myspace-and-the-internet-in-2003.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/pale-blue-dot.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/$title/pale-blue-dot.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/this-is-an-example-post.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/$title/this-is-an-example-post.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/this-is-another-example-post.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/$title/this-is-another-example-post.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/we-chose-to-go-to-the-moon.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/$title/we-chose-to-go-to-the-moon.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/404.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/Intro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/_About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/featured/_About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/_Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/featured/_Gallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/_Image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/featured/_Image.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/_MorePosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/featured/_MorePosts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/_Posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/featured/_Posts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/_PostsAlt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/featured/_PostsAlt.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/featured/_Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/featured/_Projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/_index/route.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/about/_about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/contact/_contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/photos/_photos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/photos/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/posts+/$title/hello-world.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/hello-world.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/posts+/$title/myspace-and-the-internet-in-2003.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/myspace-and-the-internet-in-2003.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/posts+/$title/pale-blue-dot.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/pale-blue-dot.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/posts+/$title/this-is-an-example-post.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/this-is-an-example-post.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/posts+/$title/this-is-another-example-post.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/this-is-another-example-post.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/posts+/$title/we-chose-to-go-to-the-moon.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/we-chose-to-go-to-the-moon.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/posts+/_index/route.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/posts+/_posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/projects+/$slug/route.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/projects+/_index/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/Projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/projects+/_projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/types/Controls.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/Controls.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/types/Layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/Layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/types/Navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/Navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/types/Posts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/Posts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/types/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/Projects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/types/Settings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/Settings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/fetchLocalPosts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/fetchLocalPosts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prettier.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/prettier.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +171,7 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2eFHzZGPQeYX2tIVTwzYs7zrQyx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,15 +184,15 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/nextjs-site-migration",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/vcoles/Github/projects/vcolesdev-mysite/app/modules/FeaturedProjectCard",
+    "last_opened_file_path": "/Users/vcoles/Github/projects/vcolesdev-mysite/app",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/typescript/lib",
     "use.deno.dismiss": "true",
     "vue.rearranger.settings.migration": "true"
@@ -93,18 +208,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/assets" />
       <recent name="$PROJECT_DIR$/app/modules/FeaturedProjectCard" />
       <recent name="$PROJECT_DIR$/app/modules/FeaturedPost" />
       <recent name="$PROJECT_DIR$/app/routes/posts.$title" />
-      <recent name="$PROJECT_DIR$/app/assets/images/photos" />
-      <recent name="$PROJECT_DIR$/app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/projects" />
+      <recent name="$PROJECT_DIR$/modules" />
+      <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/.client" />
-      <recent name="$PROJECT_DIR$/app/components" />
-      <recent name="$PROJECT_DIR$/app/hooks/components" />
-      <recent name="$PROJECT_DIR$/app/hooks/fetchers" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SharedIndexes">

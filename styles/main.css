@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-jost: "Jost", sans-serif;
+  --font-kanit: "Kanit", sans-serif;
+  --font-anek: "Anek Tamil", sans-serif;
+  --font-cusrive: "Cedarville Cursive", cursive;
+}
+
+html,
+body {
+  @apply h-full;
+}
+
+body {
+  @apply bg-melon-800 text-rosy_brown-200 text-[1.125rem] font-sans antialiased;
+  /* @apply bg-no-repeat bg-fixed bg-left-top bg-gradient-to-b from-melon-500 to-melon-900 text-rosy_brown-200; */
+}
+
+/* Default Focus states for all clickable elements */
+*:focus,
+*::before:focus,
+*::after:focus {
+  @apply focus:outline-none focus:ring-4 focus:ring-melon-600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-anek;
+}
