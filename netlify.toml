@@ -4,4 +4,4 @@ publish = ".next"
 
 [dev]
 command = "next dev"
-framework = "nextjs"
+framework = "next"
