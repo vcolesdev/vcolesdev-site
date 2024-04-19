@@ -1,7 +1,7 @@
 [build]
-command = "npm run build"
+command = "next build"
 publish = ".next"
 
 [dev]
-command = "npm run dev"
+command = "next dev"
 framework = "nextjs"
