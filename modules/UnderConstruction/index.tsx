@@ -6,16 +6,14 @@ export default function UnderConstruction() {
     <div className={styles.banner.styles}>
       <div className={styles.banner.contentWrapper}>
         <div className={styles.banner.content}>
-          <IconTrafficCone className={styles.banner.icon} size={24} />
-          <p className={styles.textContent.styles}>
-            <span className={styles.textContent.span}>
-              Under Construction
-            </span>
-            - Welcome! This site is a work in progress. Thank you for stopping by.
-          </p>
-          <button id="btnDismissConstructionAlert" className={styles.btnDismiss.styles}>
-            <IconSquareRoundedX className={styles.btnDismiss.icon} size={24} />
-          </button>
+          <div className={styles.textContent.styles}>
+            <p className={styles.textContent.span}>
+              <span className="px-3">Under Construction</span>
+            </p>
+            <p>
+              Welcome!  This site is a work in progress. Thank you for stopping by.
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -3,16 +3,16 @@ import classNames from "classnames";
 const styles = {
   banner: {
     styles: classNames([
-      "w-full",
-      "bg-melon-900",
-      "fixed",
-      "z-50",
+      "inline-block",
+      "bg-salmon_pink-800",
+      "rounded-full",
     ]),
     contentWrapper: classNames([
       "mx-auto",
       "flex",
       "items-center",
       "justify-center",
+      "px-5"
     ]),
     content: classNames([
       "flex",
@@ -21,7 +21,8 @@ const styles = {
       "py-5",
     ]),
     icon: classNames([
-      "text-melon-300",
+      "text-salmon_pink-300/70",
+      "inline-block"
     ]),
   },
   textContent: {
@@ -29,10 +30,12 @@ const styles = {
       "font-kanit",
       "text-[18px]",
       "tracking-tight",
-      "text-rosy_brown-300",
+      "text-salmon_pink-200",
+      "text-center",
     ]),
     span: classNames([
       "font-medium",
+      "block"
     ])
   },
   btnDismiss: {
@@ -40,7 +43,7 @@ const styles = {
       "relative",
     ]),
     icon: classNames([
-      "text-melon-300",
+      "text-salmon_pink-300",
     ]),
   }
 };

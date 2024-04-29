@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Motion/MotionDiv.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact/page.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/fetchers/useFetchNavLinks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/fetchers/useFetchNavLinks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Navigation/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Navigation/parts/_Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/parts/_Container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Navigation/parts/_Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/slots/NavContentSlot.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Navigation/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Navigation/styles.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Site/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/Intro.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Site/featured/_Posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/featured/_Posts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Site/featured/_Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Site/featured/_Gallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/UnderConstruction/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/UnderConstruction/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/UnderConstruction/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/UnderConstruction/styles.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import SectionContainer from "@/components/Section/_Container";
 import SectionHeader from "@/components/Section/_Header";
 import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
@@ -20,7 +20,7 @@ function ImageCardOverlay() {
   );
 }
 
-function FeaturedImageCard({imgSrc}: {imgSrc: any}) {
+function ImageCard({imgSrc}: {imgSrc: any}) {
   const [overlay, setOverlay] = useState(false);
   return (
     <Link
@@ -50,10 +50,12 @@ export default function FeaturedGallery() {
         <FeaturedCta hasIcon ctaText="View All Photos" href="/photos" />
       </SectionHeaderContainer>
       <div className="container mx-auto grid max-w-7xl sm:grid-cols-2 sm:gap-2 md:grid-cols-3">
+
         {featuredImages &&
           featuredImages.map((img, index) => (
-            <FeaturedImageCard key={index} imgSrc={img} />
+            <ImageCard key={index} imgSrc={img} />
           ))}
+
       </div>
     </SectionContainer>
   );

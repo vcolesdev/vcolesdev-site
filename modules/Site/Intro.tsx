@@ -1,5 +1,7 @@
 import Image from "next/image";
 import SocialLinks from "@/modules/SocialLinks";
+import UnderConstruction from "@/modules/UnderConstruction";
+import React from "react";
 
 function IntroTitle({title}: {title: string}) {
   return (
@@ -47,6 +49,9 @@ export default function SectionIntro({
       </div>
       <div className="mt-12 flex justify-center">
         <SocialLinks />
+      </div>
+      <div className="flex mt-12 justify-center">
+        <UnderConstruction />
       </div>
       {hasFeaturedImage && featuredImageSrc && (
         <IntroFeaturedImage imgSrc={featuredImageSrc} />
