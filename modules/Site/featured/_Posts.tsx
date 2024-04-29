@@ -23,7 +23,7 @@ export default function FeaturedPosts({posts}: {posts: any[]}) {
         <FeaturedCta hasIcon ctaText="View All Posts" href="/posts" />
       </SectionHeaderContainer>
       <div className="mx-auto max-w-7xl px-8">
-        <p className="text-xl font-semibold">Coming Soon... 👋</p>
+        <p className="text-2xl font-cursive font-semibold">Coming Soon... 👋</p>
       </div>
       {/* Featured Posts
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-12 lg:grid-cols-2 lg:gap-y-12">

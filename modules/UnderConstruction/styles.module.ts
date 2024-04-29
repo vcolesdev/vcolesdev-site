@@ -5,6 +5,8 @@ const styles = {
     styles: classNames([
       "w-full",
       "bg-melon-900",
+      "fixed",
+      "z-50",
     ]),
     contentWrapper: classNames([
       "mx-auto",

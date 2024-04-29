@@ -8,8 +8,6 @@ const styles = {
       "max-w-7xl",
       "items-center",
       "justify-between",
-      "p-6",
-      "lg:px-8",
     ]),
     content: classNames([
       "hidden",

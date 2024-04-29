@@ -17,6 +17,7 @@
   "devDependencies": {
     "@headlessui/react": "^1.7.19",
     "@netlify/plugin-nextjs": "^5.1.2",
+    "@react-spring/web": "^9.7.3",
     "@tabler/icons-react": "^3.2.0",
     "@types/node": "^20",
     "@types/react": "^18",
@@ -24,6 +25,7 @@
     "classnames": "^2.5.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.2",
+    "framer-motion": "^11.1.5",
     "i": "^0.3.7",
     "npm": "^10.5.2",
     "postcss": "^8",

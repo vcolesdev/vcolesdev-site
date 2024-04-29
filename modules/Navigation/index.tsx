@@ -1,7 +1,7 @@
 import LogoSlot from "./slots/LogoSlot";
 import BtnMobileSlot from "./slots/BtnMobileSlot";
 import NavLinks from "./parts/_Links";
-import NavContent from "./parts/_Content";
+import NavContentSlot from "./slots/NavContentSlot";
 import NavContainer from "./parts/_Container";
 import BtnMobile from "./parts/BtnMobile";
 import useNavLinks from "@/hooks/fetchers/useFetchNavLinks";
@@ -24,9 +24,9 @@ export default function Navigation({handleOpen}: NavigationProps) {
       <BtnMobileSlot>
         <BtnMobile handleClick={handleOpen} textContent="Open main menu" />
       </BtnMobileSlot>
-      <NavContent>
+      <NavContentSlot>
         <NavLinks nav={navigation} />
-      </NavContent>
+      </NavContentSlot>
       <ThemeChanger />
     </NavContainer>
   );
