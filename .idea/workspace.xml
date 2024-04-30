@@ -5,36 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedAbout/styles.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/styles.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedImage/styles.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedPosts/styles.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedProjects/styles.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/HomePage/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/HomePage/SectionIntro/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Page/_Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Page/_Container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Page/_Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Page/_Title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Section/_Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Section/_Container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Section/_Description.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Section/_Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Section/_Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Section/_HeaderContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Section/_HeaderContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Section/_Title.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UnderConstruction/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/UnderConstruction/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UnderConstruction/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/UnderConstruction/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/FeaturedProjectCard/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Nav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Site/Home.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Site/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/SectionIntro/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Site/SiteLogo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/SiteLogo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Site/featured/_About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedAbout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Site/featured/_Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Site/featured/_Image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedImage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Site/featured/_Posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedPosts/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Site/featured/_Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedProjects/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/types/layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/types/layout.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +88,7 @@
       <updated>1711827807588</updated>
       <workItem from="1711827808642" duration="22000" />
       <workItem from="1714414787117" duration="29502000" />
-      <workItem from="1714509657254" duration="7202000" />
+      <workItem from="1714509657254" duration="7747000" />
     </task>
     <servers />
   </component>

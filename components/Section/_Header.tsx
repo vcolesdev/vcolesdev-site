@@ -73,7 +73,7 @@ const SectionDescription = ({size, textContent}: {size: "default" | "lg", textCo
   const lgClasses = classNames([
     "text-2xl",
     "tracking-tight",
-    "leading-10",
+    "leading-relaxed",
     "text-rosy_brown-200/80"
   ]);
 
