@@ -34,12 +34,6 @@ export default {
       "bg-melon-900",
       "p-4",
       "transition",
-      "hover:scale-105",
-      "hover:shadow-lg",
-      "hover:shadow-melon-300/10",
-      "active:scale-100",
-      "active:shadow-sm",
-      "active:shadow-melon-300/20",
       "sm:p-6"
     ]),
     title: classNames([

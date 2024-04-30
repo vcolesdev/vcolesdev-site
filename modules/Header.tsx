@@ -1,19 +1,23 @@
 "use client";
 
-import Navigation from "@/modules/Navigation";
+import Navigation from "@/modules/Nav";
 import MobileMenu from "@/modules/MobileMenu/MobileMenu";
-import {useState} from "react";
+import React, {useState} from "react";
+
+const HeaderProvider = ({children}: {children: React.ReactNode}) => (
+  <header>{children}</header>
+);
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header>
+    <HeaderProvider>
       <Navigation handleOpen={() => setMobileMenuOpen(true)} />
       <MobileMenu
         isOpen={mobileMenuOpen}
         handleClose={() => setMobileMenuOpen(false)}
       />
-    </header>
+    </HeaderProvider>
   );
 }

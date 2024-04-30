@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import UnderConstruction from "../modules/UnderConstruction";
+import UnderConstruction from "../components/UnderConstruction";
 import Header from "../modules/Header";
 import Footer from "../modules/Footer";
 import type {Metadata} from "next";
 
-import "@/styles/main.css";
+import "@/assets/styles/main.css";
 
 export default function RootLayout({
   children,

@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import styles from "./styles.module";
-import {ContainerProps} from "@/types/Layout";
+import {ContainerProps} from "@/utils/types/layout";
 
 export default function Container({
   children,

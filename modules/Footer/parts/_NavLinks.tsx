@@ -1,5 +1,5 @@
 import styles from "../styles.module";
-import useNavLinks from "@/hooks/fetchers/useFetchNavLinks";
+import useNavLinks from "@/utils/hooks/fetchers/useFetchNavLinks";
 
 
 /**

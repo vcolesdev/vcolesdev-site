@@ -1,6 +1,6 @@
 import SectionTitle from './_Title';
 import SectionDescription from './_Description';
-import {SectionHeaderProps} from "@/types/Layout";
+import {SectionHeaderProps} from "@/utils/types/layout";
 
 export default function SectionHeader(props: SectionHeaderProps) {
   const {eyebrowText, description, hasEyebrow, title} = props;

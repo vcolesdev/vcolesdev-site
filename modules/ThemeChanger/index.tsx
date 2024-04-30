@@ -1,4 +1,4 @@
-import styles from "../Navigation/styles.module";
+import styles from "@/modules/Nav/styles.module";
 import {IconDeviceDesktop, IconMoonStars, IconSun} from "@tabler/icons-react";
 
 export default function ThemeChanger() {

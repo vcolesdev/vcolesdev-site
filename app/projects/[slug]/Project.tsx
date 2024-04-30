@@ -1,7 +1,7 @@
 import ProjectTitle from "@/app/projects/[slug]/ProjectTitle";
 import ProjectLink from "@/app/projects/[slug]/ProjectLink";
 import ProjectTags from "@/app/projects/[slug]/ProjectTags";
-import {FeaturedProject} from "@/types/Projects";
+import {FeaturedProject} from "@/utils/types/projects";
 import {IconTags, IconBrandGithub} from "@tabler/icons-react";
 
 export default function Project({

@@ -1,11 +1,10 @@
-import classNames from "classnames";
 import Link from "next/link";
 import styles from "./styles.module";
-import PostCategory from "./parts/PostCategory";
-import PostTitle from "./parts/PostTitle";
-import PostMore from "./parts/PostMore";
-import {truncateText} from "@/utils";
-import {FeaturedTestPost} from "@/types/Posts";
+import PostCategory from "./PostCategory";
+import PostTitle from "./PostTitle";
+import PostMore from "./PostMore";
+import {truncateText} from "@/utils/global/truncateText";
+import {FeaturedTestPost} from "@/utils/types/posts";
 
 /**
  * FeaturedPost module
@@ -15,19 +14,15 @@ import {FeaturedTestPost} from "@/types/Posts";
 export default function FeaturedPost(props: FeaturedTestPost) {
   const {post} = props;
 
-  const featuredPostClasses = classNames(styles.default, {});
-  const featuredPostExcerptClasses = classNames(styles.excerpt);
-  const featuredPostContentClasses = classNames("relative", "max-w-2xl", "px-8");
-
   const getExcerpt = () => truncateText(post.description, 125);
 
   return (
     <Link href={post.href}>
-      <article key={post.id} className={featuredPostClasses}>
-        <div data-name="featured-post-content" className={featuredPostContentClasses}>
+      <article key={post.id} className={styles.default}>
+        <div className={styles.content}>
           <PostCategory categoryText={post.category!.title} />
           <PostTitle title={post.title} />
-          <p className={featuredPostExcerptClasses}>
+          <p className={styles.excerpt}>
             {getExcerpt()}
           </p>
           <PostMore moreText="Continue Reading" />

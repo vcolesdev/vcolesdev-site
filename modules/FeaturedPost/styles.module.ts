@@ -31,6 +31,11 @@ export default {
     "py-8",
     "overflow-hidden"
   ]),
+  content: classNames([
+    "relative",
+    "max-w-2xl",
+    "px-8"
+  ]),
   excerpt: classNames([
     "mt-4",
     "leading-6",

@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import classNames from "classnames";
-import {FeaturedProjectCategories} from "@/types/Projects";
+import {FeaturedProjectCategories} from "@/utils/types/projects";
 import {
   IconNextJs,
   IconNodeJs,

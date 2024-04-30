@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../Layout/Container";
+import Container from "@/components/Layout/Container";
 
 export default function PageContainer({
   children,
