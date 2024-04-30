@@ -11,6 +11,7 @@ export interface SectionHeaderProps {
   description?: string;
   eyebrowText?: string;
   hasEyebrow?: boolean;
+  textSize?: "default" | "lg";
 }
 
 export type ReactChildren = React.ReactNode | React.ReactNode[] | string;

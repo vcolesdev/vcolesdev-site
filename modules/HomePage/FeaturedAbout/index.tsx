@@ -1,8 +1,7 @@
 import Image from "next/image";
-import classNames from "classnames";
+import styles from "./styles.module";
 import FeaturedCta from "@/components/Controls/FeaturedCta";
 import SectionHeader from "@/components/Section/_Header";
-import SectionContainer from "@/components/Section/_Container";
 import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
 import GithubPhoto from "@/assets/images/vcoles-github.jpeg";
 import {ReactChildren} from "@/utils/types/layout";
@@ -10,64 +9,22 @@ import {ReactChildren} from "@/utils/types/layout";
 const content = {
   ctaLink: "/about",
   ctaText: "Keep Reading",
-  description: "But you can call me Van. 👋🏼 I'm a frontend engineer based in sunny San Diego, CA.  I have over a decade of industry experience and have worked with various stacks, with a current emphasis on full stack experiences.",
+  description: `But you can call me Van. 👋🏼 I'm a Full-Stack Engineer based in sunny San Diego, CA.  I have over a decade of industry experience and have worked with various languages and stacks, currently enjoying working with React, Node, Python, and MongoDB.`,
   eyebrowText: "About Me",
   imageAlt: "Vanessa's Github",
   title: "Hi, I'm Vanessa",
 }
 
-const styles = {
-  section: {
-    styles: classNames([
-      "bg-melon-900",
-      "mb-12",
-      "max-w-7xl",
-      "rounded-2xl",
-      "shadow-2xl",
-      "shadow-melon-400/20",
-      "md:rounded-[32px]",
-      "lg:rounded-[48px]",
-      "lg:mb-24",
-      "overflow-hidden"
-    ]),
-    content: classNames([
-      "grid",
-      "md:grid-cols-1",
-      "md:gap-x-12",
-      "lg:grid-cols-2",
-      "lg:gap-y-12"
-    ]),
-    textContent: classNames([
-      "flex",
-      "items-center",
-      "py-12",
-      "sm:py-24",
-      "lg:py-0"
-    ]),
-    header: {
-      content: classNames([
-        "py-24"
-      ])
-    }
-  },
-  image: {
-    styles: classNames([
-      "h-full",
-      "w-full",
-      "object-cover"
-    ]),
-    wrapper: classNames([
-      "overflow-hidden"
-    ])
-  }
-}
-
 const SplitCardImage = Image;
-
-const SplitCardImageLeftWrapper = SectionContainer;
 const SplitCardImageHeaderContainer = SectionHeaderContainer;
 const SplitCardImageHeader = SectionHeader;
 const SplitCardCta = FeaturedCta;
+
+const SplitCardImageLeftWrapper = ({children}: {children: ReactChildren}) => (
+  <section className={styles.section.styles}>
+    {children}
+  </section>
+);
 
 const SplitCardImageContent = ({children}: {children: ReactChildren}) => (
   <div className={styles.section.content}>
@@ -94,7 +51,7 @@ const SplitCardTextContent = ({children}: {children: ReactChildren}) => (
 );
 
 const FeaturedAbout = () => (
-  <SplitCardImageLeftWrapper noPadding extraClasses={styles.section.styles}>
+  <SplitCardImageLeftWrapper>
     <SplitCardImageContent>
       <SplitCardImageWrapper>
         <SplitCardImage
@@ -105,20 +62,23 @@ const FeaturedAbout = () => (
       </SplitCardImageWrapper>
       <SplitCardTextContent>
         <SplitCardImageHeaderContainer noMarginBottom>
-          <SplitCardHeaderContent>
-            <SplitCardImageHeader
-              hasEyebrow
-              eyebrowText={content.eyebrowText}
-              title={content.title}
-              description={content.description}
-            />
-            <SplitCardCta
-              isOutline
-              hasIcon
-              ctaText={content.ctaText}
-              href={content.ctaLink}
-            />
-          </SplitCardHeaderContent>
+          <div className="py-0 sm:py-8 md:py-16 lg:py-24 xl:py-32">
+            <SplitCardHeaderContent>
+              <SplitCardImageHeader
+                hasEyebrow
+                eyebrowText={content.eyebrowText}
+                title={content.title}
+                textSize={"lg"}
+                description={content.description}
+              />
+              <SplitCardCta
+                isOutline
+                hasIcon
+                ctaText={content.ctaText}
+                href={content.ctaLink}
+              />
+            </SplitCardHeaderContent>
+          </div>
         </SplitCardImageHeaderContainer>
       </SplitCardTextContent>
     </SplitCardImageContent>

@@ -1,16 +1,14 @@
 import React from "react";
 import classNames from "classnames";
 
-export default function SectionHeaderContainer({
-  children,
-  noMarginBottom,
-}: {
+interface SectionHeaderContainerProps {
   children: React.ReactNode;
   noMarginBottom?: boolean;
-}) {
-  const elementClasses = classNames({
+}
+
+export default function SectionHeaderContainer({children, noMarginBottom,}: SectionHeaderContainerProps) {
+  const classes = classNames({
     ["mb-12 lg:mb-20"]: !noMarginBottom,
   });
-
-  return <div className={elementClasses}>{children}</div>;
+  return <div className={classes}>{children}</div>;
 }

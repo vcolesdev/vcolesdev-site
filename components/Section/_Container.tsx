@@ -1,15 +1,13 @@
 import React from "react";
 import Container from "@/components/Layout/Container";
 
-export default function SectionContainer({
-  children,
-  extraClasses,
-  noPadding,
-}: {
+interface SectionContainerProps {
   children: React.ReactNode;
   extraClasses?: string;
   noPadding?: boolean;
-}) {
+}
+
+export default function SectionContainer({children, extraClasses, noPadding}: SectionContainerProps) {
   const renderContainer = () => {
     if (extraClasses) {
       return (

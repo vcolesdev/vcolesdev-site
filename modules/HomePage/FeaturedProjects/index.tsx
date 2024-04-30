@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import styles from "./styles.module";
 import FeaturedProjectCard from "../../FeaturedProjectCard";
 import FeaturedCta from "@/components/Controls/FeaturedCta";
 import SectionContainer from "@/components/Section/_Container";
@@ -18,27 +18,6 @@ const content = {
   description: "Below are some of my favorite hobby projects I've worked on, including this site's code. Click on a project to be taken to its individual page to learn more.",
   eyebrowText: "Featured Projects",
   title: "Handpicked Favorites",
-}
-
-const styles = {
-  container: classNames([
-    "mb-12",
-    "lg:mb-24",
-  ]),
-  projects: {
-    list: classNames([
-      "container",
-      "mx-auto",
-      "grid",
-      "max-w-7xl",
-      "grid-cols-1",
-      "gap-4",
-      "lg:grid-cols-2",
-      "lg:gap-6",
-      "xl:grid-cols-3",
-      "xl:gap-8"
-    ])
-  }
 }
 
 const Projects = ({projects}: {projects: FeaturedProject[]}) =>

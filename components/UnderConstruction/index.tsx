@@ -1,5 +1,5 @@
 import styles from "./styles.module";
-import {IconTrafficCone, IconSquareRoundedX} from "@tabler/icons-react";
+//import {IconTrafficCone, IconSquareRoundedX} from "@tabler/icons-react";
 
 export default function UnderConstruction() {
   return (
@@ -8,10 +8,12 @@ export default function UnderConstruction() {
         <div className={styles.banner.content}>
           <div className={styles.textContent.styles}>
             <p className={styles.textContent.span}>
-              <span className="px-3">Under Construction</span>
+              <span className="px-3 tracking-wide uppercase font-kanit font-medium text-sm">
+                Work in Progress
+              </span>
             </p>
             <p>
-              Welcome!  This site is a work in progress. Thank you for stopping by.
+              This site is under construction. But is anything ever really complete? Thank you for stopping by!
             </p>
           </div>
         </div>

@@ -17,8 +17,8 @@ const styles = {
     content: classNames([
       "flex",
       "gap-4",
-      "px-5",
-      "py-5",
+      "px-3",
+      "py-4",
     ]),
     icon: classNames([
       "text-salmon_pink-300/70",
@@ -27,8 +27,7 @@ const styles = {
   },
   textContent: {
     styles: classNames([
-      "font-kanit",
-      "text-[18px]",
+      "text-[16px]",
       "tracking-tight",
       "text-salmon_pink-200",
       "text-center",

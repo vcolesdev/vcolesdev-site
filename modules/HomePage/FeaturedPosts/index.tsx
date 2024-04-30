@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import styles from "./styles.module";
 import SectionHeader from "@/components/Section/_Header";
 import SectionContainer from "@/components/Section/_Container";
 import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
@@ -11,13 +11,6 @@ const content = {
   eyebrowText: "Featured Posts",
   title: "Writings",
 };
-
-const styles = {
-  container: classNames([
-    "mb-12",
-    "lg:mb-24",
-  ])
-}
 
 const FeaturedPostsContainer = SectionContainer;
 const FeaturedPostsHeaderContainer = SectionHeaderContainer;

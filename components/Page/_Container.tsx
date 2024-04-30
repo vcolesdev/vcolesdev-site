@@ -1,11 +1,12 @@
 import React from "react";
 import Container from "@/components/Layout/Container";
 
-export default function PageContainer({
-  children,
-  ...props
-}: {
+interface PageContainerProps {
   children: React.ReactNode;
-}) {
-  return <Container.Page {...props}>{children}</Container.Page>;
 }
+
+const PageContainer = ({children, ...props}: PageContainerProps) => (
+  <Container.Page {...props}>{children}</Container.Page>
+);
+
+export default PageContainer;

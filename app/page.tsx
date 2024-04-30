@@ -1,4 +1,4 @@
-import Home from "@/modules/Site/Home";
+import Home from "@/modules/HomePage/Home";
 import type {Metadata} from "next";
 
 export const metadata: Metadata = {

@@ -1,13 +1,14 @@
-import styles from "@/modules/FeaturedProjectCard/styles.module";
 import * as React from "react";
-import {FeaturedProjectIconProps} from "@/utils/types/projects";
+import styles from "@/modules/FeaturedProjectCard/styles.module";
 import {motion} from "framer-motion";
+import {ReactChildren} from "@/utils/types/layout";
+import {FeaturedProjectIconProps} from "@/utils/types/projects";
 import useIconSettings from "@/utils/hooks/components/useIconSettings";
 import {projectIconSettings} from "@/utils/types/settings";
 
-const MoreText = ({content}: {content: string | React.ReactNode | React.ReactNode[]}) => (
+const MoreText = ({children}: {children: ReactChildren}) => (
   <span className={styles.links.span}>
-    {content}
+    {children}
   </span>
 )
 
@@ -31,7 +32,7 @@ const ProjectCardIcon = (props: FeaturedProjectIconProps) =>  (
 
 export const ProjectCardLink = ({moreText}: {moreText: string}) => (
   <div className={styles.links.container}>
-    <MoreText content={moreText} />
+    <MoreText>{moreText}</MoreText>
     <ProjectCardIcon
       iconStyles={styles.links.svg}
       iconSettings={useIconSettings(projectIconSettings)}>

@@ -4,7 +4,7 @@ import NavLinks from "./NavLinks";
 import BtnToggleMobileMenu from "./BtnToggleMobileMenu";
 import useNavLinks from "@/utils/hooks/fetchers/useFetchNavLinks";
 import ThemeChanger from "@/modules/ThemeChanger";
-import SiteLogo from "@/modules/Site/SiteLogo";
+import SiteLogo from "@/modules/HomePage/SiteLogo";
 import Nav from "@/modules/Nav/Nav";
 import NavProvider from "@/modules/Nav/NavProvider";
 import {ReactChildren} from "@/utils/types/layout";
