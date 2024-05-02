@@ -8,7 +8,7 @@ const PostMore = ({moreText}: {moreText: string}) => (
     <span className={styles.more.content}>
       {moreText}
     </span>
-    <PostIcon iconStyles={styles.more.svg} iconSettings={useIconSettings(projectIconSettings)}>
+    <PostIcon styles={styles.more.svg} settings={useIconSettings(projectIconSettings)}>
       <path d="m9 18 6-6-6-6" />
     </PostIcon>
   </div>
