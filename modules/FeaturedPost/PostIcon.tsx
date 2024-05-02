@@ -1,7 +1,6 @@
 import {FeaturedPostIconProps} from "@/utils/types/posts";
 
-export default function PostIcon(props: FeaturedPostIconProps) {
-  const {children, iconStyles, iconSettings} = props;
+export default function PostIcon( {children, iconStyles, iconSettings}: FeaturedPostIconProps) {
   return (
     <svg
       className={iconStyles}

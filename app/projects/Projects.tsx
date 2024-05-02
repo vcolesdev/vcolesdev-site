@@ -1,5 +1,5 @@
-import FeaturedProjectCard from "../../modules/FeaturedProjectCard";
 import {FeaturedProject} from "@/utils/types/projects";
+import FeaturedProjectCard from "../../modules/FeaturedProjectCard";
 
 export default function Projects({projects}: {projects: FeaturedProject[]}) {
   return (

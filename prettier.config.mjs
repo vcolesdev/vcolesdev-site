@@ -6,6 +6,10 @@ const config = {
   singleQuote: false,
   jsxSingleQuote: false,
   bracketSpacing: false,
+  plugins: [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-tailwindcss",
+  ],
 };
 
 export default config;

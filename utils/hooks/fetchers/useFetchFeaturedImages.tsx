@@ -10,12 +10,24 @@ import image_09 from "@/assets/images/photos/09.jpeg";
 import image_10 from "@/assets/images/photos/10.jpeg";
 import image_11 from "@/assets/images/photos/11.jpeg";
 import image_12 from "@/assets/images/photos/12.jpeg";
+import {StaticImageData} from "next/image";
+import {useState} from "react";
+
+interface Image {
+  id: number,
+  title: string,
+  data: StaticImageData,
+}
 
 /**
  * useFeaturedImages hook
  * @description This hook is used to fetch all the featured images from our assets folder..
  */
 function useFetchFeaturedImages() {
+  const [images, setImages] = useState<StaticImageData[]>([]);
+
+  let numOfImages = 12;
+
   const featuredImages = [
     image_01,
     image_02,

@@ -1,6 +1,5 @@
 import * as React from "react";
 import styles from "@/modules/FeaturedProjectCard/styles.module";
-import {motion} from "framer-motion";
 import {ReactChildren} from "@/utils/types/layout";
 import {FeaturedProjectIconProps} from "@/utils/types/projects";
 import useIconSettings from "@/utils/hooks/components/useIconSettings";
@@ -13,29 +12,29 @@ const MoreText = ({children}: {children: ReactChildren}) => (
 )
 
 const ProjectCardIcon = (props: FeaturedProjectIconProps) =>  (
-  <motion.svg
-    className={props.iconStyles}
-    xmlns={props.iconSettings.xmlns}
-    width={props.iconSettings.width}
-    height={props.iconSettings.height}
-    viewBox={props.iconSettings.viewBox}
-    fill={props.iconSettings.fill}
-    stroke={props.iconSettings.stroke}
-    strokeWidth={props.iconSettings.strokeWidth}
+  <svg
+    className={props.styles}
+    xmlns={props.settings.xmlns}
+    width={props.settings.width}
+    height={props.settings.height}
+    viewBox={props.settings.viewBox}
+    fill={props.settings.fill}
+    stroke={props.settings.stroke}
+    strokeWidth={props.settings.strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
     {...props}
   >
     {props.children}
-  </motion.svg>
+  </svg>
 );
 
 export const ProjectCardLink = ({moreText}: {moreText: string}) => (
   <div className={styles.links.container}>
     <MoreText>{moreText}</MoreText>
     <ProjectCardIcon
-      iconStyles={styles.links.svg}
-      iconSettings={useIconSettings(projectIconSettings)}>
+      styles={styles.links.svg}
+      settings={useIconSettings(projectIconSettings)}>
       <path d="m9 18 6-6-6-6" />
     </ProjectCardIcon>
   </div>

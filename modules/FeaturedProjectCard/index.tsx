@@ -10,7 +10,7 @@ import {FeaturedProjectCardProps} from "@/utils/types/projects";
 import {activeAnimation, hoverAnimation, transitionAnimation} from "./animation";
 import {ProjectCardTitle, ProjectCardLink, ProjectCardDescription} from "@/modules/FeaturedProjectCard/Card";
 
-const ProjectCardContainer = ({children}: {children: React.ReactNode | React.ReactNode[] | string}) => (
+const ProjectCardContainer = ({children}: {children: ReactChildren}) => (
   <motion.article
     className={styles.project.styles}
     transition={transitionAnimation}

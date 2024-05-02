@@ -1,10 +1,8 @@
 "use client";
 
-import React from "react";
-import UnderConstruction from "../components/UnderConstruction";
-import Header from "../modules/Header";
+import * as React from "react";
 import Footer from "../modules/Footer";
-import type {Metadata} from "next";
+import Header from "../modules/Header";
 
 import "@/assets/styles/main.css";
 

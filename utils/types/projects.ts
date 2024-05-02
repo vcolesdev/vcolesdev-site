@@ -19,8 +19,8 @@ export interface FeaturedProjectCardProps {
 
 export interface FeaturedProjectIconProps {
   children: React.ReactNode;
-  iconStyles: string;
-  iconSettings: IconSettings;
+  styles: string;
+  settings: IconSettings;
 }
 
 export interface FeaturedProject {

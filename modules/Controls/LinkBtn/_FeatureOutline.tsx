@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./styles.module";
+import {btnLinkOutline} from "./styles.module";
 import {IconCaretRight} from "@tabler/icons-react";
 
 export default function LinkBtnFeatureOutline({
@@ -12,13 +12,13 @@ export default function LinkBtnFeatureOutline({
   href?: string;
 }) {
   return (
-    <Link href={href} className={styles.btnLinkOutline.styles}>
-      <span className={styles.btnLinkOutline.textContent}>
+    <Link href={href} className={btnLinkOutline.styles}>
+      <span className={btnLinkOutline.textContent}>
         {btnText}
       </span>
       {hasIcon && (
-        <div className={styles.btnLinkOutline.iconWrapper}>
-          <IconCaretRight className={styles.btnLinkOutline.icon} stroke={2} />
+        <div className={btnLinkOutline.iconWrapper}>
+          <IconCaretRight className={btnLinkOutline.icon} stroke={2} />
         </div>
       )}
     </Link>

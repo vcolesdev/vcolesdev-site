@@ -5,9 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/photos/Photos.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/Provider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/global/fetchFiles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/global/generateStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Section/_Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Section/_Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/projects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/Projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/projects/[slug]/Project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/[slug]/Project.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Controls/LinkBtn/_Feature.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/LinkBtn/_Feature.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Controls/LinkBtn/_FeatureOutline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/LinkBtn/_FeatureOutline.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Controls/LinkBtn/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/LinkBtn/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/FeaturedPost/PostIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedPost/PostIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/FeaturedProjectCard/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/FeaturedProjectCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prettier.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/prettier.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/hooks/fetchers/useFetchFeaturedImages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/utils/hooks/fetchers/useFetchFeaturedImages.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,45 +51,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vcoles/Github/projects/vcolesdev-mysite&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/typescript/lib&quot;,
-    &quot;use.deno.dismiss&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/vcoles/Github/projects/vcolesdev-mysite/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/prettier",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "ts.external.directory.path": "/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/typescript/lib",
+    "use.deno.dismiss": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JSON&quot;,
-      &quot;PLAIN_TEXT&quot;,
-      &quot;JavaScript&quot;,
-      &quot;yaml&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON",
+      "PLAIN_TEXT",
+      "JavaScript",
+      "yaml"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/assets" />
       <recent name="$PROJECT_DIR$/app/modules/FeaturedProjectCard" />
-      <recent name="$PROJECT_DIR$/app/modules/FeaturedPost" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/modules/HomePage/SectionIntro" />
@@ -77,6 +100,13 @@
       <recent name="$PROJECT_DIR$/modules/HomePage/featured/FeaturedPosts" />
       <recent name="$PROJECT_DIR$/modules/HomePage/featured/FeaturedImage" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-2946fb9b3188-155fe4b6e3a0-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-233.15026.17" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,7 +118,8 @@
       <updated>1711827807588</updated>
       <workItem from="1711827808642" duration="22000" />
       <workItem from="1714414787117" duration="29502000" />
-      <workItem from="1714509657254" duration="7747000" />
+      <workItem from="1714509657254" duration="8304000" />
+      <workItem from="1714520662517" duration="14000" />
     </task>
     <servers />
   </component>

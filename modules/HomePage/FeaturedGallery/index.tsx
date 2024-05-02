@@ -1,22 +1,23 @@
-"use client";
-
-import Link from "next/link";
+import Image from "next/image";
 import styles from "./styles.module";
-import Image, {StaticImageData} from "next/image";
+import fetchFiles from "@/utils/global/fetchFiles";
+import ImageCardProvider from "@/modules/HomePage/FeaturedGallery/Provider";
 import SectionContainer from "@/components/Section/_Container";
 import SectionHeader from "@/components/Section/_Header";
 import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
 import FeaturedCta from "@/components/Controls/FeaturedCta";
-import useFetchFeaturedImages from "@/utils/hooks/fetchers/useFetchFeaturedImages";
 import {IconArrowsMaximize} from "@tabler/icons-react";
 import {ReactChildren} from "@/utils/types/layout";
-import {ReactNode, useState} from "react";
 
-interface ImageCardProviderProps {
-  children: ReactChildren;
-  imgSrc: any;
-  overlayElement: ReactNode;
-}
+/**
+ * Gallery Requirements:
+ * - When a user clicks on an image element, the user will be navigated to the "/image-{index}" route.
+ * - When the user clicks on an image element, an overlay will appear on the page a close icon that closes the image and overlay.
+ * - When the user clicks on an image element, the image will be displayed in a modal that takes up most of the screen.
+ * - When the user uses the right key, the user will be navigated to the next image in the gallery. If the user is on the last image, the user will be navigated to the first image.
+ * - When the user uses the left key, the user will be navigated to the previous image in the gallery. If the user is on the first image, the user will be navigated to the last image.
+ * - When the user uses the escape key, the image and overlay will be closed, and the user will be navigated back to the homepage.
+ */
 
 const content = {
   ctaLink: "/photos",
@@ -25,9 +26,6 @@ const content = {
   eyebrowText: "Personal Hobby",
   title: "Photos I've Taken",
 };
-
-const ImageControl = Link;
-const ImageCardMedia = Image;
 
 const GalleryContainer = SectionContainer;
 const GalleryHeaderContainer = SectionHeaderContainer;
@@ -42,43 +40,21 @@ const ImageCardOverlay = () => (
   </div>
 );
 
-const ImageCardProvider = ({children, ...props}: ImageCardProviderProps) => {
-  const [overlay, setOverlay] = useState(false);
-  return (
-    <ImageControl
-      className={styles.control}
-      href={props.imgSrc}
-      onMouseOver={() => setOverlay(true)}
-      onMouseLeave={() => setOverlay(false)}
-    >
-      {overlay && props.overlayElement}
-      {children}
-    </ImageControl>
-  )
-};
-
 const ImageCard = ({id, imgSrc}: {id: string, imgSrc: any}) => (
   <ImageCardProvider
     imgSrc={imgSrc}
     overlayElement={<ImageCardOverlay />}
   >
-    <ImageCardMedia
+    <Image
       id={id}
       className={styles.imageMedia}
       src={imgSrc}
-      alt=""
+      alt="Featured Image - Placeholder alt text, to be updated."
+      width={1920}
+      height={1440}
     />
   </ImageCardProvider>
 );
-
-const ImageCardList = ({images}: {images: StaticImageData[]}) =>
-  images && images.map((img, index) => (
-    <ImageCard
-      key={index + 1}
-      id={`image-${index}`}
-      imgSrc={img}
-    />
-));
 
 const GalleryContent = ({children}: {children: ReactChildren}) => (
   <div className={styles.content}>
@@ -86,8 +62,8 @@ const GalleryContent = ({children}: {children: ReactChildren}) => (
   </div>
 );
 
-export default function FeaturedGallery() {
-  const {featuredImages} = useFetchFeaturedImages();
+export default async function FeaturedGallery() {
+  const images = fetchFiles("public/images/featured");
   return (
     <GalleryContainer>
       <GalleryHeaderContainer>
@@ -104,7 +80,13 @@ export default function FeaturedGallery() {
         />
       </GalleryHeaderContainer>
       <GalleryContent>
-        <ImageCardList images={featuredImages} />
+      {images && images.map((img, index) => (
+        <ImageCard
+          key={img}
+          id={`image-${index}`}
+          imgSrc={`/images/featured/${img}`}
+        />
+      ))}
       </GalleryContent>
     </GalleryContainer>
   );

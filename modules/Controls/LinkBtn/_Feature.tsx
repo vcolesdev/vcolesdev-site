@@ -1,5 +1,5 @@
-import styles from "./styles.module";
 import Link from "next/link";
+import {btnLink} from "./styles.module";
 import {IconCaretRight} from "@tabler/icons-react";
 import {LinkBtnFeatureProps} from "@/utils/types/controls";
 
@@ -9,13 +9,13 @@ export default function LinkBtnFeature({
   href = "/",
 }: LinkBtnFeatureProps) {
   return (
-    <Link href={href} type="button" className={styles.btnLink.styles}>
-      <span className={styles.btnLink.textContent}>
+    <Link href={href} type="button" className={btnLink.styles}>
+      <span className={btnLink.textContent}>
         {btnText}
       </span>
       {hasIcon && (
-        <div className={styles.btnLink.iconWrapper}>
-          <IconCaretRight className={styles.btnLink.icon} stroke={2} />
+        <div className={btnLink.iconWrapper}>
+          <IconCaretRight className={btnLink.icon} stroke={2} />
         </div>
       )}
     </Link>

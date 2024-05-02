@@ -1,9 +1,9 @@
 import featuredProjects from "@/assets/data/featured-projects.json";
 
-import Project from "./Project";
 import PageContainer from "@/components/Page/_Container";
 import PageTitle from "@/components/Page/_Title";
 import {FeaturedProject} from "@/utils/types/projects";
+import Project from "./Project";
 
 export default function Page({params}: {params: {slug: string}}) {
   const projects: unknown[] = featuredProjects;
