@@ -55,7 +55,7 @@ export const btnLinkOutline = {
     "text-center",
     "transition",
     "duration-75",
-    "hover:bg-melon-400",
+    "group-hover:bg-melon-400",
     "focus:shadow-none",
     "focus:outline-none",
     "focus:ring-4",
@@ -66,7 +66,7 @@ export const btnLinkOutline = {
     "font-semibold",
     "tracking-tight",
     "text-melon-400",
-    "group-hover:text-melon-900"
+    "group-hover:text-white",
   ]),
   iconWrapper: classNames([
     "group-hover:translate-x-0.5",
@@ -74,6 +74,6 @@ export const btnLinkOutline = {
   ]),
   icon: classNames([
     "text-melon-400",
-    "group-hover:text-melon-900"
+    "group-hover:text-white"
   ])
 }

@@ -4,11 +4,9 @@ import styles from "@/modules/HomePage/FeaturedProjects/styles.module";
 import FeaturedProjectCard from "@/modules/FeaturedProjectCard";
 import useInViewAnimateFeaturedCards from "@/utils/hooks/animations/useInViewAnimateFeatureCards";
 import {FeaturedProject, FeaturedProjectType} from "@/utils/types/projects";
-import {LayoutGroup, stagger, useAnimate, useInView} from "framer-motion";
+import {AnimatePresence, LayoutGroup} from "framer-motion";
 import {ReactChildren} from "@/utils/types/layout";
 import {useEffect} from "react";
-
-const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
 const ProjectsList = ({children}: {children: ReactChildren}) => {
   const {
@@ -38,17 +36,19 @@ const ProjectsList = ({children}: {children: ReactChildren}) => {
 const Projects = ({projects}: {projects: FeaturedProject[]}) => {
   return (
     <ProjectsList>
-      {projects && Array.isArray(projects) && projects.length > 0 &&
-        projects.map((project: FeaturedProjectType) => (
-          <FeaturedProjectCard
-            key={project._id}
-            categorySlug={project["category_slug"]}
-            description={project.description || ""}
-            title={project.title}
-            url={`/projects/${project.slug}`}
-          />
-        )
-      )}
+      <AnimatePresence>
+        {projects && Array.isArray(projects) && projects.length > 0 &&
+          projects.map((project: FeaturedProjectType) => (
+            <FeaturedProjectCard
+              key={project._id}
+              categorySlug={project["category_slug"]}
+              description={project.description || ""}
+              title={project.title}
+              url={`/projects/${project.slug}`}
+            />
+          )
+        )}
+      </AnimatePresence>
     </ProjectsList>
   )
 }

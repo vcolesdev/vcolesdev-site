@@ -3,6 +3,7 @@ import classNames from "classnames";
 export default {
   section: {
     styles: classNames([
+      "group",
       "bg-melon-900",
       "mb-12",
       //"max-w-7xl",
@@ -38,10 +39,16 @@ export default {
     styles: classNames([
       "h-full",
       "w-full",
-      "object-cover"
+      "object-cover",
+      "blur-md",
+      "scale-105",
+      "transition-all",
+      "duration-500",
+      "group-hover:scale-100",
+      "group-hover:blur-none",
     ]),
     wrapper: classNames([
-      "overflow-hidden"
+      "overflow-hidden",
     ])
   }
 }

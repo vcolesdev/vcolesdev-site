@@ -3,11 +3,9 @@
 import styles from "@/modules/HomePage/FeaturedGallery/styles.module";
 import ImageCard from "@/modules/HomePage/FeaturedGallery/ImageCard";
 import useInViewAnimateFeaturedCards from "@/utils/hooks/animations/useInViewAnimateFeatureCards";
-import {AnimatePresence, LayoutGroup, stagger} from "framer-motion";
+import {AnimatePresence, LayoutGroup} from "framer-motion";
 import {ReactChildren} from "@/utils/types/layout";
 import {useEffect} from "react";
-
-const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
 const GalleryContent = ({children}: {children: ReactChildren}) => {
   const {

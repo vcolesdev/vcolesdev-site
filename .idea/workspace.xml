@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/Gallery.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedProjects/Projects.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/hooks/animations/useInViewAnimateFeatureCards.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/FeaturedProjectCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/Provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/ImageCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedProjects/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedProjects/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SocialLinks/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/SocialLinks/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Controls/LinkBtn/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/LinkBtn/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedAbout/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedAbout/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/Gallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedProjects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedProjects/Projects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" afterDir="false" />
     </list>
