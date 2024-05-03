@@ -21,6 +21,7 @@ export default {
     ])
   },
   control: classNames([
+    "cursor-pointer",
     "group",
     "relative",
     "flex",

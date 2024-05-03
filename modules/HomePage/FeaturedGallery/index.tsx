@@ -1,13 +1,9 @@
-import Image from "next/image";
-import styles from "./styles.module";
 import fetchFiles from "@/utils/global/fetchFiles";
-import ImageCardProvider from "@/modules/HomePage/FeaturedGallery/Provider";
+import Gallery from "@/modules/HomePage/FeaturedGallery/Gallery";
 import SectionContainer from "@/components/Section/_Container";
 import SectionHeader from "@/components/Section/_Header";
 import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
 import FeaturedCta from "@/components/Controls/FeaturedCta";
-import {IconArrowsMaximize} from "@tabler/icons-react";
-import {ReactChildren} from "@/utils/types/layout";
 
 /**
  * Gallery Requirements:
@@ -32,36 +28,6 @@ const GalleryHeaderContainer = SectionHeaderContainer;
 const GalleryHeader = SectionHeader;
 const GalleryCta = FeaturedCta;
 
-const ImageCardOverlay = () => (
-  <div className={styles.overlay.styles}>
-    <span className={styles.overlay.span}>
-      <IconArrowsMaximize stroke={1.5} size={36} />
-    </span>
-  </div>
-);
-
-const ImageCard = ({id, imgSrc}: {id: string, imgSrc: any}) => (
-  <ImageCardProvider
-    imgSrc={imgSrc}
-    overlayElement={<ImageCardOverlay />}
-  >
-    <Image
-      id={id}
-      className={styles.imageMedia}
-      src={imgSrc}
-      alt="Featured Image - Placeholder alt text, to be updated."
-      width={1920}
-      height={1440}
-    />
-  </ImageCardProvider>
-);
-
-const GalleryContent = ({children}: {children: ReactChildren}) => (
-  <div className={styles.content}>
-    {children}
-  </div>
-);
-
 export default async function FeaturedGallery() {
   const images = fetchFiles("public/images/featured");
   return (
@@ -79,15 +45,7 @@ export default async function FeaturedGallery() {
           href={content.ctaLink}
         />
       </GalleryHeaderContainer>
-      <GalleryContent>
-      {images && images.map((img, index) => (
-        <ImageCard
-          key={img}
-          id={`image-${index}`}
-          imgSrc={`/images/featured/${img}`}
-        />
-      ))}
-      </GalleryContent>
+      <Gallery images={images} />
     </GalleryContainer>
   );
 }

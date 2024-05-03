@@ -35,7 +35,7 @@ const ProjectCardFooter = ({children}: {children: ReactChildren}) => (
 * @interface FeaturedProjectCardProps
 */
 const FeaturedProjectCard = (props: FeaturedProjectCardProps) => (
-  <Link className="relative flex" href={props.url}>
+  <Link className="motion-project-card relative flex" href={props.url}>
     <ProjectCardContainer>
       <ProjectCardContent>
         <FeaturedProjectCategoryIcon categorySlug={props.categorySlug} />

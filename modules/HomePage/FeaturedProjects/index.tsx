@@ -1,11 +1,10 @@
 import styles from "./styles.module";
-import FeaturedProjectCard from "../../FeaturedProjectCard";
+import Projects from "@/modules/HomePage/FeaturedProjects/Projects";
 import FeaturedCta from "@/components/Controls/FeaturedCta";
 import SectionContainer from "@/components/Section/_Container";
 import SectionHeader from "@/components/Section/_Header";
 import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
-import {ReactChildren} from "@/utils/types/layout";
-import {FeaturedProject, FeaturedProjectType} from "@/utils/types/projects";
+import {FeaturedProject} from "@/utils/types/projects";
 
 const ProjectsContainer = SectionContainer;
 const ProjectsHeaderContainer = SectionHeaderContainer;
@@ -19,24 +18,6 @@ const content = {
   eyebrowText: "Featured Projects",
   title: "Handpicked Favorites",
 }
-
-const Projects = ({projects}: {projects: FeaturedProject[]}) =>
-  projects && Array.isArray(projects) && projects.length > 0 &&
-    projects.map((project: FeaturedProjectType) => (
-      <FeaturedProjectCard
-        key={project._id}
-        categorySlug={project["category_slug"]}
-        description={project.description || ""}
-        title={project.title}
-        url={`/projects/${project.slug}`}
-      />
-));
-
-const ProjectsList = ({children}: {children: ReactChildren}) => (
-  <div className={styles.projects.list}>
-    {children}
-  </div>
-);
 
 const FeaturedProjects = ({projects}: {projects: FeaturedProject[]}) => (
   <ProjectsContainer extraClasses={styles.container}>
@@ -53,9 +34,7 @@ const FeaturedProjects = ({projects}: {projects: FeaturedProject[]}) => (
         href={content.ctaLink}
       />
     </ProjectsHeaderContainer>
-    <ProjectsList>
-      <Projects projects={projects} />
-    </ProjectsList>
+    <Projects projects={projects} />
   </ProjectsContainer>
 );
 
