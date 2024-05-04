@@ -7,7 +7,7 @@ export const btnLink = {
     "inline-flex",
     "items-center",
     "gap-1.5",
-    "rounded-xl",
+    "rounded-full",
     "border-2",
     "border-melon-400",
     "bg-melon-400",
@@ -24,10 +24,9 @@ export const btnLink = {
     "focus:ring-melon-600"
   ]),
   textContent: classNames([
-    "text-lg",
-    "font-semibold",
-    "tracking-tight",
+    "font-kanit",
     "text-white",
+    "tracking-tight",
     "group-active:text-melon-900"
   ]),
   iconWrapper: classNames([
@@ -46,7 +45,7 @@ export const btnLinkOutline = {
     "inline-flex",
     "items-center",
     "gap-1.5",
-    "rounded-xl",
+    "rounded-full",
     "border-2",
     "border-melon-400",
     "bg-transparent",
@@ -62,10 +61,9 @@ export const btnLinkOutline = {
     "focus:ring-melon-600"
   ]),
   textContent: classNames([
-    "text-lg",
-    "font-semibold",
-    "tracking-tight",
+    "font-kanit",
     "text-melon-400",
+    "tracking-tight",
     "group-hover:text-white",
   ]),
   iconWrapper: classNames([

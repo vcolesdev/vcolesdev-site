@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {btnLink} from "./styles.module";
 import {IconCaretRight} from "@tabler/icons-react";
