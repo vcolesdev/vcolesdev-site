@@ -9,17 +9,8 @@ const styles = {
       "items-center",
       "justify-between",
     ]),
-    container: classNames([
-      "backdrop-blur-lg",
-      "fixed",
-      "w-full",
-      "z-50",
-    ]),
-    content: classNames([
-      "hidden",
-      "lg:flex",
-      "lg:gap-x-12"
-    ]),
+    container: classNames(["backdrop-blur-lg", "fixed", "w-full", "z-50"]),
+    content: classNames(["hidden", "lg:flex", "lg:gap-x-12"]),
     link: classNames([
       "block",
       "relative",
@@ -36,13 +27,10 @@ const styles = {
       "w-full",
       "h-[3px]",
       "bg-melon-300",
-      "z-10"
+      "z-10",
     ]),
   },
-  logoWrapper: classNames([
-    "flex",
-    "lg:flex-1",
-  ]),
+  logoWrapper: classNames(["flex", "lg:flex-1"]),
   logo: classNames([
     "group",
     "mt-1.5",
@@ -52,15 +40,8 @@ const styles = {
     "duration-300",
     "ease-in-out-cubic",
   ]),
-  logoText: classNames([
-    "font-cursive",
-    "font-semibold",
-    "text-[24px]",
-  ]),
-  btnMobileWrapper: classNames([
-    "flex",
-    "lg:hidden"
-  ]),
+  logoText: classNames(["font-cursive", "font-semibold", "text-[24px]"]),
+  btnMobileWrapper: classNames(["flex", "lg:hidden"]),
   btnMobile: classNames([
     "-m-2.5",
     "inline-flex",
@@ -68,15 +49,15 @@ const styles = {
     "justify-center",
     "rounded-md",
     "p-2.5",
-    "text-gray-700"
+    "text-gray-700",
   ]),
   themeChanger: classNames([
     "hidden",
     "lg:flex",
     "lg:flex-1",
     "lg:justify-end",
-    "gap-3"
-  ])
-}
+    "gap-3",
+  ]),
+};
 
 export default styles;

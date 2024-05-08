@@ -1,14 +1,21 @@
 "use client";
 
-import * as React from "react";
-import Link from "next/link";
-import styles from "./styles.module";
 import FeaturedProjectCategoryIcon from "@/components/icons/FeaturedProjectIcon";
-import {motion} from "framer-motion";
+import {
+  ProjectCardDescription,
+  ProjectCardLink,
+  ProjectCardTitle,
+} from "@/modules/FeaturedProjectCard/Card";
 import {ReactChildren} from "@/utils/types/layout";
 import {FeaturedProjectCardProps} from "@/utils/types/projects";
-import {activeAnimation, hoverAnimation, transitionAnimation} from "./animation";
-import {ProjectCardTitle, ProjectCardLink, ProjectCardDescription} from "@/modules/FeaturedProjectCard/Card";
+import {motion} from "framer-motion";
+import Link from "next/link";
+import {
+  activeAnimation,
+  hoverAnimation,
+  transitionAnimation,
+} from "./animation";
+import styles from "./styles.module";
 
 const ProjectCardContainer = ({children}: {children: ReactChildren}) => (
   <motion.article
@@ -20,7 +27,7 @@ const ProjectCardContainer = ({children}: {children: ReactChildren}) => (
   >
     {children}
   </motion.article>
-)
+);
 
 const ProjectCardContent = ({children}: {children: ReactChildren}) => (
   <div>{children}</div>
@@ -30,12 +37,24 @@ const ProjectCardFooter = ({children}: {children: ReactChildren}) => (
   <footer>{children}</footer>
 );
 
+const ProjectCardProvider = ({
+  children,
+  url,
+}: {
+  children: ReactChildren;
+  url: string;
+}) => (
+  <Link className="motion-project-card relative flex" href={url}>
+    {children}
+  </Link>
+);
+
 /**
-* FeaturedProjectCard module
-* @interface FeaturedProjectCardProps
-*/
+ * FeaturedProjectCard module
+ * @interface FeaturedProjectCardProps
+ */
 const FeaturedProjectCard = (props: FeaturedProjectCardProps) => (
-  <Link className="motion-project-card relative flex" href={props.url}>
+  <ProjectCardProvider url={props.url}>
     <ProjectCardContainer>
       <ProjectCardContent>
         <FeaturedProjectCategoryIcon categorySlug={props.categorySlug} />
@@ -46,8 +65,7 @@ const FeaturedProjectCard = (props: FeaturedProjectCardProps) => (
         <ProjectCardLink moreText="View Project" />
       </ProjectCardFooter>
     </ProjectCardContainer>
-  </Link>
+  </ProjectCardProvider>
 );
 
 export default FeaturedProjectCard;
-

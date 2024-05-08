@@ -1,9 +1,9 @@
-import fetchFiles from "@/utils/global/fetchFiles";
-import Gallery from "@/modules/HomePage/FeaturedGallery/Gallery";
+import FeaturedCta from "@/components/Controls/FeaturedCta";
 import SectionContainer from "@/components/Section/_Container";
 import SectionHeader from "@/components/Section/_Header";
 import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
-import FeaturedCta from "@/components/Controls/FeaturedCta";
+import Gallery from "@/modules/HomePage/FeaturedGallery/Gallery";
+import fetchFiles from "@/utils/global/fetchFiles";
 
 /**
  * Gallery Requirements:
@@ -18,7 +18,8 @@ import FeaturedCta from "@/components/Controls/FeaturedCta";
 const content = {
   ctaLink: "/photos",
   ctaText: "View All Photos",
-  description: "I like to take pictures from time to time, here are some of my recent favorites.  I enjoy capturing gems of my community, family and friends, and the world at large. The images below are from Fontana, Imperial Beach, and Del Mar, CA.",
+  description:
+    "I like to take pictures from time to time, here are some of my recent favorites.  I enjoy capturing gems of my community, family and friends, and the world at large. The images below are from Fontana, Imperial Beach, and Del Mar, CA.",
   eyebrowText: "Personal Hobby",
   title: "Photos I've Taken",
 };
@@ -39,11 +40,7 @@ export default async function FeaturedGallery() {
           eyebrowText={content.eyebrowText}
           title={content.title}
         />
-        <GalleryCta
-          hasIcon
-          ctaText={content.ctaText}
-          href={content.ctaLink}
-        />
+        <GalleryCta hasIcon ctaText={content.ctaText} href={content.ctaLink} />
       </GalleryHeaderContainer>
       <Gallery images={images} />
     </GalleryContainer>

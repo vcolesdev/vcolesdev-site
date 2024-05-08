@@ -1,5 +1,5 @@
-import styles from "../styles.module";
 import useFetchSocialLinks from "@/utils/hooks/fetchers/useFetchSocialLinks";
+import styles from "../styles.module";
 
 /**
  * Footer social links module

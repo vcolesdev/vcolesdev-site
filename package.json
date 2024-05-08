@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "makeover": "npx prettier --write ./app"
+    "makeover": "npx prettier --write ./app ./components ./modules ./utils"
   },
   "dependencies": {
     "next": "14.2.2",

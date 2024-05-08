@@ -1,5 +1,5 @@
-import path from "path";
 import fs from "fs";
+import path from "path";
 
 const fetchFiles = (dir: string) => {
   if (!dir) throw new Error("fetchFiles: Directory path is required.");

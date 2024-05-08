@@ -1,5 +1,5 @@
-import React from "react";
 import Container from "@/components/Layout/Container";
+import React from "react";
 
 interface SectionContainerProps {
   children: React.ReactNode;
@@ -7,7 +7,11 @@ interface SectionContainerProps {
   noPadding?: boolean;
 }
 
-export default function SectionContainer({children, extraClasses, noPadding}: SectionContainerProps) {
+export default function SectionContainer({
+  children,
+  extraClasses,
+  noPadding,
+}: SectionContainerProps) {
   const renderContainer = () => {
     if (extraClasses) {
       return (

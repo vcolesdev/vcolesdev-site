@@ -1,17 +1,14 @@
-import * as React from "react";
 import styles from "@/modules/FeaturedProjectCard/styles.module";
+import useIconSettings from "@/utils/hooks/components/useIconSettings";
 import {ReactChildren} from "@/utils/types/layout";
 import {FeaturedProjectIconProps} from "@/utils/types/projects";
-import useIconSettings from "@/utils/hooks/components/useIconSettings";
 import {projectIconSettings} from "@/utils/types/settings";
 
 const MoreText = ({children}: {children: ReactChildren}) => (
-  <span className={styles.links.span}>
-    {children}
-  </span>
-)
+  <span className={styles.links.span}>{children}</span>
+);
 
-const ProjectCardIcon = (props: FeaturedProjectIconProps) =>  (
+const ProjectCardIcon = (props: FeaturedProjectIconProps) => (
   <svg
     className={props.styles}
     xmlns={props.settings.xmlns}
@@ -34,20 +31,17 @@ export const ProjectCardLink = ({moreText}: {moreText: string}) => (
     <MoreText>{moreText}</MoreText>
     <ProjectCardIcon
       styles={styles.links.svg}
-      settings={useIconSettings(projectIconSettings)}>
+      settings={useIconSettings(projectIconSettings)}
+    >
       <path d="m9 18 6-6-6-6" />
     </ProjectCardIcon>
   </div>
 );
 
 export const ProjectCardTitle = ({title}: {title: string}) => (
-  <h3 className={styles.project.title}>
-    {title}
-  </h3>
-)
+  <h3 className={styles.project.title}>{title}</h3>
+);
 
 export const ProjectCardDescription = (props: {description: string}) => (
-  <p className={styles.project.description}>
-    {props.description}
-  </p>
+  <p className={styles.project.description}>{props.description}</p>
 );

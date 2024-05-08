@@ -10,7 +10,7 @@ const useFetchNavLinks = () => {
     {name: "About", href: "/about"},
     {name: "My Stuff", href: "/projects"},
     {name: "Writings", href: "/posts"},
-    {name: "Photos", href: "/photos"}
+    {name: "Photos", href: "/photos"},
   ];
 
   return links;

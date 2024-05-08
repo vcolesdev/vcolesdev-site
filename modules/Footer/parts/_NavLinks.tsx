@@ -1,6 +1,5 @@
-import styles from "../styles.module";
 import useNavLinks from "@/utils/hooks/fetchers/useFetchNavLinks";
-
+import styles from "../styles.module";
 
 /**
  * Footer navigation links module

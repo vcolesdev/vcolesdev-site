@@ -1,8 +1,8 @@
-import * as React from "react";
-import styles from "@/modules/Nav/styles.module";
 import MotionDiv from "@/components/Motion/MotionDiv";
+import styles from "@/modules/Nav/styles.module";
+import {useEffect} from "react";
 import {ReactChildren} from "@/utils/types/layout";
-import {useScroll, useTransform} from "framer-motion";
+import {useAnimate, useScroll, useTransform} from "framer-motion";
 import {
   bgOutputRange,
   boxShadowOutputRange,
@@ -11,7 +11,8 @@ import {
   paddingOutputRange,
 } from "@/modules/Nav/animation";
 
-export default function NavProvider ({children}: {children: ReactChildren}) {
+export default function NavProvider({children}: {children: ReactChildren}) {
+  const [scope, animate] = useAnimate();
   const {scrollY} = useScroll();
 
   const background = useTransform(scrollY, inputRange, bgOutputRange);
@@ -25,13 +26,17 @@ export default function NavProvider ({children}: {children: ReactChildren}) {
     boxShadow,
   };
 
+  useEffect(() => {}, [scrollY]);
+
   return (
     <MotionDiv
+      id="navProvider"
       className={styles.nav.container}
+      ref={scope}
       style={style}
       transition={navAnimationTransition}
     >
       {children}
     </MotionDiv>
-  )
+  );
 }

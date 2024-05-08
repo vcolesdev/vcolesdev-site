@@ -101,6 +101,6 @@ function useFetchTestPosts() {
       },
     },
   ];
-};
+}
 
 export default useFetchTestPosts;

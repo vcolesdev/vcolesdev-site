@@ -1,13 +1,14 @@
-import styles from "./styles.module";
-import SectionHeader from "@/components/Section/_Header";
-import SectionContainer from "@/components/Section/_Container";
-import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
 import FeaturedCta from "@/components/Controls/FeaturedCta";
+import SectionContainer from "@/components/Section/_Container";
+import SectionHeader from "@/components/Section/_Header";
+import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
+import styles from "./styles.module";
 
 const content = {
   ctaText: "View All Posts",
   ctaLink: "/posts",
-  description: "Coming Soon. Having experienced a majority of adolescence in the early 2000's, writing for the web has always come naturally. Below are a few of my favorite posts.",
+  description:
+    "Coming Soon. Having experienced a majority of adolescence in the early 2000's, writing for the web has always come naturally. Below are a few of my favorite posts.",
   eyebrowText: "Featured Posts",
   title: "Writings",
 };

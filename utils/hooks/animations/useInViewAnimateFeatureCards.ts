@@ -1,5 +1,5 @@
-import {useRef} from "react";
 import {stagger, useAnimate, useInView} from "framer-motion";
+import {useRef} from "react";
 
 export default function useInViewAnimateFeaturedCards() {
   const ref = useRef<HTMLDivElement>(null);
@@ -11,8 +11,8 @@ export default function useInViewAnimateFeaturedCards() {
     duration: 0.1,
     options: {
       startDelay: 0.15,
-    }
-  }
+    },
+  };
 
   const staggerMenuItems = stagger(
     staggerAnimation.duration,
@@ -23,13 +23,13 @@ export default function useInViewAnimateFeaturedCards() {
   const keyframes = {
     to: {
       opacity: 0.9,
-      y: 0
+      y: 0,
     },
     from: {
       opacity: 0,
-      y: 100
-    }
-  }
+      y: 100,
+    },
+  };
 
   const options = {
     duration: 0.4,

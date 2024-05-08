@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
-import classNames from "classnames";
 import {FeaturedProjectCategories} from "@/utils/types/projects";
+import classNames from "classnames";
+import React from "react";
 import {
   IconNextJs,
   IconNodeJs,
@@ -29,15 +29,17 @@ const styles = {
     "group-hover:text-melon-900",
     "group-hover:shadow-md",
     "group-hover:shadow-melon-300/20",
-  ])
-}
+  ]),
+};
 
-function FeaturedProjectCategoryIconWrapper({children}: {children: React.ReactNode}) {
+function FeaturedProjectCategoryIconWrapper({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div>
-      <span className={styles.wrapper}>
-        {children}
-      </span>
+      <span className={styles.wrapper}>{children}</span>
     </div>
   );
 }

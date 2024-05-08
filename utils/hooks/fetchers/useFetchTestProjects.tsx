@@ -1,5 +1,5 @@
-import FeaturedProjectCard from "../../../modules/FeaturedProjectCard";
 import {FeaturedProjectCategories} from "@/utils/types/projects";
+import FeaturedProjectCard from "../../../modules/FeaturedProjectCard";
 
 function useFetchTestProjects() {
   const testProjects = (count: number) => {

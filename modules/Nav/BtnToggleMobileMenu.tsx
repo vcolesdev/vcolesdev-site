@@ -1,5 +1,5 @@
-import styles from "./styles.module";
 import {BtnMobileProps} from "@/utils/types/controls";
+import styles from "./styles.module";
 
 const Icon = () => (
   <svg
@@ -18,9 +18,7 @@ const Icon = () => (
 
 const BtnToggleMobileMenu = (props: BtnMobileProps) => (
   <button className={styles.btnMobile} onClick={props.handleClick}>
-    <span className="sr-only">
-      {props.textContent}
-    </span>
+    <span className="sr-only">{props.textContent}</span>
     <Icon />
   </button>
 );

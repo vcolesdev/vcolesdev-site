@@ -14,5 +14,5 @@ export default function ThemeChanger() {
         <IconDeviceDesktop stroke={2} size={24} />
       </button>
     </div>
-  )
+  );
 }

@@ -91,7 +91,7 @@ export const customColors = {
     800: "#d96a9a",
     900: "#ecb4cc",
   },
-}
+};
 
 /* Fonts */
 
@@ -102,4 +102,4 @@ export const customFonts = {
   serif: ['"Merriweather"', "Georgia", "serif"],
   mono: ['"Fira Code"', "monospace"],
   cursive: ['"Cedarville Cursive"', "cursive"],
-}
+};

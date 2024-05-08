@@ -1,6 +1,10 @@
 import {FeaturedPostIconProps} from "@/utils/types/posts";
 
-export default function PostIcon( {children, styles, settings}: FeaturedPostIconProps) {
+export default function PostIcon({
+  children,
+  styles,
+  settings,
+}: FeaturedPostIconProps) {
   return (
     <svg
       className={styles}
@@ -16,5 +20,5 @@ export default function PostIcon( {children, styles, settings}: FeaturedPostIcon
     >
       {children}
     </svg>
-  )
+  );
 }

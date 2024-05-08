@@ -1,10 +1,10 @@
-import styles from "./styles.module";
-import Projects from "@/modules/HomePage/FeaturedProjects/Projects";
 import FeaturedCta from "@/components/Controls/FeaturedCta";
 import SectionContainer from "@/components/Section/_Container";
 import SectionHeader from "@/components/Section/_Header";
 import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
+import Projects from "@/modules/HomePage/FeaturedProjects/Projects";
 import {FeaturedProject} from "@/utils/types/projects";
+import styles from "./styles.module";
 
 const ProjectsContainer = SectionContainer;
 const ProjectsHeaderContainer = SectionHeaderContainer;
@@ -14,10 +14,11 @@ const ProjectsCta = FeaturedCta;
 const content = {
   ctaLink: "/projects",
   ctaText: "View All Projects",
-  description: "Below are some of my favorite hobby projects I've worked on, including this site's code. Click on a project to be taken to its individual page to learn more.",
+  description:
+    "Below are some of my favorite hobby projects I've worked on, including this site's code. Click on a project to be taken to its individual page to learn more.",
   eyebrowText: "Featured Projects",
   title: "Handpicked Favorites",
-}
+};
 
 const FeaturedProjects = ({projects}: {projects: FeaturedProject[]}) => (
   <ProjectsContainer extraClasses={styles.container}>
@@ -28,11 +29,7 @@ const FeaturedProjects = ({projects}: {projects: FeaturedProject[]}) => (
         title={content.title}
         description={content.description}
       />
-      <ProjectsCta
-        hasIcon
-        ctaText={content.ctaText}
-        href={content.ctaLink}
-      />
+      <ProjectsCta hasIcon ctaText={content.ctaText} href={content.ctaLink} />
     </ProjectsHeaderContainer>
     <Projects projects={projects} />
   </ProjectsContainer>

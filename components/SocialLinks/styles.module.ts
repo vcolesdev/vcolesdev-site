@@ -21,15 +21,7 @@ export default {
     "active:text-rosy_brown-200",
   ]),
   tooltip: {
-    styles: classNames([
-      "p-4",
-      "bg-white",
-      "rounded-lg",
-      "shadow-lg"
-    ]),
-    textContent: classNames([
-      "text-sm",
-      "text-gray-900"
-    ])
-  }
-}
+    styles: classNames(["p-4", "bg-white", "rounded-lg", "shadow-lg"]),
+    textContent: classNames(["text-sm", "text-gray-900"]),
+  },
+};

@@ -1,5 +1,4 @@
-import LinkBtnFeature from "@/modules/Controls/LinkBtn/_Feature";
-import LinkBtnFeatureOutline from "@/modules/Controls/LinkBtn/_FeatureOutline";
+import Button from "@/modules/Controls/Btn/Button";
 
 export default function FeaturedCta({
   hasIcon,
@@ -12,17 +11,29 @@ export default function FeaturedCta({
   href?: string;
   isOutline?: boolean;
 }) {
+  const FeatureButton = hasIcon ? (
+    <Button isLink iconButton groupId="featuredCtaBtn" href={href}>
+      {ctaText}
+    </Button>
+  ) : (
+    <Button isLink groupId="featuredCtaBtn" href={href}>
+      {ctaText}
+    </Button>
+  );
+
+  const FeatureOutlineButton = hasIcon ? (
+    <Button isLink iconButton outlineStyle groupId="featuredCtaBtn" href={href}>
+      {ctaText}
+    </Button>
+  ) : (
+    <Button isLink outlineStyle groupId="featuredCtaBtn" href={href}>
+      {ctaText}
+    </Button>
+  );
+
   return (
     <div className="mx-auto mt-8 max-w-7xl px-8 lg:mt-12">
-      {isOutline ? (
-        <LinkBtnFeatureOutline
-          hasIcon={hasIcon}
-          btnText={ctaText}
-          href={href}
-        />
-      ) : (
-        <LinkBtnFeature hasIcon={hasIcon} btnText={ctaText} href={href} />
-      )}
+      {isOutline ? FeatureOutlineButton : FeatureButton}
     </div>
   );
 }

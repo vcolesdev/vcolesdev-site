@@ -1,10 +1,10 @@
-import Image from "next/image";
-import styles from "./styles.module";
+import GithubPhoto from "@/assets/images/vcoles-github.jpeg";
 import FeaturedCta from "@/components/Controls/FeaturedCta";
 import SectionHeader from "@/components/Section/_Header";
 import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
-import GithubPhoto from "@/assets/images/vcoles-github.jpeg";
 import {ReactChildren} from "@/utils/types/layout";
+import Image from "next/image";
+import styles from "./styles.module";
 
 const content = {
   ctaLink: "/about",
@@ -13,7 +13,7 @@ const content = {
   eyebrowText: "About Me",
   imageAlt: "Vanessa's Github",
   title: "Hi, I'm Vanessa",
-}
+};
 
 const SplitCardImage = Image;
 const SplitCardImageHeaderContainer = SectionHeaderContainer;
@@ -21,33 +21,23 @@ const SplitCardImageHeader = SectionHeader;
 const SplitCardCta = FeaturedCta;
 
 const SplitCardImageLeftWrapper = ({children}: {children: ReactChildren}) => (
-  <section className={styles.section.styles}>
-    {children}
-  </section>
+  <section className={styles.section.styles}>{children}</section>
 );
 
 const SplitCardImageContent = ({children}: {children: ReactChildren}) => (
-  <div className={styles.section.content}>
-    {children}
-  </div>
+  <div className={styles.section.content}>{children}</div>
 );
 
 const SplitCardImageWrapper = ({children}: {children: ReactChildren}) => (
-  <div className={styles.image.wrapper}>
-    {children}
-  </div>
+  <div className={styles.image.wrapper}>{children}</div>
 );
 
 const SplitCardHeaderContent = ({children}: {children: ReactChildren}) => (
-  <div className={styles.section.header.content}>
-    {children}
-  </div>
+  <div className={styles.section.header.content}>{children}</div>
 );
 
 const SplitCardTextContent = ({children}: {children: ReactChildren}) => (
-  <div className={styles.section.textContent}>
-    {children}
-  </div>
+  <div className={styles.section.textContent}>{children}</div>
 );
 
 const FeaturedAbout = () => (

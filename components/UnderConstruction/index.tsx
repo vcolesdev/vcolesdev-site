@@ -8,12 +8,13 @@ export default function UnderConstruction() {
         <div className={styles.banner.content}>
           <div className={styles.textContent.styles}>
             <p className={styles.textContent.span}>
-              <span className="px-3 tracking-wide uppercase font-kanit font-medium text-sm">
+              <span className="px-3 font-kanit text-sm font-medium uppercase tracking-wide">
                 Work in Progress
               </span>
             </p>
             <p>
-              This site is under construction. But is anything ever really complete? Thank you for stopping by!
+              This site is under construction. But is anything ever really
+              complete? Thank you for stopping by!
             </p>
           </div>
         </div>

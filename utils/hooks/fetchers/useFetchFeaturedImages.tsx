@@ -14,9 +14,9 @@ import {StaticImageData} from "next/image";
 import {useState} from "react";
 
 interface Image {
-  id: number,
-  title: string,
-  data: StaticImageData,
+  id: number;
+  title: string;
+  data: StaticImageData;
 }
 
 /**

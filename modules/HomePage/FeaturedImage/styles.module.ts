@@ -7,7 +7,7 @@ export default {
     "mb-12",
     "min-h-screen",
     "overflow-hidden",
-    "lg:mb-24"
+    "lg:mb-24",
   ]),
   image: classNames([
     "absolute",
@@ -15,7 +15,7 @@ export default {
     "-z-10",
     "h-full",
     "w-full",
-    "object-cover"
+    "object-cover",
   ]),
   divOne: {
     styles: classNames([
@@ -26,7 +26,7 @@ export default {
       "transform-gpu",
       "overflow-hidden",
       "blur-3xl",
-      "sm:-top-80"
+      "sm:-top-80",
     ]),
     child: classNames([
       "relative",
@@ -40,8 +40,8 @@ export default {
       "to-[#9089fc]",
       "opacity-20",
       "sm:left-[calc(50%-30rem)]",
-      "sm:w-[72.1875rem]"
-    ])
+      "sm:w-[72.1875rem]",
+    ]),
   },
   divTwo: {
     styles: classNames([
@@ -52,7 +52,7 @@ export default {
       "transform-gpu",
       "overflow-hidden",
       "blur-3xl",
-      "sm:top-[calc(100%-30rem)]"
+      "sm:top-[calc(100%-30rem)]",
     ]),
     child: classNames([
       "relative",
@@ -65,7 +65,7 @@ export default {
       "to-[#9089fc]",
       "opacity-20",
       "sm:left-[calc(50%+36rem)]",
-      "sm:w-[72.1875rem]"
-    ])
-  }
-}
+      "sm:w-[72.1875rem]",
+    ]),
+  },
+};

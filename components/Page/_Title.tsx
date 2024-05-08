@@ -1,5 +1,5 @@
-import classNames from "classnames";
 import {ReactChildren} from "@/utils/types/layout";
+import classNames from "classnames";
 
 interface PageTitleProps {
   title: string;
@@ -12,31 +12,25 @@ const styles = {
     "font-kanit",
     "text-6xl",
     "font-medium",
-    "text-rosy_brown-200"
+    "text-rosy_brown-200",
   ]),
-  description: classNames([
-    "text-xl",
-    "font-medium",
-    "text-rosy_brown-300"
-  ])
-}
+  description: classNames(["text-xl", "font-medium", "text-rosy_brown-300"]),
+};
 
-const PageTitleProvider = ({children, title}: {children: ReactChildren, title: string}) => (
-  <div data-page-title={title}>
-    {children}
-  </div>
-);
+const PageTitleProvider = ({
+  children,
+  title,
+}: {
+  children: ReactChildren;
+  title: string;
+}) => <div data-page-title={title}>{children}</div>;
 
 const PageDescription = ({description}: {description: string}) => (
-  <p className={styles.description}>
-    {description}
-  </p>
+  <p className={styles.description}>{description}</p>
 );
 
 const PageHeading = ({title}: {title: string}) => (
-  <h2 className={styles.title}>
-    {title}
-  </h2>
+  <h2 className={styles.title}>{title}</h2>
 );
 
 const PageTitle = ({title, description}: PageTitleProps) => (

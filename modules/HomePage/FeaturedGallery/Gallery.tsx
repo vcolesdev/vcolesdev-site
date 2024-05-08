@@ -1,24 +1,22 @@
 "use client";
 
-import styles from "@/modules/HomePage/FeaturedGallery/styles.module";
 import ImageCard from "@/modules/HomePage/FeaturedGallery/ImageCard";
+import styles from "@/modules/HomePage/FeaturedGallery/styles.module";
 import useInViewAnimateFeaturedCards from "@/utils/hooks/animations/useInViewAnimateFeatureCards";
-import {AnimatePresence, LayoutGroup} from "framer-motion";
 import {ReactChildren} from "@/utils/types/layout";
+import {AnimatePresence, LayoutGroup} from "framer-motion";
 import {useEffect} from "react";
 
 const GalleryContent = ({children}: {children: ReactChildren}) => {
-  const {
-    animate,
-    isInView,
-    keyframes,
-    options,
-    ref,
-    scope
-  } = useInViewAnimateFeaturedCards();
+  const {animate, isInView, keyframes, options, ref, scope} =
+    useInViewAnimateFeaturedCards();
 
   useEffect(() => {
-    animate(".motion-img-card", isInView ? keyframes.to : keyframes.from, options);
+    animate(
+      ".motion-img-card",
+      isInView ? keyframes.to : keyframes.from,
+      options
+    );
   }, [isInView]);
 
   return (
@@ -29,8 +27,8 @@ const GalleryContent = ({children}: {children: ReactChildren}) => {
         </div>
       </div>
     </LayoutGroup>
-  )
-}
+  );
+};
 
 const Gallery = ({images}: {images: string[]}) => (
   <GalleryContent>
@@ -44,7 +42,6 @@ const Gallery = ({images}: {images: string[]}) => (
       ))}
     </AnimatePresence>
   </GalleryContent>
-)
-
+);
 
 export default Gallery;

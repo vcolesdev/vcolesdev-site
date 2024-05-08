@@ -2,12 +2,7 @@ import classNames from "classnames";
 
 export default {
   links: {
-    container: classNames([
-      "mt-4",
-      "inline-flex",
-      "items-center",
-      "gap-x-1",
-    ]),
+    container: classNames(["mt-4", "inline-flex", "items-center", "gap-x-1"]),
     span: classNames([
       "text-base",
       "font-medium",
@@ -21,7 +16,7 @@ export default {
       "transition",
       "ease-in-out",
       "group-hover:translate-x-1",
-    ])
+    ]),
   },
   project: {
     styles: classNames([
@@ -34,7 +29,7 @@ export default {
       "bg-melon-900",
       "p-4",
       "transition",
-      "sm:p-6"
+      "sm:p-6",
     ]),
     title: classNames([
       "mt-1.5",
@@ -50,6 +45,6 @@ export default {
       "text-base/relaxed",
       "text-rosy_brown-200/80",
       "opacity-80",
-    ])
-  }
-}
+    ]),
+  },
+};

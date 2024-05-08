@@ -1,4 +1,4 @@
-import React, {useEffect, MouseEvent} from 'react';
+import React, {MouseEvent, useEffect} from "react";
 
 interface MousePosition {
   x: number | null;
@@ -8,18 +8,20 @@ interface MousePosition {
 const useMousePosition = () => {
   const initPosition: MousePosition = {
     x: null,
-    y: null
+    y: null,
   };
 
   const [mousePosition, setMousePosition] = React.useState(initPosition);
 
   useEffect(() => {
-    const updateMousePosition = ((event: MouseEvent<HTMLElement, MouseEvent>) => {
+    const updateMousePosition = (
+      event: MouseEvent<HTMLElement, MouseEvent>
+    ) => {
       setMousePosition({
         x: event.clientX,
-        y: event.clientY
+        y: event.clientY,
       });
-    });
+    };
 
     window.addEventListener("mousemove", () => updateMousePosition);
 

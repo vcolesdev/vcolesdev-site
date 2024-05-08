@@ -13,8 +13,8 @@ function useIconSettings(props: IconSettings) {
     viewBox: props.viewBox,
     fill: props.fill,
     stroke: props.stroke,
-    strokeWidth: props.strokeWidth
-  }
+    strokeWidth: props.strokeWidth,
+  };
 }
 
 export default useIconSettings;

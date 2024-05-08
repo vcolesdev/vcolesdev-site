@@ -12,8 +12,10 @@ const config: import('tailwindcss').Config = {
     extend: {
       fontFamily: customFonts,
       colors: {
-        primary: customColors.melon[400],
-        secondary: customColors.salmon_pink[300],
+        charcoal: customColors.charcoal,
+        melon: customColors.melon,
+        rosy_brown: customColors.rosy_brown,
+        salmon_pink: customColors.salmon_pink,
         light: {
           bgColor: customColors.melon[800],
           textColor: customColors.rosy_brown[200],
@@ -23,9 +25,8 @@ const config: import('tailwindcss').Config = {
         dark: {
           bgColor: customColors.charcoal[200],
         },
-        melon: customColors.melon,
-        rosy_brown: customColors.rosy_brown,
-        salmon_pink: customColors.salmon_pink,
+        primary: customColors.melon[400],
+        secondary: customColors.salmon_pink[300],
       },
     },
   },

@@ -1,8 +1,8 @@
 import React from "react";
 
 export interface NavContainerProps {
-  children: React.ReactNode,
-  id?: string,
+  children: React.ReactNode;
+  id?: string;
 }
 
 export interface NavigationProps {

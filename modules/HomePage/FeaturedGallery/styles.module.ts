@@ -14,11 +14,9 @@ export default {
       "bg-melon-400/90",
       "bg-opacity-100",
       "transition",
-      "active:bg-melon-400"
+      "active:bg-melon-400",
     ]),
-    span: classNames([
-      "text-white"
-    ])
+    span: classNames(["text-white"]),
   },
   control: classNames([
     "cursor-pointer",
@@ -29,13 +27,9 @@ export default {
     "border-8",
     "border-transparent",
     "active:border-8",
-    "active:border-melon-500"
+    "active:border-melon-500",
   ]),
-  imageMedia: classNames([
-    "h-auto",
-    "max-w-full",
-    "rounded-[32px]"
-  ]),
+  imageMedia: classNames(["h-auto", "max-w-full", "rounded-[32px]"]),
   content: classNames([
     "container",
     "mx-auto",
@@ -43,6 +37,6 @@ export default {
     "max-w-7xl",
     "sm:grid-cols-2",
     "sm:gap-2",
-    "md:grid-cols-3"
-  ])
-}
+    "md:grid-cols-3",
+  ]),
+};

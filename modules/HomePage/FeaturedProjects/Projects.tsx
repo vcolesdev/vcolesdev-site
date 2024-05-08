@@ -1,25 +1,23 @@
 "use client";
 
-import styles from "@/modules/HomePage/FeaturedProjects/styles.module";
 import FeaturedProjectCard from "@/modules/FeaturedProjectCard";
+import styles from "@/modules/HomePage/FeaturedProjects/styles.module";
 import useInViewAnimateFeaturedCards from "@/utils/hooks/animations/useInViewAnimateFeatureCards";
+import {ReactChildren} from "@/utils/types/layout";
 import {FeaturedProject, FeaturedProjectType} from "@/utils/types/projects";
 import {AnimatePresence, LayoutGroup} from "framer-motion";
-import {ReactChildren} from "@/utils/types/layout";
 import {useEffect} from "react";
 
 const ProjectsList = ({children}: {children: ReactChildren}) => {
-  const {
-    animate,
-    isInView,
-    keyframes,
-    options,
-    ref,
-    scope
-  } = useInViewAnimateFeaturedCards();
+  const {animate, isInView, keyframes, options, ref, scope} =
+    useInViewAnimateFeaturedCards();
 
   useEffect(() => {
-    animate(".motion-project-card", isInView ? keyframes.to : keyframes.from, options);
+    animate(
+      ".motion-project-card",
+      isInView ? keyframes.to : keyframes.from,
+      options
+    );
   }, [isInView]);
 
   return (
@@ -30,14 +28,16 @@ const ProjectsList = ({children}: {children: ReactChildren}) => {
         </div>
       </div>
     </LayoutGroup>
-  )
-}
+  );
+};
 
 const Projects = ({projects}: {projects: FeaturedProject[]}) => {
   return (
     <ProjectsList>
       <AnimatePresence>
-        {projects && Array.isArray(projects) && projects.length > 0 &&
+        {projects &&
+          Array.isArray(projects) &&
+          projects.length > 0 &&
           projects.map((project: FeaturedProjectType) => (
             <FeaturedProjectCard
               key={project._id}
@@ -46,11 +46,10 @@ const Projects = ({projects}: {projects: FeaturedProject[]}) => {
               title={project.title}
               url={`/projects/${project.slug}`}
             />
-          )
-        )}
+          ))}
       </AnimatePresence>
     </ProjectsList>
-  )
-}
+  );
+};
 
 export default Projects;

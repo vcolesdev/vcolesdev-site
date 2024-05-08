@@ -1,14 +1,14 @@
 "use client";
 
-import Image from "next/image";
 import styles from "@/modules/HomePage/FeaturedGallery/styles.module";
 import {motion} from "framer-motion";
+import Image from "next/image";
 import {MouseEvent} from "react";
 
-const ImageCard = ({id, imgSrc}: {id: string, imgSrc: string}) => {
+const ImageCard = ({id, imgSrc}: {id: string; imgSrc: string}) => {
   const handleClick = (event: MouseEvent<HTMLDivElement>) => {
     console.log("Clicked: ", event.currentTarget);
-  }
+  };
 
   return (
     <motion.div
@@ -28,7 +28,7 @@ const ImageCard = ({id, imgSrc}: {id: string, imgSrc: string}) => {
         height={1440}
       />
     </motion.div>
-  )
-}
+  );
+};
 
 export default ImageCard;
