@@ -1,5 +1,7 @@
-import {ReactChildren} from "@/utils/types/layout";
+"use client";
+
 import Image from "next/image";
+import {ReactChildren} from "@/utils/types/layout";
 import SocialLinks from "../../../components/SocialLinks";
 import UnderConstruction from "../../../components/UnderConstruction";
 import styles from "./styles.module";

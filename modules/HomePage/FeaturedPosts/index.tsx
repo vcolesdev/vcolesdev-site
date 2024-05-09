@@ -1,39 +1,40 @@
-import FeaturedCta from "@/components/Controls/FeaturedCta";
-import SectionContainer from "@/components/Section/_Container";
-import SectionHeader from "@/components/Section/_Header";
-import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
+"use client";
+
 import styles from "./styles.module";
+import SectionContainer from "@/components/SectionContainer";
+import FeaturedCta from "@/components/Featured/FeaturedCta";
+import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
+import {SectionHeaderContainer} from "@/components/SectionHeader/components";
 
 const content = {
   ctaText: "View All Posts",
   ctaLink: "/posts",
   description:
-    "Coming Soon. Having experienced a majority of adolescence in the early 2000's, writing for the web has always come naturally. Below are a few of my favorite posts.",
+    "Coming Soon. Having experienced a majority of my adolescence in the early 2000's, writing for the web has always come naturally. Below are a few of my favorite posts.",
   eyebrowText: "Featured Posts",
   title: "Writings",
 };
 
 const FeaturedPostsContainer = SectionContainer;
 const FeaturedPostsHeaderContainer = SectionHeaderContainer;
-const FeaturedPostsHeader = SectionHeader;
+const FeaturedPostsHeader = SectionHeaderEyebrow;
 const FeaturedPostsCta = FeaturedCta;
 
-const FeaturedPosts = ({posts}: {posts: any[]}) => (
-  <FeaturedPostsContainer extraClasses={styles.container}>
-    <FeaturedPostsHeaderContainer>
-      <FeaturedPostsHeader
-        hasEyebrow
-        eyebrowText={content.eyebrowText}
-        title={content.title}
-        description={content.description}
-      />
-      <FeaturedPostsCta
-        hasIcon
-        ctaText={content.ctaText}
-        href={content.ctaLink}
-      />
-    </FeaturedPostsHeaderContainer>
-  </FeaturedPostsContainer>
-);
-
-export default FeaturedPosts;
+export default function FeaturedPosts({posts}: {posts: any[]}) {
+  return (
+    <FeaturedPostsContainer extraClasses={styles.container}>
+      <FeaturedPostsHeaderContainer>
+        <FeaturedPostsHeader
+          eyebrowText={content.eyebrowText}
+          title={content.title}
+          description={content.description}
+        />
+        <FeaturedPostsCta
+          hasIcon
+          ctaText={content.ctaText}
+          href={content.ctaLink}
+        />
+      </FeaturedPostsHeaderContainer>
+    </FeaturedPostsContainer>
+  );
+}

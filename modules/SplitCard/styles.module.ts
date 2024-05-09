@@ -1,17 +1,14 @@
+import {SplitCardStyles} from "@/modules/SplitCard/api";
 import classNames from "classnames";
 
-export default {
+export const splitCardStyles: SplitCardStyles = {
   section: {
     styles: classNames([
       "group/element",
       "bg-melon-900",
       "mb-12",
-      //"max-w-7xl",
-      //"rounded-2xl",
       "shadow-2xl",
       "shadow-melon-400/20",
-      //"md:rounded-[32px]",
-      //"lg:rounded-[48px]",
       "lg:mb-24",
       "overflow-hidden",
     ]),

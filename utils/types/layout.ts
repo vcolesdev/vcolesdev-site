@@ -6,12 +6,13 @@ export interface ContainerProps {
   noPadding?: boolean;
 }
 
-export interface SectionHeaderProps {
+export interface SectionContent {
+  ctaLink: string;
+  ctaText: string;
+  description: string;
+  eyebrowText: string;
+  imageAlt: string;
   title: string;
-  description?: string;
-  eyebrowText?: string;
-  hasEyebrow?: boolean;
-  textSize?: "default" | "lg";
 }
 
 export type ReactChildren = React.ReactNode | React.ReactNode[] | string;

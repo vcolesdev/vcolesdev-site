@@ -17,7 +17,7 @@ const Home = () => (
     {/* Featured Projects */}
     <FeaturedProjects projects={projects} />
     {/* Gallery */}
-    <FeaturedGallery />
+    <FeaturedGallery dir="public/images/featured" />
   </>
 );
 

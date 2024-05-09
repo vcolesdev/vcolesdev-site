@@ -1,11 +1,5 @@
 import Container from "@/components/Layout/Container";
-import React from "react";
-
-interface SectionContainerProps {
-  children: React.ReactNode;
-  extraClasses?: string;
-  noPadding?: boolean;
-}
+import {SectionContainerProps} from "./api";
 
 export default function SectionContainer({
   children,

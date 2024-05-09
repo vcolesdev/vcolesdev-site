@@ -1,6 +1,7 @@
+import {FeaturedProjectCardStyles} from "@/modules/FeaturedProjectCard/api";
 import classNames from "classnames";
 
-export default {
+export const cardStyles: FeaturedProjectCardStyles = {
   links: {
     container: classNames(["mt-4", "inline-flex", "items-center", "gap-x-1"]),
     span: classNames([

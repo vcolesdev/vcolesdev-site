@@ -1,14 +1,16 @@
-import FeaturedCta from "@/components/Controls/FeaturedCta";
-import SectionContainer from "@/components/Section/_Container";
-import SectionHeader from "@/components/Section/_Header";
-import SectionHeaderContainer from "@/components/Section/_HeaderContainer";
+"use client";
+
+import styles from "./styles.module";
+import FeaturedCta from "@/components/Featured/FeaturedCta";
+import SectionContainer from "@/components/SectionContainer";
 import Projects from "@/modules/HomePage/FeaturedProjects/Projects";
 import {FeaturedProject} from "@/utils/types/projects";
-import styles from "./styles.module";
+import {SectionHeaderContainer} from "@/components/SectionHeader/components";
+import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
 
 const ProjectsContainer = SectionContainer;
 const ProjectsHeaderContainer = SectionHeaderContainer;
-const ProjectsHeader = SectionHeader;
+const ProjectsHeader = SectionHeaderEyebrow;
 const ProjectsCta = FeaturedCta;
 
 const content = {
@@ -20,19 +22,18 @@ const content = {
   title: "Handpicked Favorites",
 };
 
-const FeaturedProjects = ({projects}: {projects: FeaturedProject[]}) => (
-  <ProjectsContainer extraClasses={styles.container}>
-    <ProjectsHeaderContainer>
-      <ProjectsHeader
-        hasEyebrow
-        eyebrowText={content.eyebrowText}
-        title={content.title}
-        description={content.description}
-      />
-      <ProjectsCta hasIcon ctaText={content.ctaText} href={content.ctaLink} />
-    </ProjectsHeaderContainer>
-    <Projects projects={projects} />
-  </ProjectsContainer>
-);
-
-export default FeaturedProjects;
+export default function FeaturedProjects({projects}: {projects: FeaturedProject[]}) {
+  return (
+    <ProjectsContainer extraClasses={styles.container}>
+      <ProjectsHeaderContainer>
+        <ProjectsHeader
+          eyebrowText={content.eyebrowText}
+          title={content.title}
+          description={content.description}
+        />
+        <ProjectsCta hasIcon ctaText={content.ctaText} href={content.ctaLink} />
+      </ProjectsHeaderContainer>
+      <Projects projects={projects} />
+    </ProjectsContainer>
+  )
+}

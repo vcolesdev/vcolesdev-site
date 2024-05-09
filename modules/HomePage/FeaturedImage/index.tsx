@@ -1,3 +1,5 @@
+"use client";
+
 import {ReactChildren} from "@/utils/types/layout";
 import Image from "next/image";
 import styles from "./styles.module";

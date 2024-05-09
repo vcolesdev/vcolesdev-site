@@ -1,8 +1,4 @@
 import MotionDiv from "@/components/Motion/MotionDiv";
-import styles from "@/modules/Nav/styles.module";
-import {useEffect} from "react";
-import {ReactChildren} from "@/utils/types/layout";
-import {useAnimate, useScroll, useTransform} from "framer-motion";
 import {
   bgOutputRange,
   boxShadowOutputRange,
@@ -10,6 +6,10 @@ import {
   navAnimationTransition,
   paddingOutputRange,
 } from "@/modules/Nav/animation";
+import styles from "@/modules/Nav/styles.module";
+import {ReactChildren} from "@/utils/types/layout";
+import {useAnimate, useScroll, useTransform} from "framer-motion";
+import {useEffect} from "react";
 
 export default function NavProvider({children}: {children: ReactChildren}) {
   const [scope, animate] = useAnimate();
