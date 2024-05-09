@@ -1,10 +1,10 @@
 "use client";
 
-import styles from "./styles.module";
-import SectionContainer from "@/components/SectionContainer";
 import FeaturedCta from "@/components/Featured/FeaturedCta";
+import SectionContainer from "@/components/SectionContainer";
 import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
 import {SectionHeaderContainer} from "@/components/SectionHeader/components";
+import styles from "./styles.module";
 
 const content = {
   ctaText: "View All Posts",

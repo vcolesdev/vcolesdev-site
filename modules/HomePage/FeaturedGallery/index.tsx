@@ -1,9 +1,9 @@
 import FeaturedCta from "@/components/Featured/FeaturedCta";
 import SectionContainer from "@/components/SectionContainer";
+import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
+import {SectionHeaderContainer} from "@/components/SectionHeader/components";
 import Gallery from "@/modules/Gallery/Gallery";
 import fetchFiles from "@/utils/global/fetchFiles";
-import {SectionHeaderContainer} from "@/components/SectionHeader/components";
-import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
 
 /**
  * Gallery Requirements:

@@ -1,10 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import FeaturedCta from "@/components/Featured/FeaturedCta";
+import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
 import {SectionHeaderContainer} from "@/components/SectionHeader/components";
 import {SectionContent} from "@/utils/types/layout";
 import {StaticImport} from "next/dist/shared/lib/get-img-props";
+import Image from "next/image";
 import {
   SplitCardContent,
   SplitCardHeaderContent,
@@ -14,7 +15,6 @@ import {
   SplitCardWrapper,
 } from "./components";
 import {splitCardStyles as styles} from "./styles.module";
-import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
 
 export default function SplitCard({
   content,

@@ -1,12 +1,12 @@
 "use client";
 
-import styles from "./styles.module";
 import FeaturedCta from "@/components/Featured/FeaturedCta";
 import SectionContainer from "@/components/SectionContainer";
+import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
+import {SectionHeaderContainer} from "@/components/SectionHeader/components";
 import Projects from "@/modules/HomePage/FeaturedProjects/Projects";
 import {FeaturedProject} from "@/utils/types/projects";
-import {SectionHeaderContainer} from "@/components/SectionHeader/components";
-import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
+import styles from "./styles.module";
 
 const ProjectsContainer = SectionContainer;
 const ProjectsHeaderContainer = SectionHeaderContainer;
@@ -22,7 +22,11 @@ const content = {
   title: "Handpicked Favorites",
 };
 
-export default function FeaturedProjects({projects}: {projects: FeaturedProject[]}) {
+export default function FeaturedProjects({
+  projects,
+}: {
+  projects: FeaturedProject[];
+}) {
   return (
     <ProjectsContainer extraClasses={styles.container}>
       <ProjectsHeaderContainer>
@@ -35,5 +39,5 @@ export default function FeaturedProjects({projects}: {projects: FeaturedProject[
       </ProjectsHeaderContainer>
       <Projects projects={projects} />
     </ProjectsContainer>
-  )
+  );
 }

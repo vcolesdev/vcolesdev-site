@@ -3,7 +3,7 @@ import {
   SectionDescription,
   SectionHeaderContent,
   SectionHeaderWrapper,
-  SectionTitle
+  SectionTitle,
 } from "./components";
 
 export default function SectionHeader(props: SectionHeaderProps) {

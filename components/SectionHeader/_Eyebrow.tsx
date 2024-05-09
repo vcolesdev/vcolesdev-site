@@ -1,4 +1,3 @@
-import {SectionHeaderEyebrowProps} from "./api";
 import {
   SectionDescription,
   SectionEyebrow,
@@ -6,6 +5,7 @@ import {
   SectionHeaderWrapper,
   SectionTitle,
 } from "@/components/SectionHeader/components";
+import {SectionHeaderEyebrowProps} from "./api";
 
 export default function SectionHeaderEyebrow(props: SectionHeaderEyebrowProps) {
   return (
