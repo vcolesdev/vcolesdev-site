@@ -5,58 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Featured/api.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Featured/components/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Featured/styles.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/SectionContainer/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/SectionHeader/_Eyebrow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/SectionHeader/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/SectionHeader/components/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/SectionHeader/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/SectionHeader/styles.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Controls/Buttons/LinkButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Controls/Buttons/OutlineButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Controls/Buttons/OutlineLinkButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Controls/Buttons/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Controls/Buttons/components/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Controls/Buttons/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Controls/Buttons/styles.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Controls/button.api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/api.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/components/content.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/components/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Gallery/api.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ProjectsList/api.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ProjectsList/components/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ProjectsList/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/SplitCard/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/SplitCard/components/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/SplitCard/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Controls/FeaturedCta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Featured/FeaturedCta.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Section/_Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SectionContainer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Section/_Header.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Section/_HeaderContainer.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Controls/Btn/Button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Controls/Btn/styles.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/FeaturedProjectCard/Card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/FeaturedProjectCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/FeaturedProjectCard/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Featured/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Featured/components/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SectionContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SectionContainer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SectionHeader/_Eyebrow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SectionHeader/_Eyebrow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SectionHeader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SectionHeader/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Controls/Buttons/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/Buttons/components/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Controls/button.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/hooks/fetchers/useFetchFiles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/FeaturedProjectCard/components/content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/components/content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/FeaturedProjectCard/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/components/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedAbout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedAbout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedAbout/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/SplitCard/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Gallery/Gallery.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/ImageCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Gallery/ImageCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedGallery/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Gallery/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedImage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedImage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedPosts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedPosts/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/FeaturedProjects/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/FeaturedProjects/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/SectionIntro/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/SectionIntro/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Nav/NavProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Nav/NavProvider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/types/layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/types/layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/HomePage/SiteLogo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/SiteLogo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/SplitCard/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/SplitCard/components/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" afterDir="false" />
     </list>
@@ -90,7 +51,7 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/decoupling-pure-components",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
     "last_opened_file_path": "/Users/vcoles/Github/projects/vcolesdev-mysite/public",

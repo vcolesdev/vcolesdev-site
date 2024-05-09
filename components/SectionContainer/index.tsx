@@ -1,3 +1,5 @@
+"use client";
+
 import Container from "@/components/Layout/Container";
 import {SectionContainerProps} from "./api";
 

@@ -14,5 +14,5 @@ const content: SectionContent = {
 };
 
 export default function FeaturedAbout() {
-  return <SplitCard image={GithubPhoto} content={content} {...content} />;
+  return <SplitCard image={GithubPhoto} content={content} />;
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import {cardStyles as styles} from "@/modules/FeaturedProjectCard/styles.module";
 import useIconSettings from "@/utils/hooks/components/useIconSettings";
 import {ReactChildren} from "@/utils/types/layout";

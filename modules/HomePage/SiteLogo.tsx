@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "@/modules/Nav/styles.module";
 import Link from "next/link";
 

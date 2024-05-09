@@ -3,7 +3,7 @@ import SectionContainer from "@/components/SectionContainer";
 import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
 import {SectionHeaderContainer} from "@/components/SectionHeader/components";
 import Gallery from "@/modules/Gallery/Gallery";
-import fetchFiles from "@/utils/global/fetchFiles";
+import useFetchFiles from "@/utils/hooks/fetchers/useFetchFiles";
 
 /**
  * Gallery Requirements:
@@ -30,7 +30,7 @@ const GalleryHeader = SectionHeaderEyebrow;
 const GalleryCta = FeaturedCta;
 
 export default async function FeaturedGallery({dir}: {dir: string}) {
-  const images = fetchFiles(dir);
+  const images = useFetchFiles(dir);
   return (
     <GalleryContainer>
       <GalleryHeaderContainer>
@@ -39,7 +39,11 @@ export default async function FeaturedGallery({dir}: {dir: string}) {
           eyebrowText={content.eyebrowText}
           title={content.title}
         />
-        <GalleryCta hasIcon ctaText={content.ctaText} href={content.ctaLink} />
+        <GalleryCta
+          hasIcon
+          ctaText={content.ctaText}
+          href={content.ctaLink}
+        />
       </GalleryHeaderContainer>
       <Gallery images={images} />
     </GalleryContainer>

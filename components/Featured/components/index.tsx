@@ -1,3 +1,5 @@
+"use client";
+
 import {FeaturedCtaProps} from "@/components/Featured/api";
 import LinkButton from "@/modules/Controls/Buttons/LinkButton";
 import OutlineLinkButton from "@/modules/Controls/Buttons/OutlineLinkButton";
