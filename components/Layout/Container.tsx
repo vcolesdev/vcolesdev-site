@@ -1,6 +1,5 @@
 import {ContainerProps} from "@/utils/types/layout";
 import classNames from "classnames";
-import React from "react";
 import styles from "./styles.module";
 
 export default function Container({
@@ -8,24 +7,10 @@ export default function Container({
   extraClasses,
   noPadding,
 }: ContainerProps) {
-  const elementClasses = () => {
-    const classes = noPadding
-      ? styles.container.noPadding
-      : styles.container.styles;
-    return classNames(classes, extraClasses && extraClasses);
-  };
-  return <div className={elementClasses()}>{children}</div>;
-}
+  const classes = classNames(extraClasses, {
+    [styles.container.styles]: !noPadding,
+    [styles.container.noPadding]: noPadding,
+  });
 
-Container.Page = function PageContainer({
-  children,
-  ...props
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <Container extraClasses={styles.container.extraClasses} {...props}>
-      {children}
-    </Container>
-  );
-};
+  return <div className={classes}>{children}</div>;
+}

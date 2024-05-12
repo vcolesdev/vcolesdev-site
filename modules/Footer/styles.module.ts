@@ -11,7 +11,13 @@ export default {
     "md:justify-between",
     "lg:px-8",
   ]),
-  social: classNames(["flex", "space-x-6", "md:order-2"]),
+  social: classNames([
+    "flex",
+    "justify-center",
+    "items-center",
+    "sm:space-x-6",
+    "sm:order-2",
+  ]),
   copyright: classNames(["mt-8", "md:order-1", "md:mt-0"]),
   nav: {
     styles: classNames([

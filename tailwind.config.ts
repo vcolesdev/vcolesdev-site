@@ -20,7 +20,7 @@ const config: import('tailwindcss').Config = {
           bgColor: customColors.melon[800],
           textColor: customColors.rosy_brown[200],
           linkColor: customColors.melon[300],
-          focusRingColor: customColors.melon[600]
+          focusRingColor: customColors.melon[500]
         },
         dark: {
           bgColor: customColors.charcoal[200],

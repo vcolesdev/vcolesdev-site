@@ -26,10 +26,10 @@ export default {
     "rounded-[40px]",
     "border-8",
     "border-transparent",
-    "active:border-8",
-    "active:border-melon-500",
+    "focus:border-8",
+    "focus:border-melon-500",
   ]),
-  imageMedia: classNames(["h-auto", "max-w-full", "rounded-[32px]"]),
+  imageMedia: classNames(["h-auto", "max-w-full", "overflow-hidden"]),
   content: classNames([
     "container",
     "mx-auto",

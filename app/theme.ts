@@ -2,6 +2,9 @@ import colors from "tailwindcss/colors";
 
 /* Colors */
 
+const bgGradientStart = "#9795f0";
+const bgGradientEnd = "#fbc8d4";
+
 export const defaultColors = {
   transparent: "transparent",
   current: "currentColor",
@@ -31,6 +34,8 @@ export const defaultColors = {
 };
 
 export const customColors = {
+  bgGradientStart: bgGradientStart,
+  bgGradientEnd: bgGradientEnd,
   melon: {
     DEFAULT: "#f3b3a6",
     100: "#48140a",
@@ -98,7 +103,7 @@ export const customColors = {
 export const customFonts = {
   anek: ['"Anek Tamil"', "sans-serif"],
   kanit: ['"Kanit"', "sans-serif"],
-  sans: ['"Jost"', "system-ui", "sans-serif"],
+  sans: ['"Reddit Sans"', "system-ui", "sans-serif"],
   serif: ['"Merriweather"', "Georgia", "serif"],
   mono: ['"Fira Code"', "monospace"],
   cursive: ['"Cedarville Cursive"', "cursive"],

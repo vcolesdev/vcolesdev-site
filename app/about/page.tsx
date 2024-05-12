@@ -1,10 +1,18 @@
-import PageContainer from "@/components/Page/_Container";
-import PageTitle from "@/components/Page/_Title";
+import PageContainer from "@/components/Page/PageContainer";
+import PageTitle from "@/components/Page/PageTitle";
+import Footer from "@/modules/Footer";
+import Header from "@/modules/Header";
 
 export default function Page() {
   return (
-    <PageContainer>
-      <PageTitle description="This is the about page." title="About Me" />
-    </PageContainer>
+    <>
+      <Header />
+      <main className="pt-24">
+        <PageContainer>
+          <PageTitle description="This is the about page." title="About Me" />
+        </PageContainer>
+      </main>
+      <Footer />
+    </>
   );
 }

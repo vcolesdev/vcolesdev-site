@@ -9,7 +9,14 @@ const styles = {
       "items-center",
       "justify-between",
     ]),
-    container: classNames(["backdrop-blur-lg", "fixed", "w-full", "z-50"]),
+    container: classNames([
+      "backdrop-blur-lg",
+      "fixed",
+      "px-8",
+      "lg:px-0",
+      "w-full",
+      "z-50",
+    ]),
     content: classNames(["hidden", "lg:flex", "lg:gap-x-12"]),
     link: classNames([
       "block",

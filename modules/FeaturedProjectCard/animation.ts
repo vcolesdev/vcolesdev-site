@@ -7,7 +7,7 @@ export const transitionAnimation = {
 
 export const hoverAnimation = {
   boxShadow:
-    "0 10px 15px -3px rgb(215 60 29 / 0.1), 0 4px 6px -4px rgb(215 60 29 / 0.1)",
+    "0 10px 40px -3px rgb(215 60 29 / 0.15), 0 4px 6px -4px rgb(215 60 29 / 0.1)",
   scale: 1.05,
 };
 

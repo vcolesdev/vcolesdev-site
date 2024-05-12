@@ -39,11 +39,7 @@ export default async function FeaturedGallery({dir}: {dir: string}) {
           eyebrowText={content.eyebrowText}
           title={content.title}
         />
-        <GalleryCta
-          hasIcon
-          ctaText={content.ctaText}
-          href={content.ctaLink}
-        />
+        <GalleryCta hasIcon ctaText={content.ctaText} href={content.ctaLink} />
       </GalleryHeaderContainer>
       <Gallery images={images} />
     </GalleryContainer>

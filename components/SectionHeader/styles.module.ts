@@ -1,24 +1,30 @@
 import classNames from "classnames";
 
 export const styles = {
-  header: classNames(["mx-auto", "max-w-7xl", "px-6", "lg:px-8"]),
+  header: classNames([
+    "mx-auto",
+    "max-w-full",
+    "px-6",
+    "lg:px-8",
+    "lg:max-w-7xl",
+  ]),
   content: classNames(["mx-auto", "max-w-2xl", "lg:mx-0"]),
   eyebrow: classNames([
     "inline-block",
     "ms-0.5",
     "mb-2",
-    "text-sm",
+    "text-[0.975rem]",
     "uppercase",
-    "tracking-wide",
+    "tracking-loose",
     "font-bold",
     "leading-7",
     "text-rosy_brown-300",
   ]),
   description: {
     styles: classNames([
+      "mb-6",
       "mt-6",
       "tracking-tight",
-      "leading-8",
       "text-rosy_brown-200/60",
     ]),
     default: classNames([
@@ -28,10 +34,12 @@ export const styles = {
       "text-rosy_brown-200/60",
     ]),
     large: classNames([
-      "text-2xl",
+      "text-xl",
+      "leading-8",
       "tracking-tight",
-      "leading-relaxed",
       "text-rosy_brown-200/80",
+      "md:text-2xl",
+      "md:leading-relaxed",
     ]),
   },
   title: classNames([

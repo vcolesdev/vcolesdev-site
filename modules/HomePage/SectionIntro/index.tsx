@@ -32,11 +32,11 @@ function IntroFeaturedImage({imgSrc}: {imgSrc: string}) {
       <div className={styles.image.content}>
         <IntroImage
           priority
-          src={imgSrc}
           alt="App screenshot"
-          width={2432}
-          height={1442}
           className={styles.image.styles}
+          height={1442}
+          src={imgSrc}
+          width={2432}
         />
       </div>
     </div>

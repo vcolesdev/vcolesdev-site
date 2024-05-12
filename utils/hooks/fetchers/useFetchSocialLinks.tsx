@@ -1,36 +1,38 @@
-import {
-  IconBrandGithubFilled,
-  IconBrandLinkedin,
-  IconBrandMastodon,
-  IconMessage2Share,
-} from "@tabler/icons-react";
+"use client";
 
-const socialLinks = [
-  {
-    name: "Github",
-    href: "/",
-    icon: (): React.ReactNode => <IconBrandGithubFilled stroke={2} />,
-  },
-  {
-    name: "LinkedIn",
-    href: "/",
-    icon: (): React.ReactNode => <IconBrandLinkedin stroke={2} />,
-  },
-  {
-    name: "Mastodon",
-    href: "/",
-    icon: (): React.ReactNode => <IconBrandMastodon stroke={2} />,
-  },
-  {
-    name: "Message",
-    href: "/",
-    icon: (): React.ReactNode => <IconMessage2Share stroke={2} />,
-  },
-];
+import {
+  Github,
+  LinkedIn,
+  Mastodon,
+  Message2Share,
+} from "@/components/SocialIcon/SocialIcons";
+import {ReactNode} from "react";
 
 /**
  * useSocialLinks hook
  * @description Returns an array of objects containing the href, name, and icon for personal social medial links.
  */
-const useFetchSocialLinks = () => socialLinks;
-export default useFetchSocialLinks;
+export default function useFetchSocialLinks() {
+  return [
+    {
+      name: "Github",
+      href: "/",
+      icon: (): ReactNode => <Github />,
+    },
+    {
+      name: "LinkedIn",
+      href: "/",
+      icon: (): ReactNode => <LinkedIn />,
+    },
+    {
+      name: "Mastodon",
+      href: "/",
+      icon: (): ReactNode => <Mastodon />,
+    },
+    {
+      name: "Message",
+      href: "/",
+      icon: (): ReactNode => <Message2Share />,
+    },
+  ];
+}

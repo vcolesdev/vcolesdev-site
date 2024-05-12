@@ -6,7 +6,7 @@ import {IconCaretRight} from "@tabler/icons-react";
 import {motion} from "framer-motion";
 
 export function ButtonWrapper(props: {
-  children: ReactChildren,
+  children: ReactChildren;
   styles: string;
   groupId?: string;
   onClick?: () => void;

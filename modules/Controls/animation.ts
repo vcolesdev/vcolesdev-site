@@ -15,17 +15,10 @@ export const iconVariants = {
 };
 
 export const btnVariants = {
-  initial: {
-    scale: 1,
-  },
+  initial: {scale: 1},
   animate: {
-    scale: 1.03,
-    transition: {
-      duration: 0.1,
-      type: "spring",
-    },
+    //scale: 1.03,
+    transition: {duration: 0.1, type: "spring"},
   },
-  tap: {
-    scale: 1.03,
-  },
+  tap: {scale: 1.03},
 };

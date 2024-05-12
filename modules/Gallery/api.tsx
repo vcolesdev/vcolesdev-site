@@ -2,6 +2,13 @@ import useInViewAnimateFeaturedCards from "@/utils/hooks/animations/useInViewAni
 import {MouseEvent, useEffect} from "react";
 import ImageCard from "./ImageCard";
 
+export interface ImageCardProps {
+  id: string;
+  imgSrc: string;
+  height?: number;
+  width?: number;
+}
+
 export function useAnimateCard(classname?: string | ".motion-img-card") {
   const {animate, isInView, keyframes, options, ref, scope} =
     useInViewAnimateFeaturedCards();

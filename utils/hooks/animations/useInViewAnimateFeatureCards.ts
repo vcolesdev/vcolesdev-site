@@ -9,9 +9,7 @@ export default function useInViewAnimateFeaturedCards() {
   // We can make this dynamic by passing these through props
   const staggerAnimation = {
     duration: 0.1,
-    options: {
-      startDelay: 0.15,
-    },
+    options: {startDelay: 0.15},
   };
 
   const staggerMenuItems = stagger(
@@ -21,14 +19,8 @@ export default function useInViewAnimateFeaturedCards() {
 
   // We can make this dynamic by passing these through props
   const keyframes = {
-    to: {
-      opacity: 0.9,
-      y: 0,
-    },
-    from: {
-      opacity: 0,
-      y: 100,
-    },
+    to: {opacity: 0.9, y: 0},
+    from: {opacity: 0, y: 100},
   };
 
   const options = {
