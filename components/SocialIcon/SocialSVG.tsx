@@ -16,11 +16,9 @@ export interface SVGProps {
 export const iconClasses = tw(["icon", "icon-tabler", "icons-tabler-outline"]);
 
 export function useSocialIconSVG() {
+  let drawVariants = useDrawVariants();
   const [iconClassStr, setIconClassStr] = useState<string>(defaultIconStyle);
   const [scope, animate] = useAnimate();
-
-  const onHoverStart = () => useAnimateDrawPaths(scope);
-  let drawVariants = useDrawVariants();
 
   return {
     animate: animate,
@@ -28,7 +26,7 @@ export function useSocialIconSVG() {
     iconClassStr: iconClassStr,
     scope: scope,
     setIconClassStr: setIconClassStr,
-    onHoverStart: onHoverStart,
+    onHoverStart: useAnimateDrawPaths(scope),
   };
 }
 

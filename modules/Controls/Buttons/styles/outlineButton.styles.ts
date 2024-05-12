@@ -39,6 +39,7 @@ const text = [
   "text-salmon_pink-400",
   "tracking-tight",
   "text-[17px]",
+  "hover:group/outlined-text-white",
 ];
 
 const iconLayout = ["z-[10]", "relative"];
