@@ -24,7 +24,8 @@ export default function SVG({
     "icons-tabler-outline",
   ]);
 
-  const onHoverStart = () => useAnimateDrawPaths(scope);
+  const useOnHoverStart = () => useAnimateDrawPaths(scope);
+  const onHoverStart = useOnHoverStart;
 
   useEffect(() => {}, [scope, animate]);
 

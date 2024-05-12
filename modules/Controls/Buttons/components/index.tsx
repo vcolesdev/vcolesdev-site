@@ -22,6 +22,7 @@ export function ButtonWrapper(props: {
       transition={btn.transition || {duration: 0.15}}
       variants={btnVariants}
       whileHover="animate"
+      whileTap="tap"
     >
       {btn.children}
     </motion.button>
