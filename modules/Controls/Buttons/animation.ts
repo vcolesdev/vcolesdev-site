@@ -25,5 +25,6 @@ export const btnVariants = {
   },
   tap: {
     top: "2px",
-    transition: {duration: 0.03, type: "spring"}},
+    transition: {duration: 0.03, type: "spring"},
+  },
 };

@@ -1,33 +1,19 @@
 "use client";
 
-import {
-  activeAnimation,
-  hoverAnimation,
-  transitionAnimation,
-} from "@/modules/FeaturedProjectCard/animation";
 import {cardStyles as styles} from "@/modules/FeaturedProjectCard/styles.module";
 import {ReactChildren} from "@/utils/types/layout";
-import {motion} from "framer-motion";
 import Link from "next/link";
 
-export function ProjectCardContainer({
-  children,
-  ...card
-}: {
-  children: ReactChildren;
-}) {
-  return (
-    <motion.article
-      className={styles.project.styles}
-      transition={transitionAnimation}
-      whileHover={hoverAnimation}
-      whileFocus={activeAnimation}
-      whileTap={activeAnimation}
-      {...card}
-    >
-      {children}
-    </motion.article>
-  );
+export function MoreText({children}: {children: ReactChildren}) {
+  return <span className={styles.links.span}>{children}</span>;
+}
+
+export function ProjectCardTitle({title}: {title: string}) {
+  return <h3 className={styles.project.title}>{title}</h3>;
+}
+
+export function ProjectCardDescription(props: {description: string}) {
+  return <p className={styles.project.description}>{props.description}</p>;
 }
 
 export function ProjectCardContent({children}: {children: ReactChildren}) {

@@ -1,15 +1,17 @@
 import useFetchSocialLinks from "@/utils/hooks/fetchers/useFetchSocialLinks";
 import styles from "./styles.module";
 
-/**
- * SocialLinks module
- */
 export default function SocialLinks() {
   const social = useFetchSocialLinks();
 
   const renderLinks = () => {
     return social.map((item) => (
-      <a key={item.name} href={item.href} className={styles.link}>
+      <a
+        className={styles.link}
+        key={item.name}
+        href={item.href}
+        target="_blank"
+      >
         <span className="sr-only">{item.name}</span>
         <item.icon aria-hidden="true" />
       </a>

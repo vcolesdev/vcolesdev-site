@@ -10,7 +10,7 @@ export default function useAnimateDrawPaths(
     animate(
       paths[i],
       {pathLength: [0, 1]},
-      {duration: 0.5, type: "spring", bounce: 0}
+      {duration: 1.2, type: "spring", bounce: 0}
     );
   }
 }

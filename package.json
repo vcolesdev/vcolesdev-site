@@ -10,6 +10,7 @@
     "makeover": "npx prettier --write ./app ./components ./modules ./utils"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "next": "14.2.2",
     "react": "^18",
     "react-dom": "^18"

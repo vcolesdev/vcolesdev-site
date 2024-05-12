@@ -16,17 +16,17 @@ export default function useFetchSocialLinks() {
   return [
     {
       name: "Github",
-      href: "/",
+      href: "https://github.com/vcolesdev",
       icon: (): ReactNode => <Github />,
     },
     {
       name: "LinkedIn",
-      href: "/",
+      href: "https://www.linkedin.com/in/vanessa-coles/",
       icon: (): ReactNode => <LinkedIn />,
     },
     {
       name: "Mastodon",
-      href: "/",
+      href: "https://mastodon.social/@vcolesdev",
       icon: (): ReactNode => <Mastodon />,
     },
     {

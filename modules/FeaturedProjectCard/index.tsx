@@ -2,17 +2,15 @@
 
 import FeaturedProjectCategoryIcon from "@/components/icons/FeaturedProjectIcon";
 import {
-  ProjectCardContainer,
   ProjectCardContent,
-  ProjectCardFooter,
-  ProjectCardProvider,
-} from "@/modules/FeaturedProjectCard/components";
-import {
   ProjectCardDescription,
-  ProjectCardLink,
+  ProjectCardFooter,
   ProjectCardTitle,
-} from "@/modules/FeaturedProjectCard/components/content";
+} from "@/modules/FeaturedProjectCard/components";
+import ProjectCardContainer from "@/modules/FeaturedProjectCard/components/ProjectCardContainer";
+import ProjectCardLink from "@/modules/FeaturedProjectCard/components/ProjectCardLink";
 import {FeaturedProjectCardProps} from "@/utils/types/projects";
+import {ProjectCardProvider} from "./components";
 
 export default function FeaturedProjectCard(feature: FeaturedProjectCardProps) {
   return (

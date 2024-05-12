@@ -1,33 +1,43 @@
 "use client";
 
+import {tw} from "@/app/api";
 import useAnimateDrawPaths from "@/utils/hooks/animations/useAnimateDrawPaths";
 import useDrawVariants from "@/utils/hooks/animations/useDrawVariants";
-import classNames from "classnames";
 import {motion, useAnimate} from "framer-motion";
-import {ReactNode, useEffect} from "react";
+import {ReactNode, useEffect, useState} from "react";
 
-interface SVGProps {
+const defaultIconStyle = "icon-tabler-brand-github";
+
+export interface SVGProps {
   children: ReactNode;
   iconStyle: string;
 }
 
-export default function SVG({
-  children,
-  iconStyle = "icon-tabler-brand-github",
-}: SVGProps) {
+export const iconClasses = tw(["icon", "icon-tabler", "icons-tabler-outline"]);
+
+export function useSocialIconSVG() {
+  const [iconClassStr, setIconClassStr] = useState<string>(defaultIconStyle);
   const [scope, animate] = useAnimate();
+
+  const onHoverStart = () => useAnimateDrawPaths(scope);
   let drawVariants = useDrawVariants();
 
-  const iconClasses = classNames([
-    "icon",
-    "icon-tabler",
-    "icons-tabler-outline",
-  ]);
+  return {
+    animate: animate,
+    drawVariants: drawVariants,
+    iconClassStr: iconClassStr,
+    scope: scope,
+    setIconClassStr: setIconClassStr,
+    onHoverStart: onHoverStart,
+  };
+}
 
-  const useOnHoverStart = () => useAnimateDrawPaths(scope);
-  const onHoverStart = useOnHoverStart;
+export default function SVG({children, iconStyle}: SVGProps) {
+  const {animate, scope, setIconClassStr, ...icon} = useSocialIconSVG();
 
-  useEffect(() => {}, [scope, animate]);
+  useEffect(() => {
+    setIconClassStr(iconStyle);
+  }, [scope, animate, iconStyle]);
 
   return (
     <motion.svg
@@ -36,7 +46,7 @@ export default function SVG({
       fill="none"
       height={24}
       initial="rest"
-      onHoverStart={onHoverStart}
+      onHoverStart={icon.onHoverStart}
       ref={scope}
       stroke="currentColor"
       strokeWidth={2}
@@ -50,7 +60,7 @@ export default function SVG({
         d="M0 0h24v24H0z"
         fill="none"
         stroke="none"
-        variants={drawVariants}
+        variants={icon.drawVariants}
       />
       {children}
     </motion.svg>

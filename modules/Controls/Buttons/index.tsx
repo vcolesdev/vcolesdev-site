@@ -4,11 +4,9 @@ import {
   DefaultButtonProps,
   useButtonStyles,
 } from "@/modules/Controls/Buttons/api";
-import {
-  ButtonContent,
-  ButtonIcon,
-  ButtonWrapper,
-} from "@/modules/Controls/Buttons/components";
+import ButtonContent from "@/modules/Controls/Buttons/components/ButtonContent";
+import ButtonIcon from "@/modules/Controls/Buttons/components/ButtonIcon";
+import ButtonWrapper from "@/modules/Controls/Buttons/components/ButtonWrapper";
 import {LayoutGroup} from "framer-motion";
 
 export default function Button({...props}: DefaultButtonProps) {

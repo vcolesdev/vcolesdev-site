@@ -1,13 +1,6 @@
+import ImageCard from "@/modules/ImageCard";
 import useInViewAnimateFeaturedCards from "@/utils/hooks/animations/useInViewAnimateFeatureCards";
-import {MouseEvent, useEffect} from "react";
-import ImageCard from "./ImageCard";
-
-export interface ImageCardProps {
-  id: string;
-  imgSrc: string;
-  height?: number;
-  width?: number;
-}
+import {useEffect} from "react";
 
 export function useAnimateCard(classname?: string | ".motion-img-card") {
   const {animate, isInView, keyframes, options, ref, scope} =
@@ -39,21 +32,4 @@ export function useGalleryImages({images}: {images: string[]}) {
     />
   ));
   return Images;
-}
-
-export function useImageCard() {
-  const handleClick = (event: MouseEvent<HTMLDivElement>) => {
-    console.log("Clicked: ", event.currentTarget);
-  };
-
-  const animations = {
-    initial: {opacity: 0.9},
-    whileHover: {opacity: 1},
-    whileTap: {scale: 0.98},
-  };
-
-  return {
-    handleClick: handleClick,
-    animations: animations,
-  };
 }

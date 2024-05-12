@@ -1,43 +1,59 @@
 import {ReactChildren} from "@/utils/types/layout";
 import classNames from "classnames";
 
-interface PageTitleProps {
-  title: string;
-  description?: string;
-}
-
-const styles = {
+const styles: PageStyles = {
   title: classNames([
     "mb-8",
     "font-kanit",
     "text-6xl",
-    "font-medium",
+    "font-semibold",
     "text-rosy_brown-200",
   ]),
   description: classNames(["text-xl", "font-medium", "text-rosy_brown-300"]),
 };
 
-const PageTitleProvider = ({
-  children,
-  title,
-}: {
+interface PageTitleProviderProps {
   children: ReactChildren;
   title: string;
-}) => <div data-page-title={title}>{children}</div>;
+}
 
-const PageDescription = ({description}: {description: string}) => (
-  <p className={styles.description}>{description}</p>
-);
+interface PageHeadingProps {
+  title: string;
+}
 
-const PageHeading = ({title}: {title: string}) => (
-  <h2 className={styles.title}>{title}</h2>
-);
+interface PageTitleProps {
+  title: string;
+  description?: string;
+}
 
-const PageTitle = ({title, description}: PageTitleProps) => (
-  <PageTitleProvider title={title}>
-    <PageHeading title={title} />
-    {description && <PageDescription description={description} />}
-  </PageTitleProvider>
-);
+interface PageDescriptionProps {
+  description: string;
+}
+
+interface PageStyles {
+  title: string;
+  description: string;
+}
+
+function PageTitleProvider({children, title}: PageTitleProviderProps) {
+  return <div data-page-title={title}>{children}</div>;
+}
+
+function PageDescription({description}: PageDescriptionProps) {
+  return <p className={styles.description}>{description}</p>;
+}
+
+function PageHeading({title}: PageHeadingProps) {
+  return <h2 className={styles.title}>{title}</h2>;
+}
+
+function PageTitle({title, description}: PageTitleProps) {
+  return (
+    <PageTitleProvider title={title}>
+      <PageHeading title={title} />
+      {description && <PageDescription description={description} />}
+    </PageTitleProvider>
+  );
+}
 
 export default PageTitle;
