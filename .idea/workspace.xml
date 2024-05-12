@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SocialIcon/SocialSVG.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SocialIcon/SocialSVG.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Controls/Buttons/animation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/Buttons/animation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Controls/Buttons/styles/button.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/Buttons/styles/button.styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Controls/Buttons/styles/outlineButton.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/Buttons/styles/outlineButton.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/hooks/animations/useAnimateDrawPaths.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/hooks/animations/useAnimateDrawPaths.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" afterDir="false" />
     </list>

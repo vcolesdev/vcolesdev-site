@@ -6,25 +6,22 @@ export const iconVariants = {
   animate: {
     transform: "translateX(4px)",
     paddingRight: "4px",
-    transition: {
-      delay: 0.1,
-      duration: 0.3,
-      type: "spring",
-    },
   },
 };
 
 export const btnVariants = {
   initial: {
+    boxShadow: "none",
     scale: 1,
     top: 0,
   },
   animate: {
-    //scale: 1.03,
-    transition: {duration: 0.1, type: "spring"},
+    boxShadow: "0 20px 25px -5px rgba(215, 60, 29, 0.3), 0 8px 10px -6px rgba(215, 60, 29, 0.3)",
+    top: "-1px",
   },
   tap: {
-    top: "2px",
-    transition: {duration: 0.03, type: "spring"},
+    boxShadow: "none",
+    top: "1px",
+    scale: 0.97,
   },
 };

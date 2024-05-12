@@ -8,7 +8,8 @@ const layout = [
   "inline-flex",
   "items-center",
   "gap-1.5",
-  "px-4",
+  "ps-4",
+  "pe-4",
   "py-4",
 ];
 
@@ -18,8 +19,7 @@ const element = [
   "bg-gradient-to-t",
   "from-melon-400",
   "to-melon-300/60",
-  "shadow-sm",
-  "shadow-melon-300/20",
+  "shadow-none",
   "text-center",
 ];
 
@@ -33,7 +33,6 @@ const transition = [
 const hover = [
   "hover:bg-salmon_pink-400",
   "hover:border-salmon_pink-400",
-  "focus:shadow-none",
 ];
 
 const focus = [
@@ -48,9 +47,11 @@ const text = [
   "w-full",
   "h-full",
   "inline-block",
+  "relative",
+  "left-[3px]",
   "z-[10]",
-  "font-sans",
-  "font-semibold",
+  "font-kanit",
+  "font-medium",
   "text-white",
   "text-[17px]",
 ];
