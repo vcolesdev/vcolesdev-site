@@ -1,8 +1,4 @@
-/**
- * useGetTestPosts hook
- * @description This hook is used to get test posts for the posts (writings) page.
- */
-function useFetchTestPosts() {
+export default function useFetchTestPosts() {
   return [
     {
       id: 1,
@@ -102,5 +98,3 @@ function useFetchTestPosts() {
     },
   ];
 }
-
-export default useFetchTestPosts;

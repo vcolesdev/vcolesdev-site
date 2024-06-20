@@ -1,9 +1,7 @@
 import featuredProjects from "@/assets/data/featured-projects.json";
-import PageContainer from "@/components/Page/PageContent";
 import PageTitle from "@/components/Page/PageTitle";
-import Footer from "@/modules/Footer";
-import Header from "@/modules/Header";
 import {FeaturedProject} from "@/utils/types/projects";
+import PageWrapper from "@/components/Page/PageWrapper";
 import Project from "./Project";
 
 export default function Page({params}: {params: {slug: string}}) {
@@ -19,21 +17,9 @@ export default function Page({params}: {params: {slug: string}}) {
   }
 
   return (
-    <>
-      <Header
-        id="header"
-        theme="light"
-        toggleLightTheme={() => {}}
-        toggleDarkTheme={() => {}}
-        toggleSystemTheme={() => {}}
-      />
-      <main className="pt-24">
-        <PageContainer>
-          <PageTitle title="Projects" />
-          <Project {...currentProject} />
-        </PageContainer>
-      </main>
-      <Footer />
-    </>
+    <PageWrapper headerId="siteHeaderProject">
+      <PageTitle title="Projects" />
+      <Project {...currentProject} />
+    </PageWrapper>
   );
 }
