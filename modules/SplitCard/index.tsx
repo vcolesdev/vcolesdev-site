@@ -19,9 +19,11 @@ import {splitCardStyles as styles} from "./styles.module";
 export default function SplitCard({
   content,
   image,
+  hasCta,
 }: {
   content: SectionContent;
   image: string | StaticImport;
+  hasCta?: boolean;
 }) {
   return (
     <SplitCardWrapper>
@@ -43,12 +45,14 @@ export default function SplitCard({
                   textSize="lg"
                   title={content.title}
                 />
-                <FeaturedCta
-                  hasIcon
-                  isOutline
-                  ctaText={content.ctaText}
-                  href={content.ctaLink}
-                />
+                {hasCta && (
+                  <FeaturedCta
+                    hasIcon
+                    isOutline
+                    ctaText={content.ctaText}
+                    href={content.ctaLink}
+                  />
+                )}
               </SplitCardHeaderContent>
             </SplitCardHeaderWrapper>
           </SectionHeaderContainer>

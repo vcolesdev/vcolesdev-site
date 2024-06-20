@@ -2,7 +2,7 @@ import Container from "@/components/Layout/Container";
 import styles from "@/components/Layout/styles.module";
 import React from "react";
 
-export default function PageContainer({
+export default function PageContent({
   children,
   ...props
 }: {

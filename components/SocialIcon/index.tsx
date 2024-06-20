@@ -1,5 +1,5 @@
-import useDrawVariants from "@/utils/hooks/animations/useDrawVariants";
-import usePathComponents from "@/utils/hooks/components/usePathComponents";
+import useDrawVariants from "@/hooks/animations/useDrawVariants";
+import usePathComponents from "@/hooks/components/usePathComponents";
 import {motion} from "framer-motion";
 import SVG from "./SocialSVG";
 

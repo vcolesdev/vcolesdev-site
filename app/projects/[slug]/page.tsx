@@ -1,5 +1,5 @@
 import featuredProjects from "@/assets/data/featured-projects.json";
-import PageContainer from "@/components/Page/PageContainer";
+import PageContainer from "@/components/Page/PageContent";
 import PageTitle from "@/components/Page/PageTitle";
 import Footer from "@/modules/Footer";
 import Header from "@/modules/Header";
@@ -20,7 +20,13 @@ export default function Page({params}: {params: {slug: string}}) {
 
   return (
     <>
-      <Header />
+      <Header
+        id="header"
+        theme="light"
+        toggleLightTheme={() => {}}
+        toggleDarkTheme={() => {}}
+        toggleSystemTheme={() => {}}
+      />
       <main className="pt-24">
         <PageContainer>
           <PageTitle title="Projects" />

@@ -1,6 +1,5 @@
+import Content from "@/app/content";
 import LayoutFadeInUp from "@/components/Layout/LayoutFadeInUp";
-import Footer from "@/modules/Footer";
-import Header from "@/modules/Header";
 import Home from "@/modules/HomePage/Home";
 import type {Metadata} from "next";
 
@@ -12,11 +11,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <LayoutFadeInUp>
-      <Header />
-      <main className="pt-24">
+      <Content>
         <Home />
-      </main>
-      <Footer />
+      </Content>
     </LayoutFadeInUp>
   );
 }

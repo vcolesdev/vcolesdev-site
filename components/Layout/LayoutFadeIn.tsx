@@ -4,7 +4,7 @@ import AnimatedLayout from "@/components/Layout/AnimatedLayout";
 import {ReactChildren} from "@/utils/types/layout";
 import {motion} from "framer-motion";
 
-export const visible = {opacity: 1, transition: {duration: 1}};
+export const visible = {opacity: 1, transition: {duration: 0.75}};
 
 export const itemVariants = {
   hidden: {opacity: 0},

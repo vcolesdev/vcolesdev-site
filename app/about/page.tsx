@@ -1,18 +1,13 @@
-import PageContainer from "@/components/Page/PageContainer";
+import LayoutFadeIn from "@/components/Layout/LayoutFadeIn";
 import PageTitle from "@/components/Page/PageTitle";
-import Footer from "@/modules/Footer";
-import Header from "@/modules/Header";
+import PageWrapper from "@/components/Page/PageWrapper";
 
 export default function Page() {
   return (
-    <>
-      <Header />
-      <main className="pt-24">
-        <PageContainer>
-          <PageTitle description="This is the about page." title="About Me" />
-        </PageContainer>
-      </main>
-      <Footer />
-    </>
+    <LayoutFadeIn>
+      <PageWrapper headerId="siteHeaderAbout">
+        <PageTitle description="This is the about page." title="About Me" />
+      </PageWrapper>
+    </LayoutFadeIn>
   );
 }

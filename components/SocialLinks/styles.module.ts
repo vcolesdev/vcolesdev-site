@@ -19,6 +19,7 @@ export default {
     "active:translate-y-0.5",
     "active:bg-melon-500",
     "active:text-rosy_brown-200",
+    "dark:shadow-charcoal-200",
   ]),
   tooltip: {
     styles: classNames(["p-4", "bg-white", "rounded-lg", "shadow-lg"]),

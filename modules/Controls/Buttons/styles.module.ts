@@ -1,4 +1,4 @@
-import button from "./styles/button.styles";
-import outlineButton from "./styles/outlineButton.styles";
+import * as button from "./styles/button.styles";
+import * as outlineButton from "./styles/outlineButton.styles";
 
 export {button, outlineButton};

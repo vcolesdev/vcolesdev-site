@@ -1,21 +1,18 @@
+"use client";
+
 import featuredProjects from "@/assets/data/featured-projects.json";
-import PageContainer from "@/components/Page/PageContainer";
+import LayoutFadeIn from "@/components/Layout/LayoutFadeIn";
 import PageTitle from "@/components/Page/PageTitle";
-import Footer from "@/modules/Footer";
-import Header from "@/modules/Header";
+import PageWrapper from "@/components/Page/PageWrapper";
 import Projects from "./Projects";
 
 export default function Page() {
   return (
-    <>
-      <Header />
-      <main className="pt-24">
-        <PageContainer>
-          <PageTitle title="Projects" />
-          <Projects projects={featuredProjects} />
-        </PageContainer>
-      </main>
-      <Footer />
-    </>
+    <LayoutFadeIn>
+      <PageWrapper headerId="siteHeaderProjects">
+        <PageTitle title="Projects" />
+        <Projects projects={featuredProjects} />
+      </PageWrapper>
+    </LayoutFadeIn>
   );
 }

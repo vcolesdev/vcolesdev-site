@@ -10,6 +10,7 @@ export default {
     "md:items-center",
     "md:justify-between",
     "lg:px-8",
+    "xl:px-0",
   ]),
   social: classNames([
     "flex",

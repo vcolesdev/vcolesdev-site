@@ -1,6 +1,6 @@
 "use client";
 
-import useOnHoverImage from "@/utils/hooks/animations/useOnHoverImage";
+import useOnHoverImage from "@/hooks/animations/useOnHoverImage";
 import {useAnimate} from "framer-motion";
 import {MouseEvent} from "react";
 

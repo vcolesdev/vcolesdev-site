@@ -18,6 +18,7 @@ export default {
       "text-xl",
       "leading-8",
       "text-rosy_brown-200/70",
+      "dark:text-melon-700/70",
     ]),
     content: classNames(["mx-auto", "max-w-2xl", "text-center"]),
   },

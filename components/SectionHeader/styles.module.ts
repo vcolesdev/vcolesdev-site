@@ -19,6 +19,7 @@ export const styles = {
     "font-bold",
     "leading-7",
     "text-rosy_brown-300",
+    "dark:text-melon-600",
   ]),
   description: {
     styles: classNames([
@@ -26,6 +27,7 @@ export const styles = {
       "mt-6",
       "tracking-tight",
       "text-rosy_brown-200/60",
+      "dark:text-rosy_brown-800/70",
     ]),
     default: classNames([
       "text-xl",

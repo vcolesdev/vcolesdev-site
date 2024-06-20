@@ -1,4 +1,4 @@
-import useScaleImage from "@/utils/hooks/animations/useScaleImage";
+import useScaleImage from "@/hooks/animations/useScaleImage";
 import {AnimationScope} from "framer-motion";
 import {useEffect, useState} from "react";
 

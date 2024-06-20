@@ -8,8 +8,14 @@ const styles: PageStyles = {
     "text-6xl",
     "font-semibold",
     "text-rosy_brown-200",
+    "dark:text-melon-900",
   ]),
-  description: classNames(["text-xl", "font-medium", "text-rosy_brown-300"]),
+  description: classNames([
+    "text-xl",
+    "font-medium",
+    "text-rosy_brown-300",
+    "dark:text-melon-700/70",
+  ]),
 };
 
 interface PageTitleProviderProps {

@@ -1,4 +1,4 @@
-import useFetchSocialLinks from "@/utils/hooks/fetchers/useFetchSocialLinks";
+import useFetchSocialLinks from "@/hooks/fetchers/useFetchSocialLinks";
 import styles from "./styles.module";
 
 export default function SocialLinks() {

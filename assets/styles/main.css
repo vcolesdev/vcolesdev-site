@@ -10,6 +10,7 @@
 @tailwind utilities;
 
 :root {
+  /* Fonts */
   --font-reddit-sans: "Reddit Sans", sans-serif;
   --font-jost: "Jost", sans-serif;
   --font-kanit: "Kanit", sans-serif;
@@ -29,7 +30,10 @@ body {
     text-light-textColor
     text-[1.125rem]
     font-sans
-    antialiased;
+    antialiased
+
+    dark:bg-dark-bgColor
+    dark:text-dark-textColor;
   /* @apply bg-no-repeat bg-fixed bg-left-top bg-gradient-to-b from-melon-500 to-melon-900 text-rosy_brown-200; */
 }
 
@@ -37,7 +41,10 @@ body {
 *:focus,
 *::before:focus,
 *::after:focus {
-  @apply focus:outline-none focus:ring-4 focus:ring-light-focusRingColor;
+  @apply
+    focus:outline-none
+    focus:ring-4
+    focus:ring-light-focusRingColor;
 }
 
 h1,
@@ -47,4 +54,10 @@ h4,
 h5,
 h6 {
   @apply font-anek;
+}
+
+/* Dark mode */
+
+[data-theme="dark"] body {
+  @apply bg-dark-bgColor text-dark-textColor;
 }

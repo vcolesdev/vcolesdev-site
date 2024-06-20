@@ -1,8 +1,8 @@
 "use client";
 
+import useInViewAnimateFeaturedCards from "@/hooks/animations/useInViewAnimateFeatureCards";
 import FeaturedProjectCard from "@/modules/FeaturedProjectCard";
 import styles from "@/modules/HomePage/FeaturedProjects/styles.module";
-import useInViewAnimateFeaturedCards from "@/utils/hooks/animations/useInViewAnimateFeatureCards";
 import {ReactChildren} from "@/utils/types/layout";
 import {FeaturedProject, FeaturedProjectType} from "@/utils/types/projects";
 import {AnimatePresence, LayoutGroup} from "framer-motion";

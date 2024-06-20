@@ -2,21 +2,7 @@ import classNames from "classnames";
 
 const styles = {
   nav: {
-    styles: classNames([
-      "mx-auto",
-      "flex",
-      "max-w-7xl",
-      "items-center",
-      "justify-between",
-    ]),
-    container: classNames([
-      "backdrop-blur-lg",
-      "fixed",
-      "px-8",
-      "lg:px-0",
-      "w-full",
-      "z-50",
-    ]),
+    styles: classNames(["mx-12"]),
     content: classNames(["hidden", "lg:flex", "lg:gap-x-12"]),
     link: classNames([
       "block",

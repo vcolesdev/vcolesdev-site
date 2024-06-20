@@ -11,6 +11,8 @@ export const splitCardStyles: SplitCardStyles = {
       "shadow-melon-400/20",
       "lg:mb-24",
       "overflow-hidden",
+      "dark:bg-charcoal-300",
+      "dark:shadow-charcoal-100/20",
     ]),
     content: classNames([
       "grid",

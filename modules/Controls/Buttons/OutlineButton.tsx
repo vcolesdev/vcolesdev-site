@@ -1,27 +1,25 @@
 "use client";
 
-import {
-  DefaultButtonProps,
-  useButtonStyles,
-} from "@/modules/Controls/Buttons/api";
+import {DefaultButtonProps} from "@/modules/Controls/Buttons/api";
 import ButtonContent from "@/modules/Controls/Buttons/components/ButtonContent";
 import ButtonIcon from "@/modules/Controls/Buttons/components/ButtonIcon";
 import ButtonWrapper from "@/modules/Controls/Buttons/components/ButtonWrapper";
+import useOutlineButtonStyles from "@/modules/Controls/Buttons/hooks/useOutlineButton";
 import {LayoutGroup} from "framer-motion";
 
-export default function OutlineButton({...props}: DefaultButtonProps) {
-  const styles = useButtonStyles();
+export default function OutlineButton({...btn}: DefaultButtonProps) {
+  const {component, icon, text} = useOutlineButtonStyles();
   return (
-    <LayoutGroup id={props.groupId}>
-      <ButtonWrapper groupId={props.groupId} styles={styles.outline.component}>
-        <ButtonContent groupId={props.groupId} styles={styles.outline.text}>
-          {props.children}
+    <LayoutGroup id={btn.groupId}>
+      <ButtonWrapper groupId={btn.groupId} styles={component}>
+        <ButtonContent groupId={btn.groupId} styles={text}>
+          {btn.children}
         </ButtonContent>
-        {props.iconButton && (
+        {btn.iconButton && (
           <ButtonIcon
-            groupId={props.groupId}
-            iconStyles={styles.outline.icon}
-            wrapperStyles={styles.outline.iconWrapper}
+            groupId={btn.groupId}
+            iconStyles={icon.element}
+            wrapperStyles={icon.layout}
           />
         )}
       </ButtonWrapper>

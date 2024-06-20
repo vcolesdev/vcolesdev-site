@@ -1,6 +1,4 @@
-import {button, outlineButton} from "@/modules/Controls/Buttons/styles.module";
 import {ReactChildren} from "@/utils/types/layout";
-import classNames from "classnames";
 import {Variants} from "framer-motion";
 import {MouseEvent, ReactNode} from "react";
 
@@ -20,7 +18,7 @@ export interface DefaultButtonProps {
   isLink?: boolean;
   onClick?: (event?: MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
   outlineStyle?: boolean;
-  styles?: ReturnType<typeof getButtonStyles>;
+  styles?: ButtonStyles;
   [key: string]: any;
 }
 
@@ -34,44 +32,17 @@ export interface LinkButtonProps {
 }
 
 export interface ButtonStyles {
-  layout: string;
-  element: string;
-  transition: string;
-  states: {
-    hover: string;
-    focus: string;
-  };
-  text: string;
+  //layout: string;
+  //element: string;
+  //transition: string;
+  //states: {
+  //  hover: string;
+  //  focus: string;
+  //};
+  component: ClassNames;
+  text: ClassNames;
   icon: {
-    layout: string;
-    element: string;
-  };
-}
-
-export function getButtonStyles(styles: ButtonStyles) {
-  const component = classNames([
-    styles.layout,
-    styles.element,
-    styles.transition,
-    styles.states.hover,
-    styles.states.focus,
-  ]);
-
-  const text = styles.text;
-  const iconWrapper = styles.icon.layout;
-  const icon = styles.icon.element;
-
-  return {
-    component,
-    text,
-    iconWrapper,
-    icon,
-  };
-}
-
-export function useButtonStyles() {
-  return {
-    default: getButtonStyles(button),
-    outline: getButtonStyles(outlineButton),
+    layout: ClassNames;
+    element: ClassNames;
   };
 }

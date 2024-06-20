@@ -1,8 +1,8 @@
 "use client";
 
 import {tw} from "@/app/api";
-import useAnimateDrawPaths from "@/utils/hooks/animations/useAnimateDrawPaths";
-import useDrawVariants from "@/utils/hooks/animations/useDrawVariants";
+import useAnimateDrawPaths from "@/hooks/animations/useAnimateDrawPaths";
+import useDrawVariants from "@/hooks/animations/useDrawVariants";
 import {motion, useAnimate} from "framer-motion";
 import {ReactNode, useEffect, useState} from "react";
 

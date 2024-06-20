@@ -1,5 +1,5 @@
+import useInViewAnimateFeaturedCards from "@/hooks/animations/useInViewAnimateFeatureCards";
 import ImageCard from "@/modules/ImageCard";
-import useInViewAnimateFeaturedCards from "@/utils/hooks/animations/useInViewAnimateFeatureCards";
 import {useEffect} from "react";
 
 export function useAnimateCard(classname?: string | ".motion-img-card") {

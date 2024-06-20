@@ -1,27 +1,25 @@
 "use client";
 
-import {
-  DefaultButtonProps,
-  useButtonStyles,
-} from "@/modules/Controls/Buttons/api";
+import {DefaultButtonProps} from "@/modules/Controls/Buttons/api";
 import ButtonContent from "@/modules/Controls/Buttons/components/ButtonContent";
 import ButtonIcon from "@/modules/Controls/Buttons/components/ButtonIcon";
 import ButtonWrapper from "@/modules/Controls/Buttons/components/ButtonWrapper";
+import useButtonStyles from "@/modules/Controls/Buttons/hooks/useButtonStyles";
 import {LayoutGroup} from "framer-motion";
 
-export default function Button({...props}: DefaultButtonProps) {
-  const styles = useButtonStyles();
+export default function Button({...btn}: DefaultButtonProps) {
+  const {component, text, icon} = useButtonStyles();
   return (
-    <LayoutGroup id={props.groupId}>
-      <ButtonWrapper groupId={props.groupId} styles={styles.default.component}>
-        <ButtonContent groupId={props.groupId} styles={styles.default.text}>
-          {props.children}
+    <LayoutGroup id={btn.groupId}>
+      <ButtonWrapper groupId={btn.groupId} styles={component}>
+        <ButtonContent groupId={btn.groupId} styles={text}>
+          {btn.children}
         </ButtonContent>
-        {props.iconButton && (
+        {btn.iconButton && (
           <ButtonIcon
-            groupId={props.groupId}
-            iconStyles={styles.default.icon}
-            wrapperStyles={styles.default.iconWrapper}
+            groupId={btn.groupId}
+            iconStyles={icon.element}
+            wrapperStyles={icon.layout}
           />
         )}
       </ButtonWrapper>

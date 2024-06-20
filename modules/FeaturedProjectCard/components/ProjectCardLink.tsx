@@ -1,9 +1,9 @@
 "use client";
 
+import useIconSettings from "@/hooks/components/useIconSettings";
 import {MoreText} from "@/modules/FeaturedProjectCard/components";
 import ProjectCardIcon from "@/modules/FeaturedProjectCard/components/ProjectCardIcon";
 import {cardStyles as styles} from "@/modules/FeaturedProjectCard/styles.module";
-import useIconSettings from "@/utils/hooks/components/useIconSettings";
 import {projectIconSettings} from "@/utils/types/settings";
 import {motion} from "framer-motion";
 

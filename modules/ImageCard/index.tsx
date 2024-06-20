@@ -1,6 +1,5 @@
 "use client";
 
-import MotionDiv from "@/components/Motion/MotionDiv";
 import {motion} from "framer-motion";
 import {ImageCardProps, useImageCard} from "./api";
 import imageCard from "./styles.module";
@@ -12,7 +11,7 @@ export default function ImageCard(props: ImageCardProps) {
   const {anim, handleClick, onHoverEnd, onHoverStart, scope} = useImageCard();
 
   return (
-    <MotionDiv
+    <motion.div
       className={`motion-img-card ${imageCard.control}`}
       id={`motion-img-card-${card.id}`}
       initial={anim.initial}
@@ -35,6 +34,6 @@ export default function ImageCard(props: ImageCardProps) {
           width={card.width || 1920}
         />
       </motion.article>
-    </MotionDiv>
+    </motion.div>
   );
 }

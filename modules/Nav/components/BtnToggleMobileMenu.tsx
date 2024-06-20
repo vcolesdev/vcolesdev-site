@@ -1,5 +1,10 @@
-import {BtnMobileProps} from "@/utils/types/controls";
-import styles from "./styles.module";
+import {MouseEvent} from "react";
+import styles from "../styles.module";
+
+export interface BtnMobileProps {
+  handleClick: (event: MouseEvent) => void;
+  textContent: string;
+}
 
 const Icon = () => (
   <svg

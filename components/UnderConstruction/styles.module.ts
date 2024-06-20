@@ -2,7 +2,14 @@ import classNames from "classnames";
 
 const styles = {
   banner: {
-    styles: classNames(["inline-block", "bg-melon-700", "rounded-full"]),
+    styles: classNames([
+      "inline-block",
+      "bg-melon-700",
+      "rounded-full",
+      "dark:bg-charcoal-300",
+      "dark:border-melon-400/50",
+      "dark:border-2",
+    ]),
     contentWrapper: classNames([
       "mx-auto",
       "flex",
@@ -19,6 +26,7 @@ const styles = {
       "tracking-tight",
       "text-melon-200",
       "text-center",
+      "dark:text-melon-800/70",
     ]),
     span: classNames(["font-medium", "block"]),
   },

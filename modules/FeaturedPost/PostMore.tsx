@@ -1,6 +1,6 @@
+import useIconSettings from "@/hooks/components/useIconSettings";
 import PostIcon from "@/modules/FeaturedPost/PostIcon";
 import styles from "@/modules/FeaturedPost/styles.module";
-import useIconSettings from "@/utils/hooks/components/useIconSettings";
 import {projectIconSettings} from "@/utils/types/settings";
 
 const PostMore = ({moreText}: {moreText: string}) => (

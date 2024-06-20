@@ -12,10 +12,7 @@ export default function UnderConstruction() {
                 Work in Progress
               </span>
             </p>
-            <p>
-              This site is under construction. But is anything ever really
-              complete? Thank you for stopping by!
-            </p>
+            <p>This site is under construction. Thank you for stopping by!</p>
           </div>
         </div>
       </div>

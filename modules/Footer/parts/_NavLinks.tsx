@@ -1,4 +1,4 @@
-import useNavLinks from "@/utils/hooks/fetchers/useFetchNavLinks";
+import useNavLinks from "@/hooks/fetchers/useFetchNavLinks";
 import styles from "../styles.module";
 
 /**
@@ -9,7 +9,7 @@ export default function FooterNavLinks() {
 
   return (
     <nav className={styles.nav.styles} aria-label="Footer">
-      {navigation.map((item) => (
+      {navigation.map((item: any) => (
         <div key={item.name} className="pb-6">
           <a href={item.href} className={styles.nav.item}>
             {item.name}

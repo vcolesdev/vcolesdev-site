@@ -10,6 +10,7 @@ const styles = {
       "pb-24",
       "md:py-24",
       "lg:py-32",
+      "xl:px-0",
     ]),
   },
 };

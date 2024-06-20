@@ -1,4 +1,4 @@
-import useNavLinks from "@/utils/hooks/fetchers/useFetchNavLinks";
+import useNavLinks from "@/hooks/fetchers/useFetchNavLinks";
 import {Dialog} from "@headlessui/react";
 import {IconMoonStars} from "@tabler/icons-react";
 import Link from "next/link";
