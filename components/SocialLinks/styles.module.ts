@@ -2,6 +2,7 @@ import classNames from "classnames";
 
 export default {
   link: classNames([
+    "group",
     "relative",
     "inline-block",
     "rounded-lg",
@@ -14,11 +15,16 @@ export default {
     "shadow-melon-300/20",
     "transition-all",
     "duration-75",
-    "hover:bg-melon-900",
-    "hover:text-melon-400",
-    "active:translate-y-0.5",
-    "active:bg-melon-500",
-    "active:text-rosy_brown-200",
+
+    "group-hover:bg-melon-900",
+    "group-hover:text-melon-400",
+    "group-active:translate-y-0.5",
+    "group-active:bg-melon-500",
+    "group-active:text-rosy_brown-200",
+
+    "dark:border-charcoal-900",
+    "dark:bg-charcoal-900",
+    "dark:text-charcoal-200",
     "dark:shadow-charcoal-200",
   ]),
   tooltip: {

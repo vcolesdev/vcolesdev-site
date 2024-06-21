@@ -6,13 +6,10 @@ function getButtonVariants(type: "default" | "outline") {
   };
 
   const animateValue = {
-    boxShadow:
-      "0 20px 25px -5px rgba(215, 60, 29, 0.3), 0 8px 10px -6px rgba(215, 60, 29, 0.3)",
     top: "-1px",
   };
 
   const tapValue = {
-    boxShadow: "none",
     top: "1px",
     scale: 0.97,
   };
@@ -23,7 +20,6 @@ function getButtonVariants(type: "default" | "outline") {
       ...initialValue,
     },
     animate: {
-      background: "#e9755d",
       ...animateValue,
     },
     tap: {...tapValue},

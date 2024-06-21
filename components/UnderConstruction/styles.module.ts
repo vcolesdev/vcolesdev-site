@@ -7,8 +7,6 @@ const styles = {
       "bg-melon-700",
       "rounded-full",
       "dark:bg-charcoal-300",
-      "dark:border-melon-400/50",
-      "dark:border-2",
     ]),
     contentWrapper: classNames([
       "mx-auto",
@@ -23,10 +21,10 @@ const styles = {
   textContent: {
     styles: classNames([
       "text-[16px]",
-      "tracking-tight",
+      "tracking-[0.01em]",
       "text-melon-200",
       "text-center",
-      "dark:text-melon-800/70",
+      "dark:text-charcoal-800",
     ]),
     span: classNames(["font-medium", "block"]),
   },

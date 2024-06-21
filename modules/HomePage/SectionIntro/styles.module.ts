@@ -11,6 +11,7 @@ export default {
     "font-bold",
     "tracking-tight",
     "sm:text-6xl",
+    "dark:text-charcoal-900",
   ]),
   text: {
     styles: classNames([
@@ -18,7 +19,7 @@ export default {
       "text-xl",
       "leading-8",
       "text-rosy_brown-200/70",
-      "dark:text-melon-700/70",
+      "dark:text-charcoal-700/90",
     ]),
     content: classNames(["mx-auto", "max-w-2xl", "text-center"]),
   },

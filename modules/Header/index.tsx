@@ -6,15 +6,17 @@ import ToggleThemeSelect from "@/modules/Header/components/ToggleThemeSelect";
 import SiteLogo from "@/modules/HomePage/SiteLogo";
 import Navigation from "@/modules/Nav";
 import NavLinks from "@/modules/Nav/components/NavLinks";
+import HeaderBoxShadow from "@/modules/Header/components/HeaderBoxShadow";
 import styles from "@/modules/Nav/styles.module";
 import {motion} from "framer-motion";
-import {MouseEventHandler} from "react";
+import {MouseEventHandler, useEffect} from "react";
 import useHeader from "./hooks/useHeader";
 import useHeaderAnimation from "./hooks/useHeaderAnimation";
 import headerStyles from "./styles.module";
 
 interface HeaderInterface {
   id: string;
+  currentTheme?: string;
   onToggleLightTheme: MouseEventHandler<HTMLButtonElement>;
   onToggleDarkTheme: MouseEventHandler<HTMLButtonElement>;
   onToggleSystemTheme?: MouseEventHandler<HTMLButtonElement> | undefined;
@@ -22,13 +24,18 @@ interface HeaderInterface {
 
 export default function Header({
   id,
+  currentTheme,
   onToggleLightTheme,
   onToggleDarkTheme,
   onToggleSystemTheme,
 }: HeaderInterface) {
   const navigation = useNavLinks();
   const {maxWidth, headerSpring} = useHeaderAnimation();
-  const {boxShadow, contentScope, padding, scope} = useHeader();
+  const {contentScope, padding, scope} = useHeader();
+
+  useEffect(() => {
+    console.log("The current header theme is: ", currentTheme);
+  }, [currentTheme]);
 
   return (
     <>
@@ -64,7 +71,7 @@ export default function Header({
         </motion.div>
       </motion.header>
       {/* Box shadow element */}
-      {boxShadow}
+      <HeaderBoxShadow />
     </>
   );
 }

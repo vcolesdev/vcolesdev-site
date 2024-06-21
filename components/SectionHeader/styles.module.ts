@@ -19,7 +19,7 @@ export const styles = {
     "font-bold",
     "leading-7",
     "text-rosy_brown-300",
-    "dark:text-melon-600",
+    "dark:text-charcoal-700",
   ]),
   description: {
     styles: classNames([
@@ -27,19 +27,21 @@ export const styles = {
       "mt-6",
       "tracking-tight",
       "text-rosy_brown-200/60",
-      "dark:text-rosy_brown-800/70",
+      "dark:text-charcoal-800",
     ]),
     default: classNames([
       "text-xl",
       "leading-8",
       "tracking-loose",
       "text-rosy_brown-200/60",
+      "dark:text-charcoal-800",
     ]),
     large: classNames([
       "text-xl",
       "leading-8",
       "tracking-tight",
       "text-rosy_brown-200/80",
+      "dark:text-charcoal-800",
       "md:text-2xl",
       "md:leading-relaxed",
     ]),
@@ -51,5 +53,6 @@ export const styles = {
     "font-bold",
     "tracking-tight",
     "sm:text-6xl",
+    "dark:text-charcoal-900",
   ]),
 };

@@ -12,6 +12,7 @@ const styles = {
       "hover:text-rose_brown-700",
       "font-semibold",
       "leading-6",
+      "dark:text-charcoal-800",
     ]),
     activeLink: classNames([
       "absolute",
@@ -21,6 +22,7 @@ const styles = {
       "h-[3px]",
       "bg-melon-300",
       "z-10",
+      "dark:text-charcoal-900",
     ]),
   },
   logoWrapper: classNames(["flex", "lg:flex-1"]),
@@ -33,7 +35,7 @@ const styles = {
     "duration-300",
     "ease-in-out-cubic",
   ]),
-  logoText: classNames(["font-cursive", "font-semibold", "text-[24px]"]),
+  logoText: classNames(["font-cursive", "font-semibold", "text-[24px]", "dark:text-charcoal-900"]),
   btnMobileWrapper: classNames(["flex", "lg:hidden"]),
   btnMobile: classNames([
     "-m-2.5",

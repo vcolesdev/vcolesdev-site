@@ -9,11 +9,9 @@ import {
 
 export const layout = mergeStyles(btnLayout, ["group/button"]);
 export const element = mergeStyles(btnElement, [
-  "border-salmon_pink-400",
-  "bg-gradient-to-t",
-  "from-melon-400",
-  "to-melon-300/60",
+  "bg-melon-400",
   "shadow-none",
+  "dark:bg-rose-500",
 ]);
 export const text = mergeStyles(btnText, ["text-white"]);
 export const iconLayout = btnIconLayout;

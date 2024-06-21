@@ -13,7 +13,9 @@ function Providers({children}: {children: ReactNode | ReactNode[]}) {
   const themeValue = {theme, setTheme};
   const darkModeValue = {isDarkMode, setIsDarkMode};
 
-  useEffect(() => {}, [theme, isDarkMode]);
+  useEffect(() => {
+    setTheme(localStorage.getItem("theme") || "system");
+  }, [theme, isDarkMode, setTheme]);
 
   return (
     <ThemeProvider value={themeValue}>

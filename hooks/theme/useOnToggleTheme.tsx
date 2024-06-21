@@ -1,7 +1,13 @@
 import {useEffect, useRef, useState} from "react";
 import {useDarkMode} from "@/app/providers";
 import {useTheme} from "next-themes";
+import HeaderBoxShadow from "@/modules/Header/components/HeaderBoxShadow";
+import useBoxShadow from "@/hooks/theme/useBoxShadow";
 
+/**
+ * useOnToggleTheme()
+ * @desc A hook to toggle the theme.
+ */
 export default function useOnToggleTheme() {
   const [document, setDocument] = useState<null | Document>(null);
 
@@ -23,13 +29,17 @@ export default function useOnToggleTheme() {
     document.documentElement.classList.remove("dark");
     document.documentElement.classList.add("light");
 
-    // Update localstorage.
+    // Update local storage.
     localStorage.setItem("theme", "light");
 
     // Console log the theme change.
     console.log("Light theme toggled");
   }
 
+  /**
+   * onToggleDarkTheme()
+   * @desc Toggle the dark theme.
+   */
   function onToggleDarkTheme() {
     if (!document) return;
 
@@ -48,6 +58,10 @@ export default function useOnToggleTheme() {
     console.log("Dark theme toggled");
   }
 
+  /**
+   * onToggleSystemTheme()
+   * @desc Toggle the system theme.
+   */
   function onToggleSystemTheme() {
     // We need to read window.matchMedia to determine if the system theme is dark or light.
     const media = window.matchMedia("(prefers-color-scheme: dark)");
@@ -64,9 +78,6 @@ export default function useOnToggleTheme() {
       onToggleLightTheme();
       console.log("System theme toggled", systemTheme);
     }
-
-    // Console log the theme change.
-    console.log("System theme toggled", systemTheme);
   }
 
   return {

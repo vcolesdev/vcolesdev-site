@@ -1,7 +1,7 @@
 import featuredProjects from "@/assets/data/featured-projects.json";
 import PageTitle from "@/components/Page/PageTitle";
-import {FeaturedProject} from "@/utils/types/projects";
 import PageWrapper from "@/components/Page/PageWrapper";
+import {FeaturedProject} from "@/utils/types/projects";
 import Project from "./Project";
 
 export default function Page({params}: {params: {slug: string}}) {

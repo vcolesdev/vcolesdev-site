@@ -20,6 +20,14 @@ export default {
     "sm:order-2",
   ]),
   copyright: classNames(["mt-8", "md:order-1", "md:mt-0"]),
+  copyrightText: classNames([
+    "mt-10",
+    "text-center",
+    "text-sm",
+    "font-medium",
+    "leading-5",
+    "dark:text-charcoal-800",
+  ]),
   nav: {
     styles: classNames([
       "-mb-6",
@@ -39,6 +47,11 @@ export default {
   },
   socialLinks: {
     styles: classNames(["mt-10", "flex", "justify-center", "space-x-10"]),
-    item: classNames(["text-rosy_brown-300", "hover:text-melon-400"]),
+    item: classNames([
+      "text-rosy_brown-300",
+      "hover:text-melon-400",
+      "dark:text-charcoal-800",
+      "dark:hover:text-rose-400",
+    ]),
   },
 };

@@ -28,6 +28,7 @@ const control = [
   "border-transparent",
   "focus:border-8",
   "focus:border-melon-500",
+  "dark:focus:border-charcoal-800",
 ];
 
 const imageMedia = ["h-auto", "max-w-full", "overflow-hidden"];

@@ -20,7 +20,9 @@
 
 html,
 body {
-  @apply h-full;
+  @apply
+    h-full
+    text-light-textColor
 }
 
 body {
@@ -44,7 +46,9 @@ body {
   @apply
     focus:outline-none
     focus:ring-4
-    focus:ring-light-focusRingColor;
+    focus:ring-light-focusRingColor
+    dark:focus:ring-4
+    dark:focus:ring-charcoal-800;
 }
 
 h1,
@@ -54,10 +58,4 @@ h4,
 h5,
 h6 {
   @apply font-anek;
-}
-
-/* Dark mode */
-
-[data-theme="dark"] body {
-  @apply bg-dark-bgColor text-dark-textColor;
 }
