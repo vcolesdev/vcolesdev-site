@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/modules/Nav/components/BtnToggleMobileMenu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Nav/components/NavLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Nav/components/NavLinks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Nav/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Nav/styles.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" afterDir="false" />
     </list>
@@ -47,7 +50,7 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "feature/mobile-menu-refactoring-add-animations",
+    "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
     "last_opened_file_path": "/Users/vcoles/Github/projects/vcolesdev-mysite/public",

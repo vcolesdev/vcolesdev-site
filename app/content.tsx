@@ -29,18 +29,14 @@ export default function Content({children}: ContentInterface) {
         id="siteHeaderPage"
         btnMobileMenuId="siteHeaderShowMobileMenu"
         currentTheme={theme}
-        onShowMobileMenu={() => {
-          onShowMobileMenu();
-        }}
+        onShowMobileMenu={onShowMobileMenu}
         onToggleLightTheme={onToggleLightTheme}
         onToggleDarkTheme={onToggleDarkTheme}
         onToggleSystemTheme={onToggleSystemTheme}
       />
       {/* Fixed mobile menu */}
       <MobileMenu
-        onHideMobileMenu={() => {
-          onHideMobileMenu();
-        }}
+        onHideMobileMenu={onHideMobileMenu}
         isActive={isMobileMenuActive || false}
         menuId="mainMobileMenu"
       />

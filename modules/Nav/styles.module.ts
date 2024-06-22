@@ -4,6 +4,9 @@ const styles = {
   nav: {
     styles: classNames(["mx-12"]),
     content: classNames(["hidden", "lg:flex", "lg:gap-x-12"]),
+    item: classNames([
+      "relative",
+    ]),
     link: classNames([
       "block",
       "relative",
@@ -15,14 +18,10 @@ const styles = {
       "dark:text-charcoal-800",
     ]),
     activeLink: classNames([
-      "absolute",
-      "-bottom-1",
-      "left-0",
-      "w-full",
-      "h-[3px]",
-      "bg-melon-300",
-      "z-10",
-      "dark:text-charcoal-900",
+      "text-melon-400",
+      "dark:text-rose-400",
+    ]),
+    darkActiveLink: classNames([
     ]),
   },
   logoWrapper: classNames(["flex", "lg:flex-1"]),
