@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/Header/components/HeaderProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/MobileMenu/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/MobileMenu/components/BtnShowMobileMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/MobileMenu/hooks/useMobileMenu.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/MobileMenu/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Page/PageWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Page/PageWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Controls/Buttons/styles/shared.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/Buttons/styles/shared.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Header/components/ToggleThemeSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Header/components/ToggleThemeSelect.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Header/hooks/useBoxShadowTransforms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Header/hooks/useBoxShadowTransforms.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Header/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Header/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/SiteLogo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/SiteLogo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/MobileMenu/MobileMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MobileMenu/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Nav/components/NavLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Nav/components/NavLinks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Nav/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Nav/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/SplitCard/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/SplitCard/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Nav/components/BtnToggleMobileMenu.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" afterDir="false" />
     </list>
@@ -64,7 +47,7 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/mobile-menu-refactoring-add-animations",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
     "last_opened_file_path": "/Users/vcoles/Github/projects/vcolesdev-mysite/public",
