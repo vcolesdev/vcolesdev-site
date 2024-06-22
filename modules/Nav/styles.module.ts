@@ -35,17 +35,13 @@ const styles = {
     "duration-300",
     "ease-in-out-cubic",
   ]),
-  logoText: classNames(["font-cursive", "font-semibold", "text-[24px]", "dark:text-charcoal-900"]),
-  btnMobileWrapper: classNames(["flex", "lg:hidden"]),
-  btnMobile: classNames([
-    "-m-2.5",
-    "inline-flex",
-    "items-center",
-    "justify-center",
-    "rounded-md",
-    "p-2.5",
-    "text-gray-700",
+  logoText: classNames([
+    "font-cursive",
+    "font-semibold",
+    "text-[24px]",
+    "dark:text-charcoal-900",
   ]),
+  mobileMenuIcon: classNames(["lg:hidden", "flex", "items-end"]),
   themeChanger: classNames([
     "hidden",
     "lg:flex",

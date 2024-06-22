@@ -5,32 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hooks/theme/useBoxShadow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Header/components/HeaderProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/MobileMenu/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/MobileMenu/components/BtnShowMobileMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/MobileMenu/hooks/useMobileMenu.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/MobileMenu/styles.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/providers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Page/PageWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Page/PageWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SectionHeader/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/SectionHeader/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SocialLinks/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/SocialLinks/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UnderConstruction/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/UnderConstruction/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/icons/FeaturedProjectIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/icons/FeaturedProjectIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/theme/useOnToggleTheme.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Controls/Buttons/hooks/useButtonVariants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/Buttons/hooks/useButtonVariants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Controls/Buttons/styles/button.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/Buttons/styles/button.styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Controls/Buttons/styles/shared.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Controls/Buttons/styles/shared.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/FeaturedProjectCard/animation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/animation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/FeaturedProjectCard/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/FeaturedProjectCard/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Footer/parts/_Copyright.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Footer/parts/_Copyright.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Footer/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Footer/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Header/components/HeaderBoxShadow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Header/components/HeaderBoxShadow.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Header/components/ToggleThemeSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Header/components/ToggleThemeSelect.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Header/hooks/useHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Header/hooks/useHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Header/hooks/useBoxShadowTransforms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Header/hooks/useBoxShadowTransforms.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Header/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Header/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Header/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HomePage/SectionIntro/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/SectionIntro/styles.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ImageCard/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ImageCard/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/HomePage/SiteLogo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HomePage/SiteLogo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MobileMenu/MobileMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MobileMenu/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Nav/components/NavLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Nav/components/NavLinks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Nav/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Nav/styles.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/SplitCard/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/SplitCard/styles.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" afterDir="false" />
@@ -65,41 +55,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/toggle-box-shadow-color&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vcoles/Github/projects/vcolesdev-mysite/public&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/typescript/lib&quot;,
-    &quot;use.deno.dismiss&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/vcoles/Github/projects/vcolesdev-mysite/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/prettier",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "ts.external.directory.path": "/Users/vcoles/Github/projects/vcolesdev-mysite/node_modules/typescript/lib",
+    "use.deno.dismiss": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;TypeScript JSX&quot;,
-      &quot;JSON&quot;,
-      &quot;PLAIN_TEXT&quot;,
-      &quot;JavaScript&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TypeScript JSX",
+      "JSON",
+      "PLAIN_TEXT",
+      "JavaScript"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />

@@ -7,11 +7,7 @@ export const btnLayout = [
   "py-3",
   "hover:shadow-lg",
 ];
-export const btnElement = [
-  "relative",
-  "rounded-xl",
-  "text-center",
-];
+export const btnElement = ["relative", "rounded-xl", "text-center"];
 export const btnTransition = ["ease-in-out", "transition-all", "duration-300"];
 export const btnFocusEvent = ["focus:ring-4"];
 export const btnText = [

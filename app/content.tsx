@@ -1,11 +1,12 @@
 "use client";
 
-import useBoxShadow from "@/hooks/theme/useBoxShadow";
+import {ThemeContext} from "@/context/ThemeContext";
 import useOnToggleTheme from "@/hooks/theme/useOnToggleTheme";
 import Footer from "@/modules/Footer";
 import Header from "@/modules/Header";
+import MobileMenu from "@/modules/MobileMenu";
+import useMobileMenu from "@/modules/MobileMenu/hooks/useMobileMenu";
 import {ReactNode, useContext, useEffect} from "react";
-import {ThemeContext} from "@/context/ThemeContext";
 
 interface ContentInterface {
   children: ReactNode | ReactNode[];
@@ -15,26 +16,33 @@ export default function Content({children}: ContentInterface) {
   const {onToggleDarkTheme, onToggleLightTheme, onToggleSystemTheme} =
     useOnToggleTheme();
 
-  const {boxShadowColor, setBoxShadowColor} = useBoxShadow();
+  const {isMobileMenuActive, onShowMobileMenu, onHideMobileMenu} =
+    useMobileMenu("mainMobileMenu");
+
   const {theme} = useContext(ThemeContext);
 
-  useEffect(() => {
-    if (theme === "light") {
-      setBoxShadowColor("#d73c1d");
-    }
-    if (theme === "dark") {
-      setBoxShadowColor("#333333");
-    }
-  }, [boxShadowColor, setBoxShadowColor, theme]);
+  useEffect(() => {}, [theme]);
 
   return (
     <>
       <Header
         id="siteHeaderPage"
+        btnMobileMenuId="siteHeaderShowMobileMenu"
         currentTheme={theme}
+        onShowMobileMenu={() => {
+          onShowMobileMenu();
+        }}
         onToggleLightTheme={onToggleLightTheme}
         onToggleDarkTheme={onToggleDarkTheme}
         onToggleSystemTheme={onToggleSystemTheme}
+      />
+      {/* Fixed mobile menu */}
+      <MobileMenu
+        onHideMobileMenu={() => {
+          onHideMobileMenu();
+        }}
+        isActive={isMobileMenuActive || false}
+        menuId="mainMobileMenu"
       />
       <main className="pt-24">{children}</main>
       <Footer />

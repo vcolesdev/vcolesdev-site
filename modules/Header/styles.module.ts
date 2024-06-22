@@ -9,7 +9,7 @@ const headerStyles = {
     "backdrop-blur-lg",
     "bg-melon-800/80",
     "px-8",
-    "lg:px-0",
+    "xl:px-0",
     "dark:bg-charcoal-200/80",
   ]),
   content: classNames([

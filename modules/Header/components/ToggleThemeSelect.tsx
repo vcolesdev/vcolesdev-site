@@ -1,7 +1,7 @@
 import {IconDeviceDesktop, IconMoonStars, IconSun} from "@tabler/icons-react";
-import headerStyles from "../styles.module";
 import {motion} from "framer-motion";
 import {MouseEventHandler} from "react";
+import headerStyles from "../styles.module";
 
 export default function ToggleThemeSelect({
   onToggleDarkTheme,

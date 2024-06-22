@@ -21,10 +21,7 @@ export const splitCardStyles: SplitCardStyles = {
       "lg:grid-cols-2",
       "lg:gap-y-12",
     ]),
-    textContent: classNames([
-      "flex",
-      "items-center",
-    ]),
+    textContent: classNames(["flex", "items-center"]),
     header: {
       content: classNames(["py-12", "lg:py-24"]),
     },
