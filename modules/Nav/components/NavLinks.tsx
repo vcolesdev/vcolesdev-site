@@ -15,21 +15,28 @@ export interface NavLinkItem {
 export type NavLinks = NavLinkItem[];
 
 function NavLink({item, pathname}: {item: NavLinkItem; pathname?: string}) {
+  const [activelinkColor, setActiveLinkColor] = useState("");
   const [extraClasses, setExtraClasses] = useState("");
-
   const {theme} = useTheme();
 
   useEffect(() => {
     if (pathname === item.href) {
-      setExtraClasses(styles.nav.activeLink);
+      setExtraClasses("active");
+      setActiveLinkColor(styles.nav.activeLink);
     }
-  }, [item.href, pathname, setExtraClasses, theme]);
+  }, [
+    item,
+    pathname,
+    setExtraClasses,
+    setActiveLinkColor,
+    theme
+  ]);
 
   return (
-    <motion.div className={styles.nav.item + " " + extraClasses}>
+    <motion.div className={styles.nav.item}>
       <Link
+        className={styles.nav.link + " " + extraClasses + " " + activelinkColor}
         href={item.href}
-        className={styles.nav.link}
       >
         {item.name}
       </Link>

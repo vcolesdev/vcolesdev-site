@@ -3,24 +3,28 @@
 import LayoutFadeIn from "@/components/Layout/LayoutFadeIn";
 import PageTitle from "@/components/Page/PageTitle";
 import PageWrapper from "@/components/Page/PageWrapper";
+import {pageStyles} from "@/app/styles.module";
 
 export default function Page() {
+  const pageTitle = "Recent Posts";
+  const pageDesc = "A list of recent posts will be displayed here.";
+
   return (
     <LayoutFadeIn>
       <PageWrapper headerId="siteHeaderPosts">
         <PageTitle title="Writings" />
         <div>
           <div className="mb-8">
-            <h2 className="mb-6 font-kanit text-4xl font-semibold tracking-tight">
-              Recent Posts
+            <h2 className={pageStyles.page.subheader}>
+              {pageTitle}
             </h2>
-            <p className="text-lg">
-              A list of recent posts will be displayed here.
+            <p className={pageStyles.page.description}>
+              {pageDesc}
             </p>
           </div>
           <div>
             {/* This is where the list of posts will go. */}
-            Coming Soon...
+            <p className="dark:text-charcoal-800">Coming Soon...</p>
           </div>
         </div>
       </PageWrapper>

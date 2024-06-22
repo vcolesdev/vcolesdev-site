@@ -19,9 +19,9 @@ const styles = {
     ]),
     activeLink: classNames([
       "text-melon-400",
-      "dark:text-rose-400",
     ]),
     darkActiveLink: classNames([
+      "dark:text-rose-400",
     ]),
   },
   logoWrapper: classNames(["flex", "lg:flex-1"]),
