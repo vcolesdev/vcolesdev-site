@@ -1,11 +1,11 @@
 "use client";
 
+import useTheme from "@/hooks/theme/useTheme";
+import {motion} from "framer-motion";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
-import {motion} from "framer-motion";
-import styles from "../styles.module";
 import {useEffect, useState} from "react";
-import useTheme from "@/hooks/theme/useTheme";
+import styles from "../styles.module";
 
 export interface NavLinkItem {
   name: string;
@@ -24,13 +24,7 @@ function NavLink({item, pathname}: {item: NavLinkItem; pathname?: string}) {
       setExtraClasses("active");
       setActiveLinkColor(styles.nav.activeLink);
     }
-  }, [
-    item,
-    pathname,
-    setExtraClasses,
-    setActiveLinkColor,
-    theme
-  ]);
+  }, [item, pathname, setExtraClasses, setActiveLinkColor, theme]);
 
   return (
     <motion.div className={styles.nav.item}>

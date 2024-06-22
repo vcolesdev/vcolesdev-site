@@ -10,9 +10,6 @@ export const pageStyles = {
       "tracking-tight",
       "dark:text-charcoal-700",
     ]),
-    description: classNames([
-      "text-lg",
-      "dark:text-charcoal-800",
-    ])
-  }
-}
+    description: classNames(["text-lg", "dark:text-charcoal-800"]),
+  },
+};
