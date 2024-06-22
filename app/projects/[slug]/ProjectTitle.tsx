@@ -1,3 +1,5 @@
+import {pageStyles} from "@/app/styles.module";
+
 export default function ProjectTitle({
   title,
   description,
@@ -7,10 +9,10 @@ export default function ProjectTitle({
 }) {
   return (
     <div className="mb-8">
-      <h2 className="mb-6 font-kanit text-4xl font-semibold tracking-tight">
+      <h2 className={pageStyles.page.subheader}>
         {title}
       </h2>
-      {description && <p className="text-lg">{description}</p>}
+      {description && <p className={pageStyles.page.description}>{description}</p>}
     </div>
   );
 }

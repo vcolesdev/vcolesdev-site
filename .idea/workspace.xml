@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d297f5-74ee-4d71-8181-1abcfe2470cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/styles.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/projects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Page/PageTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Page/PageTitle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Nav/components/NavLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Nav/components/NavLinks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Nav/styles.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Nav/styles.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/projects/[slug]/Project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/[slug]/Project.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/projects/[slug]/ProjectLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/[slug]/ProjectLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/projects/[slug]/ProjectTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/[slug]/ProjectTags.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/projects/[slug]/ProjectTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/[slug]/ProjectTitle.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../vcolesdev-site-backup/app/types/Projects.ts" afterDir="false" />
     </list>
