@@ -3,31 +3,23 @@ import ProjectTags from "@/app/projects/[slug]/ProjectTags";
 import ProjectTitle from "@/app/projects/[slug]/ProjectTitle";
 import {FeaturedProject} from "@/utils/types/projects";
 import {IconBrandGithub, IconTags} from "@tabler/icons-react";
-import {ReactNode} from "react";
 import classNames from "classnames";
+import {ReactNode} from "react";
 
 const projectStyles = {
-  content: classNames([
-    "flex",
-    "items-center",
-    "gap-4",
-  ])
-}
+  content: classNames(["flex", "items-center", "gap-4"]),
+};
 
 const iconStyles = {
   container: classNames([
     "text-2xl",
     "text-rosy_brown-300",
     "dark:text-charcoal-500",
-  ])
-}
+  ]),
+};
 
 function IconContainer({children}: {children: ReactNode | ReactNode[]}) {
-  return (
-    <div className={iconStyles.container}>
-      {children}
-    </div>
-  );
+  return <div className={iconStyles.container}>{children}</div>;
 }
 
 export default function Project({

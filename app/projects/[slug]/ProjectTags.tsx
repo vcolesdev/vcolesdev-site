@@ -20,7 +20,7 @@ const tagStyles = {
     "dark:border-charcoal-400/80",
     "dark:text-rose-400",
     "dark:hover:border-rose-400",
- ])
+  ]),
 };
 
 export default function ProjectTags({tags}: {tags: string[]}) {

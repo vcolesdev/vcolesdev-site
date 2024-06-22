@@ -9,10 +9,10 @@ export default function ProjectTitle({
 }) {
   return (
     <div className="mb-8">
-      <h2 className={pageStyles.page.subheader}>
-        {title}
-      </h2>
-      {description && <p className={pageStyles.page.description}>{description}</p>}
+      <h2 className={pageStyles.page.subheader}>{title}</h2>
+      {description && (
+        <p className={pageStyles.page.description}>{description}</p>
+      )}
     </div>
   );
 }

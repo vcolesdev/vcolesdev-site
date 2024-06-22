@@ -10,7 +10,7 @@ const linkStyles = {
     "dark:text-rose-400",
     "dark:hover:text-rose-500",
   ]),
-}
+};
 
 interface ProjectLink {
   href: string;
