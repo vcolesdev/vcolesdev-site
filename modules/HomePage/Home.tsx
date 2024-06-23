@@ -4,6 +4,7 @@ import FeaturedAbout from "@/modules/HomePage/FeaturedAbout";
 import FeaturedGallery from "@/modules/HomePage/FeaturedGallery";
 import FeaturedPosts from "@/modules/HomePage/FeaturedPosts";
 import FeaturedProjects from "@/modules/HomePage/FeaturedProjects";
+
 import SectionIntro from "./SectionIntro";
 
 const Home = () => (

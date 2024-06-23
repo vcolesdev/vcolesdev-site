@@ -1,8 +1,12 @@
 "use client";
 
-import {FeaturedProjectIconProps} from "@/utils/types/projects";
-import {motion} from "framer-motion";
+import { FeaturedProjectIconProps } from "@/utils/types/projects";
+import { motion } from "framer-motion";
 
+/**
+ * ProjectCardIcon
+ * @param props
+ */
 export default function ProjectCardIcon(props: FeaturedProjectIconProps) {
   return (
     <motion.svg

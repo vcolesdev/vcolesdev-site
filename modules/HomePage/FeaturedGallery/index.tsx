@@ -1,9 +1,9 @@
 import FeaturedCta from "@/components/Featured/FeaturedCta";
 import SectionContainer from "@/components/SectionContainer";
 import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
-import {SectionHeaderContainer} from "@/components/SectionHeader/components";
+import { SectionHeaderContainer } from "@/components/SectionHeader/components";
 import useFetchFiles from "@/hooks/fetchers/useFetchFiles";
-import Gallery from "@/modules/Gallery/Gallery";
+import Gallery from "@/modules/Gallery";
 
 /**
  * Gallery Requirements:
@@ -29,16 +29,12 @@ const GalleryHeaderContainer = SectionHeaderContainer;
 const GalleryHeader = SectionHeaderEyebrow;
 const GalleryCta = FeaturedCta;
 
-export default async function FeaturedGallery({dir}: {dir: string}) {
+export default async function FeaturedGallery({ dir }: { dir: string }) {
   const images = useFetchFiles(dir);
   return (
     <GalleryContainer>
       <GalleryHeaderContainer>
-        <GalleryHeader
-          description={content.description}
-          eyebrowText={content.eyebrowText}
-          title={content.title}
-        />
+        <GalleryHeader description={content.description} eyebrowText={content.eyebrowText} title={content.title} />
         <GalleryCta hasIcon ctaText={content.ctaText} href={content.ctaLink} />
       </GalleryHeaderContainer>
       <Gallery images={images} />

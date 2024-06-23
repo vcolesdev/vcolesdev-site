@@ -1,4 +1,4 @@
-import {ReactChildren} from "@/utils/types/layout";
+import { ReactChildren } from "@/utils/types/layout";
 import classNames from "classnames";
 
 const styles: PageStyles = {
@@ -10,12 +10,7 @@ const styles: PageStyles = {
     "text-rosy_brown-200",
     "dark:text-charcoal-900",
   ]),
-  description: classNames([
-    "text-xl",
-    "font-medium",
-    "text-rosy_brown-300",
-    "dark:text-charcoal-700",
-  ]),
+  description: classNames(["text-xl", "font-medium", "text-rosy_brown-300", "dark:text-charcoal-700"]),
 };
 
 interface PageTitleProviderProps {
@@ -41,19 +36,19 @@ interface PageStyles {
   description: string;
 }
 
-function PageTitleProvider({children, title}: PageTitleProviderProps) {
+function PageTitleProvider({ children, title }: PageTitleProviderProps) {
   return <div data-page-title={title}>{children}</div>;
 }
 
-function PageDescription({description}: PageDescriptionProps) {
+function PageDescription({ description }: PageDescriptionProps) {
   return <p className={styles.description}>{description}</p>;
 }
 
-function PageHeading({title}: PageHeadingProps) {
+function PageHeading({ title }: PageHeadingProps) {
   return <h2 className={styles.title}>{title}</h2>;
 }
 
-function PageTitle({title, description}: PageTitleProps) {
+function PageTitle({ title, description }: PageTitleProps) {
   return (
     <PageTitleProvider title={title}>
       <PageHeading title={title} />

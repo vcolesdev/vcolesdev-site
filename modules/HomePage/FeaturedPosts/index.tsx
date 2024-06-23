@@ -3,7 +3,8 @@
 import FeaturedCta from "@/components/Featured/FeaturedCta";
 import SectionContainer from "@/components/SectionContainer";
 import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
-import {SectionHeaderContainer} from "@/components/SectionHeader/components";
+import { SectionHeaderContainer } from "@/components/SectionHeader/components";
+
 import styles from "./styles.module";
 
 const content = {
@@ -20,7 +21,7 @@ const FeaturedPostsHeaderContainer = SectionHeaderContainer;
 const FeaturedPostsHeader = SectionHeaderEyebrow;
 const FeaturedPostsCta = FeaturedCta;
 
-export default function FeaturedPosts({posts}: {posts: any[]}) {
+export default function FeaturedPosts({ posts }: { posts: any[] }) {
   return (
     <FeaturedPostsContainer extraClasses={styles.container}>
       <FeaturedPostsHeaderContainer>
@@ -29,11 +30,7 @@ export default function FeaturedPosts({posts}: {posts: any[]}) {
           title={content.title}
           description={content.description}
         />
-        <FeaturedPostsCta
-          hasIcon
-          ctaText={content.ctaText}
-          href={content.ctaLink}
-        />
+        <FeaturedPostsCta hasIcon ctaText={content.ctaText} href={content.ctaLink} />
       </FeaturedPostsHeaderContainer>
     </FeaturedPostsContainer>
   );

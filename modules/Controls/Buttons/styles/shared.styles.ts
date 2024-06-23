@@ -1,12 +1,4 @@
-export const btnLayout = [
-  "relative",
-  "inline-flex",
-  "items-center",
-  "gap-1.5",
-  "px-3",
-  "py-3",
-  "hover:shadow-lg",
-];
+export const btnLayout = ["relative", "inline-flex", "items-center", "gap-1.5", "px-3", "py-3", "hover:shadow-lg"];
 export const btnElement = ["relative", "rounded-xl", "text-center"];
 export const btnTransition = ["ease-in-out", "transition-all", "duration-300"];
 export const btnFocusEvent = ["focus:ring-4"];

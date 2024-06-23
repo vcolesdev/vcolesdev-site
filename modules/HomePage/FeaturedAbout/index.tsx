@@ -2,7 +2,7 @@
 
 import GithubPhoto from "@/assets/images/vcoles-github.jpeg";
 import SplitCard from "@/modules/SplitCard";
-import {SectionContent} from "@/utils/types/layout";
+import { SectionContent } from "@/utils/types/layout";
 
 const content: SectionContent = {
   ctaLink: "/about",

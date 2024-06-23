@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-export default {
+const styles = {
   category: {
     styles: classNames([
       "text-sm",
@@ -23,22 +23,9 @@ export default {
       "group-hover:text-rosy_brown-200",
     ]),
   },
-  default: classNames([
-    "cursor",
-    "group",
-    "relative",
-    "rounded-[28px]",
-    "py-8",
-    "overflow-hidden",
-  ]),
+  default: classNames(["cursor", "group", "relative", "rounded-[28px]", "py-8", "overflow-hidden"]),
   content: classNames(["relative", "max-w-2xl", "px-8"]),
-  excerpt: classNames([
-    "mt-4",
-    "leading-6",
-    "text-rosy_brown-200/60",
-    "group-hover:text-melon-900",
-    "lg:pr-16",
-  ]),
+  excerpt: classNames(["mt-4", "leading-6", "text-rosy_brown-200/60", "group-hover:text-melon-900", "lg:pr-16"]),
   hoverElement: classNames([
     "absolute",
     "rounded-[28px]",
@@ -62,11 +49,7 @@ export default {
   ]),
   more: {
     styles: classNames(["mt-6", "inline-flex", "items-center", "gap-x-1"]),
-    content: classNames([
-      "font-medium",
-      "tracking-tight",
-      "group-hover:text-white",
-    ]),
+    content: classNames(["font-medium", "tracking-tight", "group-hover:text-white"]),
     svg: classNames([
       "mt-[3px]",
       "size-4",
@@ -82,3 +65,5 @@ export default {
     content: classNames(["text-xl", "font-medium"]),
   },
 };
+
+export default styles;

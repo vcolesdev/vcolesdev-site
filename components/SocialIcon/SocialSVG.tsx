@@ -1,10 +1,10 @@
 "use client";
 
-import {tw} from "@/app/api";
+import { tw } from "@/app/api";
 import useAnimateDrawPaths from "@/hooks/animations/useAnimateDrawPaths";
 import useDrawVariants from "@/hooks/animations/useDrawVariants";
-import {motion, useAnimate} from "framer-motion";
-import {ReactNode, useEffect, useState} from "react";
+import { motion, useAnimate } from "framer-motion";
+import { ReactNode, useEffect, useState } from "react";
 
 const defaultIconStyle = "icon-tabler-brand-github";
 
@@ -30,8 +30,8 @@ export function useSocialIconSVG() {
   };
 }
 
-export default function SVG({children, iconStyle}: SVGProps) {
-  const {animate, scope, setIconClassStr, ...icon} = useSocialIconSVG();
+export default function SVG({ children, iconStyle }: SVGProps) {
+  const { animate, scope, setIconClassStr, ...icon } = useSocialIconSVG();
 
   useEffect(() => {
     setIconClassStr(iconStyle);
@@ -54,12 +54,7 @@ export default function SVG({children, iconStyle}: SVGProps) {
       xmlns="http://www.w3.org/2000/svg"
       width={24}
     >
-      <motion.path
-        d="M0 0h24v24H0z"
-        fill="none"
-        stroke="none"
-        variants={icon.drawVariants}
-      />
+      <motion.path d="M0 0h24v24H0z" fill="none" stroke="none" variants={icon.drawVariants} />
       {children}
     </motion.svg>
   );

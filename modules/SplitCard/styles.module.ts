@@ -1,4 +1,4 @@
-import {SplitCardStyles} from "@/modules/SplitCard/api";
+import { SplitCardStyles } from "@/modules/SplitCard/types";
 import classNames from "classnames";
 
 export const splitCardStyles: SplitCardStyles = {
@@ -14,13 +14,7 @@ export const splitCardStyles: SplitCardStyles = {
       "dark:bg-charcoal-300",
       "dark:shadow-charcoal-100/20",
     ]),
-    content: classNames([
-      "grid",
-      "md:grid-cols-1",
-      "md:gap-x-12",
-      "lg:grid-cols-2",
-      "lg:gap-y-12",
-    ]),
+    content: classNames(["grid", "md:grid-cols-1", "md:gap-x-12", "lg:grid-cols-2", "lg:gap-y-12"]),
     textContent: classNames(["flex", "items-center"]),
     header: {
       content: classNames(["py-12", "lg:py-24"]),

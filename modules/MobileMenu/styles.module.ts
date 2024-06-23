@@ -2,13 +2,8 @@ import classNames from "classnames";
 
 const styles = {
   dialog: {
-    closeButton: classNames([
-      "absolute",
-      "items-center",
-      "top-[24px]",
-      "right-[16px]",
-      "dark:text-rose-400",
-    ]),
+    // Update to more appropriate class
+    closeButton: classNames(["absolute", "items-center", "top-[24px]", "right-[16px]", "dark:text-rose-400"]),
     overlay: classNames([
       "fixed",
       "w-full",
@@ -33,21 +28,8 @@ const styles = {
       "dark:bg-charcoal-300",
       "dark:shadow-charcoal-100/80",
     ]),
-    top: classNames([
-      "block",
-      "px-4",
-      "py-6",
-      "bg-melon-800",
-      "dark:bg-charcoal-200",
-    ]),
-    title: classNames([
-      "inline-block",
-      "ms-2",
-      "text-3xl",
-      "font-cursive",
-      "font-semibold",
-      "dark:text-charcoal-900",
-    ]),
+    top: classNames(["block", "px-4", "py-6", "bg-melon-800", "dark:bg-charcoal-200"]),
+    title: classNames(["inline-block", "ms-2", "text-3xl", "font-cursive", "font-semibold", "dark:text-charcoal-900"]),
     content: classNames(["w-full", "p-4"]),
   },
   menu: {

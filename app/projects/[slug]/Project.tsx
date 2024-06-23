@@ -1,33 +1,24 @@
 import ProjectLink from "@/app/projects/[slug]/ProjectLink";
 import ProjectTags from "@/app/projects/[slug]/ProjectTags";
 import ProjectTitle from "@/app/projects/[slug]/ProjectTitle";
-import {FeaturedProject} from "@/utils/types/projects";
-import {IconBrandGithub, IconTags} from "@tabler/icons-react";
+import { FeaturedProject } from "@/utils/types/projects";
+import { IconBrandGithub, IconTags } from "@tabler/icons-react";
 import classNames from "classnames";
-import {ReactNode} from "react";
+import { ReactNode } from "react";
 
 const projectStyles = {
   content: classNames(["flex", "items-center", "gap-4"]),
 };
 
 const iconStyles = {
-  container: classNames([
-    "text-2xl",
-    "text-rosy_brown-300",
-    "dark:text-charcoal-500",
-  ]),
+  container: classNames(["text-2xl", "text-rosy_brown-300", "dark:text-charcoal-500"]),
 };
 
-function IconContainer({children}: {children: ReactNode | ReactNode[]}) {
+function IconContainer({ children }: { children: ReactNode | ReactNode[] }) {
   return <div className={iconStyles.container}>{children}</div>;
 }
 
-export default function Project({
-  href,
-  title,
-  description,
-  tags,
-}: FeaturedProject) {
+export default function Project({ href, title, description, tags }: FeaturedProject) {
   return (
     <>
       <ProjectTitle title={title} description={description} />

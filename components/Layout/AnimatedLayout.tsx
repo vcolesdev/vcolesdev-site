@@ -1,8 +1,8 @@
 "use client";
 
-import {ReactChildren} from "@/utils/types/layout";
-import {AnimatePresence, LayoutGroup} from "framer-motion";
-import {ComponentPropsWithRef} from "react";
+import { ReactChildren } from "@/utils/types/layout";
+import { AnimatePresence, LayoutGroup } from "framer-motion";
+import { ComponentPropsWithRef } from "react";
 
 interface AnimatePresenceProps {
   /**

@@ -1,4 +1,7 @@
 export const NAV_WIDTH = 375;
+export const ACTIVE_CLASS = "flex";
+export const INACTIVE_CLASS = "hidden";
+export const DEFAULT_MENU_ID = "siteMobileMenu";
 
 export const overlayVariants = {
   hidden: {
@@ -19,7 +22,7 @@ export const overlayVariants = {
   },
 };
 
-export const dialogVariants = {
+export const providerVariants = {
   hidden: {
     left: -NAV_WIDTH,
     opacity: 0,

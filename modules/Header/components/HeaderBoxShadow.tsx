@@ -1,19 +1,15 @@
 "use client";
 
-import {motion, useAnimate} from "framer-motion";
+import { motion, useAnimate } from "framer-motion";
 
-interface HeaderBoxShadowInterface {
-  id?: string;
-}
+import headerStyles from "../styles.module";
+import type { HeaderBoxShadow } from "../types";
 
-export default function HeaderBoxShadow({id}: HeaderBoxShadowInterface) {
+/**
+ * HeaderBoxShadow
+ * @param id
+ */
+export default function HeaderBoxShadow({ id }: HeaderBoxShadow) {
   const [scope] = useAnimate();
-
-  return (
-    <motion.div
-      className="fixed left-0 top-0 z-10 w-full bg-transparent"
-      id={id}
-      ref={scope}
-    />
-  );
+  return <motion.div className={headerStyles.boxShadow} id={id} ref={scope} />;
 }

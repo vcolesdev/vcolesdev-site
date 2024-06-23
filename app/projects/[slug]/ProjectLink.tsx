@@ -17,16 +17,11 @@ interface ProjectLink {
   linkText: string;
 }
 
-export default function ProjectLink({href, linkText}: ProjectLink) {
+export default function ProjectLink({ href, linkText }: ProjectLink) {
   // Link to be updated...
   return (
     <p>
-      <a
-        href={href}
-        className={linkStyles.element}
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href={href} className={linkStyles.element} target="_blank" rel="noreferrer">
         {linkText}
       </a>
     </p>

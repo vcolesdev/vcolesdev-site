@@ -1,7 +1,11 @@
-import {useScroll, useSpring, useTransform} from "framer-motion";
+import { useScroll, useSpring, useTransform } from "framer-motion";
 
+/**
+ * useHeaderAnimation()
+ * @description Hook that returns Header animation values.
+ */
 export default function useHeaderAnimation() {
-  const {scrollY} = useScroll();
+  const { scrollY } = useScroll();
   const maxWidth = useTransform(scrollY, [0, 100], ["80rem", "100rem"], {});
 
   const spring = useSpring(scrollY, {

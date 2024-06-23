@@ -1,7 +1,8 @@
 "use client";
 
-import {ReactChildren} from "@/utils/types/layout";
+import { ReactChildren } from "@/utils/types/layout";
 import Image from "next/image";
+
 import styles from "./styles.module";
 
 const divOneClipPath =
@@ -12,28 +13,24 @@ const divTwoClipPath =
 const DivTransforms = () => (
   <>
     <div className={styles.divOne.styles} aria-hidden="true">
-      <div className={styles.divOne.child} style={{clipPath: divOneClipPath}} />
+      <div className={styles.divOne.child} style={{ clipPath: divOneClipPath }} />
     </div>
     <div className={styles.divTwo.styles} aria-hidden="true">
-      <div className={styles.divTwo.child} style={{clipPath: divTwoClipPath}} />
+      <div className={styles.divTwo.child} style={{ clipPath: divTwoClipPath }} />
     </div>
   </>
 );
 
-const ImageTransformWrapper = ({children}: {children: ReactChildren}) => (
+const ImageTransformWrapper = ({ children }: { children: ReactChildren }) => (
   <section className={styles.wrapper}>
     {children}
     <DivTransforms />
   </section>
 );
 
-const FeaturedImage = (props: {imgSrc: string}) => (
+const FeaturedImage = (props: { imgSrc: string }) => (
   <ImageTransformWrapper>
-    <Image
-      alt="Large featured image"
-      className={styles.image}
-      src={props.imgSrc}
-    />
+    <Image alt="Large featured image" className={styles.image} src={props.imgSrc} />
   </ImageTransformWrapper>
 );
 

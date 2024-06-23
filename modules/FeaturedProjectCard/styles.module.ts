@@ -1,14 +1,17 @@
-import {tw} from "@/app/api";
-import {FeaturedProjectCardStyles} from "@/modules/FeaturedProjectCard/api";
+import { tw } from "@/app/api";
+import { FeaturedProjectCardStyles } from "@/modules/FeaturedProjectCard/api";
+import classNames from "classnames";
 
 const linksContainer = ["mt-4", "inline-flex", "items-center", "gap-x-1"];
+
+const linkContainer = ["motion-project-card", "relative", "flex"];
 
 const linksSpan = [
   "text-base",
   "font-medium",
   "text-rosy_brown-400",
   "group-hover:text-melon-400",
-  "dark:text-charcoal-700",
+  "dark:text-charcoal-800",
   "dark:group-hover:text-rose-400",
   "dark:group-hover:font-semibold",
 ];
@@ -21,6 +24,7 @@ const linksSvg = [
   "ease-in-out",
   "group-hover:translate-x-1",
   "group-hover:text-melon-400",
+  "dark:text-charcoal-800",
 ];
 
 const projectStyles = [
@@ -50,7 +54,7 @@ const projectTitle = [
   "text-rosy_brown-300",
   "font-semibold",
   "group-hover:text-melon-400",
-  "dark:text-charcoal-700",
+  "dark:text-charcoal-800/90",
   "dark:group-hover:text-rose-400",
 ];
 
@@ -64,13 +68,14 @@ const projectDescription = [
   "dark:group-hover:text-white",
 ];
 
-export const cardStyles: FeaturedProjectCardStyles = {
+export const cardStyles = {
   links: {
     container: tw(linksContainer),
     span: tw(linksSpan),
     svg: tw(linksSvg),
   },
   project: {
+    linkContainer: tw(linkContainer),
     styles: tw(projectStyles),
     title: tw(projectTitle),
     description: tw(projectDescription),

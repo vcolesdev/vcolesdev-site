@@ -1,5 +1,5 @@
-import {ReactChildren} from "@/utils/types/layout";
-import React, {useEffect, useState} from "react";
+import { ReactChildren } from "@/utils/types/layout";
+import React, { useEffect, useState } from "react";
 
 export function Slot({
   element = "div",
@@ -22,9 +22,5 @@ export function Slot({
     };
   }, [z, setZindex]);
 
-  return React.createElement(
-    element,
-    {className: styles + ` z-${zIndex}`, ...props},
-    children
-  );
+  return React.createElement(element, { className: styles + ` z-${zIndex}`, ...props }, children);
 }

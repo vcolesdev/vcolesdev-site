@@ -1,7 +1,8 @@
 "use client";
 
-import {ReactChildren} from "@/utils/types/layout";
+import { ReactChildren } from "@/utils/types/layout";
 import Image from "next/image";
+
 import SocialLinks from "../../../components/SocialLinks";
 import UnderConstruction from "../../../components/UnderConstruction";
 import styles from "./styles.module";
@@ -18,15 +19,11 @@ const content = {
 
 const IntroImage = Image;
 
-const IntroTitle = ({title}: {title: ReactChildren}) => (
-  <h2 className={styles.title}>{title}</h2>
-);
+const IntroTitle = ({ title }: { title: ReactChildren }) => <h1 className={styles.title}>{title}</h1>;
 
-const IntroText = ({text}: {text: string}) => (
-  <p className={styles.text.styles}>{text}</p>
-);
+const IntroText = ({ text }: { text: string }) => <p className={styles.text.styles}>{text}</p>;
 
-function IntroFeaturedImage({imgSrc}: {imgSrc: string}) {
+function IntroFeaturedImage({ imgSrc }: { imgSrc: string }) {
   return (
     <div className={styles.image.container}>
       <div className={styles.image.content}>
@@ -43,30 +40,23 @@ function IntroFeaturedImage({imgSrc}: {imgSrc: string}) {
   );
 }
 
-const IntroSlotTop = ({children}: {children: ReactChildren}) => (
-  <div className={styles.slotTop}>{children}</div>
-);
+const IntroSlotTop = ({ children }: { children: ReactChildren }) => <div className={styles.slotTop}>{children}</div>;
 
-const IntroSlotBottom = ({children}: {children: ReactChildren}) => (
+const IntroSlotBottom = ({ children }: { children: ReactChildren }) => (
   <div className={styles.slotBottom}>{children}</div>
 );
 
-const IntroSlot = ({children}: {children: ReactChildren}) => (
-  <div className={styles.slot}>{children}</div>
-);
+const IntroSlot = ({ children }: { children: ReactChildren }) => <div className={styles.slot}>{children}</div>;
 
-const IntroTextContent = ({children}: {children: ReactChildren}) => (
+const IntroTextContent = ({ children }: { children: ReactChildren }) => (
   <div className={styles.text.content}>{children}</div>
 );
 
-const IntroContainer = ({children}: {children: ReactChildren}) => (
+const IntroContainer = ({ children }: { children: ReactChildren }) => (
   <div className={styles.container}>{children}</div>
 );
 
-const SectionIntro = ({
-  featuredImageSrc,
-  hasFeaturedImage = false,
-}: SectionIntroProps) => (
+const SectionIntro = ({ featuredImageSrc, hasFeaturedImage = false }: SectionIntroProps) => (
   <IntroContainer>
     <IntroTextContent>
       <IntroTitle title={content.title} />
@@ -78,9 +68,7 @@ const SectionIntro = ({
     <IntroSlot>
       <SocialLinks />
     </IntroSlot>
-    {hasFeaturedImage && featuredImageSrc && (
-      <IntroFeaturedImage imgSrc={featuredImageSrc} />
-    )}
+    {hasFeaturedImage && featuredImageSrc && <IntroFeaturedImage imgSrc={featuredImageSrc} />}
   </IntroContainer>
 );
 

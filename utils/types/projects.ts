@@ -1,5 +1,6 @@
 import React from "react";
-import {IconSettings} from "./settings";
+
+import { IconSettings } from "./settings";
 
 export enum FeaturedProjectCategories {
   nextjs = "nextjs",

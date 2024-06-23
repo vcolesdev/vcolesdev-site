@@ -3,9 +3,10 @@
 import FeaturedCta from "@/components/Featured/FeaturedCta";
 import SectionContainer from "@/components/SectionContainer";
 import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
-import {SectionHeaderContainer} from "@/components/SectionHeader/components";
+import { SectionHeaderContainer } from "@/components/SectionHeader/components";
 import Projects from "@/modules/HomePage/FeaturedProjects/Projects";
-import {FeaturedProject} from "@/utils/types/projects";
+import { FeaturedProject } from "@/utils/types/projects";
+
 import styles from "./styles.module";
 
 const ProjectsContainer = SectionContainer;
@@ -22,19 +23,11 @@ const content = {
   title: "Handpicked Favorites",
 };
 
-export default function FeaturedProjects({
-  projects,
-}: {
-  projects: FeaturedProject[];
-}) {
+export default function FeaturedProjects({ projects }: { projects: FeaturedProject[] }) {
   return (
     <ProjectsContainer extraClasses={styles.container}>
       <ProjectsHeaderContainer>
-        <ProjectsHeader
-          eyebrowText={content.eyebrowText}
-          title={content.title}
-          description={content.description}
-        />
+        <ProjectsHeader eyebrowText={content.eyebrowText} title={content.title} description={content.description} />
         <ProjectsCta hasIcon ctaText={content.ctaText} href={content.ctaLink} />
       </ProjectsHeaderContainer>
       <Projects projects={projects} />

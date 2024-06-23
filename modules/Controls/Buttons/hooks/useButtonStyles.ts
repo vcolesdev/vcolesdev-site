@@ -1,5 +1,5 @@
-import {mergeStyles, tw} from "@/app/api";
-import {ButtonStyles} from "@/modules/Controls/Buttons/api";
+import { mergeStyles, tw } from "@/app/api";
+import { ButtonStyles } from "@/modules/Controls/Buttons/api";
 import {
   element,
   focus,
@@ -12,13 +12,7 @@ import {
 } from "@/modules/Controls/Buttons/styles/button.styles";
 
 export default function useButtonStyles(): ButtonStyles {
-  const componentStyles = mergeStyles(
-    layout,
-    element,
-    transition,
-    hover,
-    focus
-  );
+  const componentStyles = mergeStyles(layout, element, transition, hover, focus);
   return {
     component: tw(componentStyles),
     text: tw(text),

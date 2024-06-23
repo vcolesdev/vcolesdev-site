@@ -1,22 +1,20 @@
-import FooterContent from "./parts/_Content";
-import FooterCopyright from "./parts/_Copyright";
-import FooterSocialLinks from "./parts/_SocialLinks";
-import CopyrightSlot from "./slots/CopyrightSlot";
-import SocialLinksSlot from "./slots/SocialLinksSlot";
+import { FooterContent, FooterCopyright, FooterCopyrightContainer, FooterSocialLinksContainer } from "./components";
+import FooterSocialLinks from "./components/FooterSocialLinks";
 
 /**
- * Footer module
+ * Footer
+ * @module Footer
  */
 export default function Footer() {
   return (
     <footer id="siteFooterMain">
       <FooterContent>
-        <SocialLinksSlot>
+        <FooterSocialLinksContainer>
           <FooterSocialLinks />
-        </SocialLinksSlot>
-        <CopyrightSlot>
+        </FooterSocialLinksContainer>
+        <FooterCopyrightContainer>
           <FooterCopyright />
-        </CopyrightSlot>
+        </FooterCopyrightContainer>
       </FooterContent>
     </footer>
   );

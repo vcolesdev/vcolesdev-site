@@ -7,9 +7,10 @@ import {
   SectionHeaderWrapper,
   SectionTitle,
 } from "@/components/SectionHeader/components";
-import {LayoutGroup, motion, useAnimate, useInView} from "framer-motion";
-import {useEffect} from "react";
-import {SectionHeaderEyebrowProps} from "./api";
+import { LayoutGroup, motion, useAnimate, useInView } from "framer-motion";
+import { useEffect } from "react";
+
+import { SectionHeaderEyebrowProps } from "./api";
 
 const keyframes = {
   animate: {},
@@ -36,10 +37,7 @@ export default function SectionHeaderEyebrow(props: SectionHeaderEyebrowProps) {
             <SectionEyebrow textContent={props.eyebrowText} />
             <SectionTitle title={props.title} />
             {props.description && (
-              <SectionDescription
-                size={props.textSize || "default"}
-                textContent={props.description}
-              />
+              <SectionDescription size={props.textSize || "default"} textContent={props.description} />
             )}
           </SectionHeaderContent>
         </SectionHeaderWrapper>

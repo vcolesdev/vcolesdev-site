@@ -16,12 +16,4 @@ const IconStorybook = () => <IconBrandStorybook />;
 const IconVite = () => <IconBrandVite />;
 const Placeholder = () => <IconCode />;
 
-export {
-  IconNextJs,
-  IconNodeJs,
-  IconPython,
-  IconRemix,
-  IconStorybook,
-  IconVite,
-  Placeholder,
-};
+export { IconNextJs, IconNodeJs, IconPython, IconRemix, IconStorybook, IconVite, Placeholder };

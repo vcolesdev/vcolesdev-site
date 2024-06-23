@@ -1,5 +1,5 @@
-import {tw} from "@/app/api";
-import {ImageCardStyles} from "@/modules/ImageCard/api";
+import { tw } from "@/app/api";
+import { ImageCardStyles } from "./types";
 
 const overlay = [
   "absolute",

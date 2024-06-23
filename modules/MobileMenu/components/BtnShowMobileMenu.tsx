@@ -1,13 +1,7 @@
-import {IconMenu2} from "@tabler/icons-react";
-import {motion} from "framer-motion";
+import { IconMenu2 } from "@tabler/icons-react";
+import { motion } from "framer-motion";
 
-export default function BtnShowMobileMenu({
-  id,
-  onClick,
-}: {
-  id?: string;
-  onClick: any;
-}) {
+export default function BtnMobileMenuOpen({ id, onClick }: { id?: string; onClick: any }) {
   return (
     <motion.button id={id} onClick={onClick}>
       <span>

@@ -1,20 +1,20 @@
 "use client";
 
-import useHeader from "@/modules/Header/hooks/useHeader";
-import useHeaderAnimation from "@/modules/Header/hooks/useHeaderAnimation";
-import headerStyles from "@/modules/Header/styles.module";
-import {motion} from "framer-motion";
-import {ReactNode} from "react";
+import { motion } from "framer-motion";
 
-export default function HeaderProvider({
-  id,
-  children,
-}: {
-  id: string;
-  children: ReactNode | ReactNode[];
-}) {
-  const {maxWidth, headerSpring} = useHeaderAnimation();
-  const {contentScope, padding, scope} = useHeader();
+import useHeader from "../hooks/useHeader";
+import useHeaderAnimation from "../hooks/useHeaderAnimation";
+import headerStyles from "../styles.module";
+import type { HeaderProvider } from "../types";
+
+/**
+ * HeaderProvider
+ * @param id
+ * @param children
+ */
+export default function HeaderProvider({ id, children }: HeaderProvider) {
+  const { maxWidth, headerSpring } = useHeaderAnimation();
+  const { contentScope, padding, scope } = useHeader();
 
   return (
     <motion.header className={headerStyles.element} id={id} ref={scope}>

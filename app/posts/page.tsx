@@ -1,6 +1,6 @@
 "use client";
 
-import {pageStyles} from "@/app/styles.module";
+import { pageStyles } from "@/app/styles.module";
 import LayoutFadeIn from "@/components/Layout/LayoutFadeIn";
 import PageTitle from "@/components/Page/PageTitle";
 import PageWrapper from "@/components/Page/PageWrapper";

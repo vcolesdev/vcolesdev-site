@@ -4,6 +4,7 @@ import featuredProjects from "@/assets/data/featured-projects.json";
 import LayoutFadeIn from "@/components/Layout/LayoutFadeIn";
 import PageTitle from "@/components/Page/PageTitle";
 import PageWrapper from "@/components/Page/PageWrapper";
+
 import Projects from "./Projects";
 
 export default function Page() {

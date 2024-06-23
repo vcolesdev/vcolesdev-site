@@ -1,22 +1,8 @@
 import classNames from "classnames";
 
 export default {
-  wrapper: classNames([
-    "relative",
-    "isolate",
-    "mb-12",
-    "min-h-screen",
-    "overflow-hidden",
-    "lg:mb-24",
-  ]),
-  image: classNames([
-    "absolute",
-    "inset-0",
-    "-z-10",
-    "h-full",
-    "w-full",
-    "object-cover",
-  ]),
+  wrapper: classNames(["relative", "isolate", "mb-12", "min-h-screen", "overflow-hidden", "lg:mb-24"]),
+  image: classNames(["absolute", "inset-0", "-z-10", "h-full", "w-full", "object-cover"]),
   divOne: {
     styles: classNames([
       "absolute",

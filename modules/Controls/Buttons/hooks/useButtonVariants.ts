@@ -22,7 +22,7 @@ function getButtonVariants(type: "default" | "outline") {
     animate: {
       ...animateValue,
     },
-    tap: {...tapValue},
+    tap: { ...tapValue },
   };
 
   const outlineVariants = {
@@ -34,7 +34,7 @@ function getButtonVariants(type: "default" | "outline") {
       //backgroundImage: "linear-gradient(to bottom, rgba(233, 117, 93, 0.9), rgba(215, 60, 29, 0.8))",
       ...animateValue,
     },
-    tap: {...tapValue},
+    tap: { ...tapValue },
   };
 
   if (type === "default") {

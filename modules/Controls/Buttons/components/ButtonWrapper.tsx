@@ -1,18 +1,18 @@
 "use client";
 
 import useButtonVariants from "@/modules/Controls/Buttons/hooks/useButtonVariants";
-import {ReactChildren} from "@/utils/types/layout";
-import {motion} from "framer-motion";
+import { ReactChildren } from "@/utils/types/layout";
+import { motion } from "framer-motion";
 
 interface ButtonWrapperProps {
   children: ReactChildren;
   styles: string;
   groupId?: string;
   onClick?: () => void;
-  transition?: {duration: number};
+  transition?: { duration: number };
 }
 
-export default function ButtonWrapper({...btn}: ButtonWrapperProps) {
+export default function ButtonWrapper({ ...btn }: ButtonWrapperProps) {
   const btnVariants = useButtonVariants();
 
   /**
@@ -27,7 +27,7 @@ export default function ButtonWrapper({...btn}: ButtonWrapperProps) {
         layoutId={btn.groupId || "button"}
         initial="initial"
         onClick={btn.onClick}
-        transition={btn.transition || {duration: 0.15}}
+        transition={btn.transition || { duration: 0.15 }}
         variants={btnVariants.outline}
         whileHover="animate"
         whileTap="tap"
@@ -42,7 +42,7 @@ export default function ButtonWrapper({...btn}: ButtonWrapperProps) {
         layoutId={btn.groupId || "button"}
         initial="initial"
         onClick={btn.onClick}
-        transition={btn.transition || {duration: 0.15}}
+        transition={btn.transition || { duration: 0.15 }}
         variants={btnVariants.default}
         whileHover="animate"
         whileTap="tap"

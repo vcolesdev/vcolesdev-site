@@ -1,14 +1,21 @@
 "use client";
 
-import {motion} from "framer-motion";
-import {ImageCardProps, useImageCard} from "./api";
+import { motion } from "framer-motion";
+
+import useImageCard from "./hooks/useImageCard";
 import imageCard from "./styles.module";
+import type { ImageCard } from "./types";
 
 const defaultAltText = "Featured Image - Placeholder alt text, to be updated.";
 
-export default function ImageCard(props: ImageCardProps) {
+/**
+ * ImageCard
+ * @module ImageCard
+ * @param props
+ */
+export default function ImageCard(props: ImageCard) {
   const card = props;
-  const {anim, handleClick, onHoverEnd, onHoverStart, scope} = useImageCard();
+  const { anim, handleClick, onHoverEnd, onHoverStart, scope } = useImageCard();
 
   return (
     <motion.div
@@ -22,10 +29,7 @@ export default function ImageCard(props: ImageCardProps) {
       whileHover={anim.whileHover}
       whileTap={anim.whileTap}
     >
-      <motion.article
-        className={imageCard.imageMedia}
-        style={{borderRadius: "2rem"}}
-      >
+      <motion.article className={imageCard.imageMedia} style={{ borderRadius: "2rem" }}>
         <motion.img
           alt={defaultAltText}
           height={card.height || 1440}

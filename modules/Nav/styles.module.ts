@@ -28,20 +28,9 @@ const styles = {
     "duration-300",
     "ease-in-out-cubic",
   ]),
-  logoText: classNames([
-    "font-cursive",
-    "font-semibold",
-    "text-[24px]",
-    "dark:text-charcoal-900",
-  ]),
+  logoText: classNames(["font-cursive", "font-semibold", "text-[24px]", "dark:text-charcoal-900"]),
   mobileMenuIcon: classNames(["lg:hidden", "flex", "items-end"]),
-  themeChanger: classNames([
-    "hidden",
-    "lg:flex",
-    "lg:flex-1",
-    "lg:justify-end",
-    "gap-3",
-  ]),
+  themeChanger: classNames(["hidden", "lg:flex", "lg:flex-1", "lg:justify-end", "gap-3"]),
 };
 
 export default styles;

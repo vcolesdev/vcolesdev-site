@@ -1,13 +1,10 @@
 "use client";
 
 import Container from "@/components/Layout/Container";
-import {SectionContainerProps} from "./api";
 
-export default function SectionContainer({
-  children,
-  extraClasses,
-  noPadding,
-}: SectionContainerProps) {
+import { SectionContainerProps } from "./api";
+
+export default function SectionContainer({ children, extraClasses, noPadding }: SectionContainerProps) {
   const renderContainer = () => {
     if (extraClasses) {
       return (

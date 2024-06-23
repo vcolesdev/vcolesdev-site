@@ -1,10 +1,7 @@
 "use client";
 
-import {
-  FeatureIconButton,
-  FeatureOutlineIconButton,
-} from "@/components/Featured/components";
-import {ReactChildren} from "@/utils/types/layout";
+import { FeatureIconButton, FeatureOutlineIconButton } from "@/components/Featured/components";
+import { ReactChildren } from "@/utils/types/layout";
 
 export interface FeaturedCtaProps {
   hasIcon?: boolean;
@@ -17,17 +14,9 @@ export function getFeaturedCta(btn: FeaturedCtaProps) {
   let component: ReactChildren;
 
   if (btn.isOutline) {
-    component = (
-      <FeatureOutlineIconButton
-        ctaText={btn.ctaText}
-        href={btn.href}
-        {...btn}
-      />
-    );
+    component = <FeatureOutlineIconButton ctaText={btn.ctaText} href={btn.href} {...btn} />;
   } else {
-    component = (
-      <FeatureIconButton ctaText={btn.ctaText} href={btn.href} {...btn} />
-    );
+    component = <FeatureIconButton ctaText={btn.ctaText} href={btn.href} {...btn} />;
   }
 
   return component;

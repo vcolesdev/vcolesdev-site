@@ -1,7 +1,7 @@
 "use client";
 
 import classNames from "classnames";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const tagStyles = {
   container: classNames(["flex", "gap-3"]),
@@ -23,7 +23,7 @@ const tagStyles = {
   ]),
 };
 
-export default function ProjectTags({tags}: {tags: string[]}) {
+export default function ProjectTags({ tags }: { tags: string[] }) {
   return (
     <div className={tagStyles.container}>
       {tags.map((tag) => (

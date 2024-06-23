@@ -1,17 +1,10 @@
 "use client";
 
-import {FeaturedProjectCategories} from "@/utils/types/projects";
+import { FeaturedProjectCategories } from "@/utils/types/projects";
 import classNames from "classnames";
 import React from "react";
-import {
-  IconNextJs,
-  IconNodeJs,
-  IconPython,
-  IconRemix,
-  IconStorybook,
-  IconVite,
-  Placeholder,
-} from "./BrandIcons";
+
+import { IconNextJs, IconNodeJs, IconPython, IconRemix, IconStorybook, IconVite, Placeholder } from "./BrandIcons";
 
 const styles = {
   wrapper: classNames([
@@ -38,11 +31,7 @@ const styles = {
   ]),
 };
 
-function FeaturedProjectCategoryIconWrapper({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+function FeaturedProjectCategoryIconWrapper({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <span className={styles.wrapper}>{children}</span>

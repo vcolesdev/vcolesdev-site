@@ -1,49 +1,15 @@
 "use client";
 
-import useTheme from "@/hooks/theme/useTheme";
-import {motion} from "framer-motion";
-import Link from "next/link";
-import {usePathname} from "next/navigation";
-import {useEffect, useState} from "react";
-import styles from "../styles.module";
+import { usePathname } from "next/navigation";
 
-export interface NavLinkItem {
-  name: string;
-  href: string;
-}
+import type { NavLinkItem, NavLinks } from "../types";
+import NavLink from "./NavLink";
 
-export type NavLinks = NavLinkItem[];
-
-function NavLink({item, pathname}: {item: NavLinkItem; pathname?: string}) {
-  const [activelinkColor, setActiveLinkColor] = useState("");
-  const [extraClasses, setExtraClasses] = useState("");
-  const {theme} = useTheme();
-
-  useEffect(() => {
-    if (pathname === item.href) {
-      setExtraClasses("active");
-      setActiveLinkColor(styles.nav.activeLink);
-    }
-  }, [item, pathname, setExtraClasses, setActiveLinkColor, theme]);
-
-  return (
-    <motion.div className={styles.nav.item}>
-      <Link
-        className={styles.nav.link + " " + extraClasses + " " + activelinkColor}
-        href={item.href}
-      >
-        {item.name}
-      </Link>
-    </motion.div>
-  );
-}
-
-function NavLinks({nav}: {nav: NavLinks}) {
+/**
+ * NavLinks component
+ * @param nav
+ */
+export default function NavLinks({ nav }: { nav: NavLinks }) {
   const currentPath = usePathname();
-
-  return nav.map((item: NavLinkItem) => (
-    <NavLink key={item.name} item={item} pathname={currentPath} />
-  ));
+  return nav.map((item: NavLinkItem) => <NavLink key={item.name} item={item} pathname={currentPath} />);
 }
-
-export default NavLinks;

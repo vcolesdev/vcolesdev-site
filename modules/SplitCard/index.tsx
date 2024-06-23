@@ -2,10 +2,9 @@
 
 import FeaturedCta from "@/components/Featured/FeaturedCta";
 import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
-import {SectionHeaderContainer} from "@/components/SectionHeader/components";
-import {SectionContent} from "@/utils/types/layout";
-import {StaticImport} from "next/dist/shared/lib/get-img-props";
+import { SectionHeaderContainer } from "@/components/SectionHeader/components";
 import Image from "next/image";
+
 import {
   SplitCardContent,
   SplitCardHeaderContent,
@@ -14,26 +13,22 @@ import {
   SplitCardText,
   SplitCardWrapper,
 } from "./components";
-import {splitCardStyles as styles} from "./styles.module";
+import { splitCardStyles as styles } from "./styles.module";
+import type { SplitCard } from "./types";
 
-export default function SplitCard({
-  content,
-  image,
-  hasCta,
-}: {
-  content: SectionContent;
-  image: string | StaticImport;
-  hasCta?: boolean;
-}) {
+/**
+ * SplitCard
+ * @module SplitCard
+ * @param content
+ * @param image
+ * @param hasCta
+ */
+export default function SplitCard({ content, image, hasCta }: SplitCard) {
   return (
     <SplitCardWrapper>
       <SplitCardContent>
         <SplitCardImage>
-          <Image
-            src={image}
-            alt={content.imageAlt}
-            className={styles.image.styles}
-          />
+          <Image src={image} alt={content.imageAlt} className={styles.image.styles} />
         </SplitCardImage>
         <SplitCardText>
           <SectionHeaderContainer noMarginBottom>
@@ -45,14 +40,7 @@ export default function SplitCard({
                   textSize="lg"
                   title={content.title}
                 />
-                {hasCta && (
-                  <FeaturedCta
-                    hasIcon
-                    isOutline
-                    ctaText={content.ctaText}
-                    href={content.ctaLink}
-                  />
-                )}
+                {hasCta && <FeaturedCta hasIcon isOutline ctaText={content.ctaText} href={content.ctaLink} />}
               </SplitCardHeaderContent>
             </SplitCardHeaderWrapper>
           </SectionHeaderContainer>

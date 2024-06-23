@@ -1,6 +1,6 @@
-import {ReactChildren} from "@/utils/types/layout";
-import {Variants} from "framer-motion";
-import {MouseEvent, ReactNode} from "react";
+import { ReactChildren } from "@/utils/types/layout";
+import { Variants } from "framer-motion";
+import { MouseEvent, ReactNode } from "react";
 
 export type ClassNames = string;
 

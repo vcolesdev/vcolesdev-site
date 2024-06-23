@@ -1,4 +1,4 @@
-import React, {Attributes, ReactNode} from "react";
+import React, { Attributes, ReactNode } from "react";
 
 type Props = Attributes;
 type Children = ReactNode[] | ReactNode;

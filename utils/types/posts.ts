@@ -1,5 +1,6 @@
-import {FeaturedProjectIconProps} from "@/utils/types/projects";
+import { FeaturedProjectIconProps } from "@/utils/types/projects";
 
+// @todo Move these to the correct location, we want these to be local to their component directory.
 export interface FeaturedTestPostInterface {
   id: number;
   title: string;
@@ -21,7 +22,5 @@ export interface FeaturedTestPostInterface {
 export type FeaturedTestPost = {
   post: FeaturedTestPostInterface;
 };
-
-// export type FeaturedTestPosts = FeaturedTestPostInterface[];
 
 export interface FeaturedPostIconProps extends FeaturedProjectIconProps {}
