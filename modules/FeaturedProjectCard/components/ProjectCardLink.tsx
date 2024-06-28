@@ -1,20 +1,25 @@
 "use client";
 
 import useIconSettings from "@/hooks/components/useIconSettings";
-import { MoreText } from "@/modules/FeaturedProjectCard/components";
-import ProjectCardIcon from "@/modules/FeaturedProjectCard/components/ProjectCardIcon";
-import { cardStyles as styles } from "@/modules/FeaturedProjectCard/styles.module";
 import { projectIconSettings } from "@/utils/types/settings";
 import { motion } from "framer-motion";
 
+import { MoreText } from "../components";
+import ProjectCardIcon from "../components/ProjectCardIcon";
+import styles from "../styles.module";
 import type { ProjectCardLink } from "../types";
 
+/**
+ * More Icon
+ * @component MoreIcon
+ */
 function MoreIcon() {
   return <motion.path d="m9 18 6-6-6-6" />;
 }
 
 /**
- * ProjectCardLink
+ * Project Card Link
+ * @component ProjectCardLink
  * @param moreText
  */
 export default function ProjectCardLink({ moreText }: ProjectCardLink) {

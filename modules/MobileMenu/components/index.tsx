@@ -4,7 +4,8 @@ import styles from "../styles.module";
 import type { MobileMenuContent, MobileMenuList } from "../types";
 
 /**
- * MobileMenuTitle component
+ * Mobile Menu Title
+ * @component MobileMenuTitle
  * @param title
  */
 export function MobileMenuTitle({ title }: { title: string }) {
@@ -16,7 +17,8 @@ export function MobileMenuTitle({ title }: { title: string }) {
 }
 
 /**
- * MobileMenuContent component
+ * Mobile Menu Content
+ * @component MobileMenuContent
  * @param children
  * @param maxWidth
  */
@@ -29,10 +31,15 @@ export function MobileMenuContent({ children, maxWidth = NAV_WIDTH }: MobileMenu
 }
 
 /**
- * MobileMenuList component
+ * Mobile Menu List
+ * @component MobileMenuList
  * @param children
  * @param menuId
  */
 export function MobileMenuList({ children, menuId = DEFAULT_MENU_ID }: MobileMenuList) {
-  return <ul className={styles.menu.element}>{children}</ul>;
+  return (
+    <ul id={menuId} className={styles.menu.element}>
+      {children}
+    </ul>
+  );
 }

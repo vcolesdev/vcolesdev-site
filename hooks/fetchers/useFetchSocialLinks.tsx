@@ -1,12 +1,7 @@
 "use client";
 
-import {
-  Github,
-  LinkedIn,
-  Mastodon,
-  Message2Share,
-} from "@/components/SocialIcon/SocialIcons";
-import {ReactNode} from "react";
+import { Github, LinkedIn, Mastodon, Message2Share } from "@/components/SocialIcon/components/SocialIcons";
+import { ReactNode } from "react";
 
 /**
  * useSocialLinks hook

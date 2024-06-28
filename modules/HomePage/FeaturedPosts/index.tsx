@@ -7,7 +7,7 @@ import { SectionHeaderContainer } from "@/components/SectionHeader/components";
 
 import styles from "./styles.module";
 
-const content = {
+const CONTENT = {
   ctaText: "View All Posts",
   ctaLink: "/posts",
   description:
@@ -21,16 +21,20 @@ const FeaturedPostsHeaderContainer = SectionHeaderContainer;
 const FeaturedPostsHeader = SectionHeaderEyebrow;
 const FeaturedPostsCta = FeaturedCta;
 
+/**
+ * Featured Posts
+ * @module Homepage/FeaturedPosts
+ * @param posts
+ * @constructor
+ */
 export default function FeaturedPosts({ posts }: { posts: any[] }) {
+  const { ctaText, ctaLink, description, eyebrowText, title } = CONTENT;
+
   return (
     <FeaturedPostsContainer extraClasses={styles.container}>
       <FeaturedPostsHeaderContainer>
-        <FeaturedPostsHeader
-          eyebrowText={content.eyebrowText}
-          title={content.title}
-          description={content.description}
-        />
-        <FeaturedPostsCta hasIcon ctaText={content.ctaText} href={content.ctaLink} />
+        <FeaturedPostsHeader eyebrowText={eyebrowText} title={title} description={description} />
+        <FeaturedPostsCta hasIcon ctaText={ctaText} href={ctaLink} />
       </FeaturedPostsHeaderContainer>
     </FeaturedPostsContainer>
   );

@@ -2,40 +2,35 @@
 
 import { motion } from "framer-motion";
 
-import useImageCard from "./hooks/useImageCard";
-import imageCard from "./styles.module";
+import styles from "./styles.module";
 import type { ImageCard } from "./types";
 
-const defaultAltText = "Featured Image - Placeholder alt text, to be updated.";
+const DEFAULT_ALT_TEXT = "Featured Image - Placeholder alt text, to be updated.";
+const DEFAULT_HEIGHT = 1440;
+const DEFAULT_WIDTH = 1920;
+const DEFAULT_BORDER_RADIUS = "2rem";
 
 /**
- * ImageCard
+ * Image Card
  * @module ImageCard
  * @param props
  */
 export default function ImageCard(props: ImageCard) {
   const card = props;
-  const { anim, handleClick, onHoverEnd, onHoverStart, scope } = useImageCard();
 
   return (
     <motion.div
-      className={`motion-img-card ${imageCard.control}`}
+      className={`motion-img-card ${styles.control}`}
       id={`motion-img-card-${card.id}`}
-      initial={anim.initial}
-      onClick={handleClick}
-      onHoverEnd={() => onHoverEnd()}
-      onHoverStart={() => onHoverStart()}
-      ref={scope}
-      whileHover={anim.whileHover}
-      whileTap={anim.whileTap}
+      onClick={() => console.log("ImageCard clicked!", props.id)}
     >
-      <motion.article className={imageCard.imageMedia} style={{ borderRadius: "2rem" }}>
+      <motion.article className={styles.imageMedia} style={{ borderRadius: DEFAULT_BORDER_RADIUS }}>
         <motion.img
-          alt={defaultAltText}
-          height={card.height || 1440}
+          alt={DEFAULT_ALT_TEXT}
+          height={card.height || DEFAULT_HEIGHT}
           id={card.id}
           src={card.imgSrc}
-          width={card.width || 1920}
+          width={card.width || DEFAULT_WIDTH}
         />
       </motion.article>
     </motion.div>

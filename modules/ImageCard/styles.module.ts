@@ -1,7 +1,25 @@
-import { tw } from "@/app/api";
-import { ImageCardStyles } from "./types";
+import classNames from "classnames";
+import { ClassNames } from "@/app/api";
 
-const overlay = [
+let styles = {} as ClassNames;
+
+const CONTROL = [
+  "group/imageCard",
+  "cursor-pointer",
+  "group",
+  "relative",
+  "flex",
+  "rounded-[40px]",
+  "border-8",
+  "border-transparent",
+  "focus:border-8",
+  "focus:border-melon-500",
+  "dark:focus:border-charcoal-800",
+];
+
+const IMAGE_MEDIA = ["h-auto", "max-w-full", "overflow-hidden", "duration-300", "opacity-90"];
+
+const OVERLAY = [
   "absolute",
   "inset-0",
   "flex",
@@ -16,30 +34,14 @@ const overlay = [
   "active:bg-melon-400",
 ];
 
-const overlaySpan = ["text-white"];
+const OVERLAY_SPAN = ["text-white"];
 
-const control = [
-  "cursor-pointer",
-  "group",
-  "relative",
-  "flex",
-  "rounded-[40px]",
-  "border-8",
-  "border-transparent",
-  "focus:border-8",
-  "focus:border-melon-500",
-  "dark:focus:border-charcoal-800",
-];
+styles.control = classNames(CONTROL);
+styles.imageMedia = classNames(IMAGE_MEDIA);
 
-const imageMedia = ["h-auto", "max-w-full", "overflow-hidden"];
-
-const imageCard: ImageCardStyles = {
-  overlay: {
-    styles: tw(overlay),
-    span: tw(overlaySpan),
-  },
-  control: tw(control),
-  imageMedia: tw(imageMedia),
+styles.overlay = {
+  styles: classNames(OVERLAY),
+  span: classNames(OVERLAY_SPAN),
 };
 
-export default imageCard;
+export default styles;

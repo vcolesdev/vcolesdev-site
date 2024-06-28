@@ -1,7 +1,9 @@
 import styles from "./styles.module";
 
-//import {IconTrafficCone, IconSquareRoundedX} from "@tabler/icons-react";
-
+/**
+ * Under Construction
+ * @component UnderConstruction
+ */
 export default function UnderConstruction() {
   return (
     <div className={styles.banner.styles}>

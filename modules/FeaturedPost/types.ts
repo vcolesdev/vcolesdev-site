@@ -1,25 +1,46 @@
 import { ReactNode } from "react";
+import { FeaturedProjectIconProps } from "@/utils/types/projects";
 
-export interface FeaturedPostProvider {
+export interface FeaturedPostContainer {
   children: ReactNode | ReactNode[];
 }
 
-export interface PostContent {
+export interface FeaturedPostContent {
   children: ReactNode | ReactNode[];
 }
 
-export interface PostExcerpt {
+export interface FeaturedPostExcerpt {
   excerpt: string;
 }
 
-export interface PostCategory {
+export interface FeaturedPostCategory {
   categoryText: string;
 }
 
-export interface PostTitle {
+export interface FeaturedPostTitle {
   title: string;
 }
 
-export interface PostMore {
+export interface FeaturedPostMore {
   moreText: string;
 }
+
+export interface FeaturedTestPost {
+  id: number;
+  title: string;
+  href: string;
+  description: string;
+  date: string;
+  datetime: string;
+  category?: {
+    title: string;
+    href: string;
+  };
+  author?: {
+    name: string;
+    href: string;
+    imageUrl: string;
+  };
+}
+
+export interface FeaturedPostIconProps extends FeaturedProjectIconProps {}

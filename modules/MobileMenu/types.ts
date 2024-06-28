@@ -12,12 +12,12 @@ export interface MobileMenuOverlay {
   onHideMobileMenu: any; // Update to a real type
 }
 
-export interface MobileMenuProvider {
+export interface MobileMenuContainer {
   activeClass: string;
   children: ReactNode | ReactNode[];
+  containerId?: string;
   isActive: boolean;
   maxWidth?: number;
-  providerId?: string;
 }
 
 export interface MobileMenuContent {

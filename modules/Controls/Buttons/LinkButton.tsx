@@ -8,6 +8,11 @@ import useButtonStyles from "@/modules/Controls/Buttons/hooks/useButtonStyles";
 import { LayoutGroup } from "framer-motion";
 import Link from "next/link";
 
+/**
+ * Link Button
+ * @component LinkButton
+ * @param btn
+ */
 export default function LinkButton({ ...btn }: LinkButtonProps) {
   const { component, icon, text } = useButtonStyles();
   return (

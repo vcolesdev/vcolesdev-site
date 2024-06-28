@@ -1,12 +1,9 @@
 "use client";
 
 import { tw } from "@/app/api";
-import useAnimateDrawPaths from "@/hooks/animations/useAnimateDrawPaths";
-import useDrawVariants from "@/hooks/animations/useDrawVariants";
-import { motion, useAnimate } from "framer-motion";
-import { ReactNode, useEffect, useState } from "react";
-
-const defaultIconStyle = "icon-tabler-brand-github";
+import { useSocialIconSVG } from "@/components/SocialIcon/hooks/useSocialIconSVG";
+import { motion } from "framer-motion";
+import { ReactNode, useEffect } from "react";
 
 export interface SVGProps {
   children: ReactNode;
@@ -15,21 +12,12 @@ export interface SVGProps {
 
 export const iconClasses = tw(["icon", "icon-tabler", "icons-tabler-outline"]);
 
-export function useSocialIconSVG() {
-  let drawVariants = useDrawVariants();
-  const [iconClassStr, setIconClassStr] = useState<string>(defaultIconStyle);
-  const [scope, animate] = useAnimate();
-
-  return {
-    animate: animate,
-    drawVariants: drawVariants,
-    iconClassStr: iconClassStr,
-    scope: scope,
-    setIconClassStr: setIconClassStr,
-    onHoverStart: useAnimateDrawPaths(scope),
-  };
-}
-
+/**
+ * SVG
+ * @component SVG
+ * @param children
+ * @param iconStyle
+ */
 export default function SVG({ children, iconStyle }: SVGProps) {
   const { animate, scope, setIconClassStr, ...icon } = useSocialIconSVG();
 

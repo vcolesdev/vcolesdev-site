@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 import useHeader from "../hooks/useHeader";
 import useHeaderAnimation from "../hooks/useHeaderAnimation";
 import headerStyles from "../styles.module";
-import type { HeaderProvider } from "../types";
+import type { HeaderContainer } from "../types";
 
 /**
  * HeaderProvider
  * @param id
  * @param children
  */
-export default function HeaderProvider({ id, children }: HeaderProvider) {
+export default function HeaderContainer({ id, children }: HeaderContainer) {
   const { maxWidth, headerSpring } = useHeaderAnimation();
   const { contentScope, padding, scope } = useHeader();
 

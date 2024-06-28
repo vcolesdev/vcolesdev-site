@@ -3,7 +3,8 @@ import type { MobileMenuListItems } from "@/modules/MobileMenu/types";
 import { motion } from "framer-motion";
 
 /**
- * MobileMenuListItems component
+ * Mobile Menu List Items
+ * @component MobileMenuListItems
  * @param items
  */
 export default function MobileMenuListItems({ items }: MobileMenuListItems) {

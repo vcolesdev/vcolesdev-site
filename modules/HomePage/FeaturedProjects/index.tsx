@@ -4,17 +4,17 @@ import FeaturedCta from "@/components/Featured/FeaturedCta";
 import SectionContainer from "@/components/SectionContainer";
 import SectionHeaderEyebrow from "@/components/SectionHeader/_Eyebrow";
 import { SectionHeaderContainer } from "@/components/SectionHeader/components";
-import Projects from "@/modules/HomePage/FeaturedProjects/Projects";
 import { FeaturedProject } from "@/utils/types/projects";
 
+import FeaturedProjectsList from "./FeaturedProjectsList";
 import styles from "./styles.module";
 
-const ProjectsContainer = SectionContainer;
-const ProjectsHeaderContainer = SectionHeaderContainer;
-const ProjectsHeader = SectionHeaderEyebrow;
-const ProjectsCta = FeaturedCta;
+const FeaturedProjectsContainer = SectionContainer;
+const FeaturedProjectsHeaderContainer = SectionHeaderContainer;
+const FeaturedProjectsHeader = SectionHeaderEyebrow;
+const FeaturedProjectsCta = FeaturedCta;
 
-const content = {
+const CONTENT = {
   ctaLink: "/projects",
   ctaText: "View All Projects",
   description:
@@ -23,14 +23,20 @@ const content = {
   title: "Handpicked Favorites",
 };
 
+/**
+ * Featured Projects
+ * @component FeaturedProjects
+ * @param projects
+ */
 export default function FeaturedProjects({ projects }: { projects: FeaturedProject[] }) {
+  const { ctaLink, ctaText, description, eyebrowText, title } = CONTENT;
   return (
-    <ProjectsContainer extraClasses={styles.container}>
-      <ProjectsHeaderContainer>
-        <ProjectsHeader eyebrowText={content.eyebrowText} title={content.title} description={content.description} />
-        <ProjectsCta hasIcon ctaText={content.ctaText} href={content.ctaLink} />
-      </ProjectsHeaderContainer>
-      <Projects projects={projects} />
-    </ProjectsContainer>
+    <FeaturedProjectsContainer extraClasses={styles.container}>
+      <FeaturedProjectsHeaderContainer>
+        <FeaturedProjectsHeader eyebrowText={eyebrowText} title={title} description={description} />
+        <FeaturedProjectsCta hasIcon ctaText={ctaText} href={ctaLink} />
+      </FeaturedProjectsHeaderContainer>
+      <FeaturedProjectsList projects={projects} />
+    </FeaturedProjectsContainer>
   );
 }

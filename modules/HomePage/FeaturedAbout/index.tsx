@@ -4,7 +4,7 @@ import GithubPhoto from "@/assets/images/vcoles-github.jpeg";
 import SplitCard from "@/modules/SplitCard";
 import { SectionContent } from "@/utils/types/layout";
 
-const content: SectionContent = {
+const CONTENT: SectionContent = {
   ctaLink: "/about",
   ctaText: "Keep Reading",
   description: `But you can call me Van. 👋🏼 I'm a Full-Stack Engineer based in sunny San Diego, CA.  I have over a decade of industry experience and have worked with various languages and stacks, currently enjoying working with React, Node, Python, and MongoDB.`,
@@ -13,6 +13,10 @@ const content: SectionContent = {
   title: "Hi, I'm Vanessa",
 };
 
+/**
+ * Featured About Section
+ * @module HomePage/FeaturedAbout
+ */
 export default function FeaturedAbout() {
-  return <SplitCard image={GithubPhoto} content={content} />;
+  return <SplitCard image={GithubPhoto} content={CONTENT} />;
 }

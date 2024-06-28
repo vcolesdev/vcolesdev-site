@@ -4,7 +4,8 @@ import { FeaturedProjectIconProps } from "@/utils/types/projects";
 import { motion } from "framer-motion";
 
 /**
- * ProjectCardIcon
+ * Project Card Icon
+ * @component ProjectCardIcon
  * @param props
  */
 export default function ProjectCardIcon(props: FeaturedProjectIconProps) {

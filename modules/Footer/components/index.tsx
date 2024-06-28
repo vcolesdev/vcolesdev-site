@@ -29,7 +29,7 @@ export function FooterCopyright() {
  * @param children
  */
 export function FooterSocialLinksProvider({ children }: FooterSocialLinksProvider) {
-  return <div className={styles.socialLinks.styles}>{children}</div>;
+  return <div className={styles.socialLinks}>{children}</div>;
 }
 
 /**

@@ -8,6 +8,11 @@
 import clsx from "clsx";
 
 /**
+ * ClassNames generic type
+ */
+export type ClassNames = Record<string, any>;
+
+/**
  * Disable element scroll with overflow: hidden
  */
 export function disableScroll(element: HTMLElement) {

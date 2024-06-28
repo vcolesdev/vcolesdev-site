@@ -1,5 +1,10 @@
 import classNames from "classnames";
+import { ClassNames } from "@/app/api";
 
-export default {
-  content: classNames(["container", "mx-auto", "grid", "max-w-7xl", "sm:grid-cols-2", "sm:gap-2", "md:grid-cols-3"]),
-};
+let styles = {} as ClassNames;
+
+const CONTENT = ["container", "mx-auto", "grid", "max-w-7xl", "sm:grid-cols-2", "sm:gap-2", "md:grid-cols-3"];
+
+styles.content = classNames(CONTENT);
+
+export default styles;

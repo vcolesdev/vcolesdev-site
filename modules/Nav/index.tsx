@@ -1,9 +1,12 @@
 import useNavLinks from "@/hooks/fetchers/useFetchNavLinks";
+import BtnShowMobileMenu from "@/modules/MobileMenu/components/BtnShowMobileMenu";
+import NavContainer from "@/modules/Nav/components/NavContainer";
 import NavLinkItems from "@/modules/Nav/components/NavLinkItems";
-import NavProvider from "@/modules/Nav/components/NavProvider";
-import NavShowMobileMenu from "@/modules/Nav/components/NavShowMobileMenu";
+import styles from "@/modules/Nav/styles.module";
 
 import type { Navigation } from "./types";
+
+const DEFAULT_NAV_ID = "siteNavMain";
 
 /**
  * Nav
@@ -15,11 +18,11 @@ export default function Nav({ navId, onShowMobileMenu, showMobileMenuId }: Navig
   const nav = useNavLinks();
 
   return (
-    <>
-      <NavProvider id={navId || "siteNavMain"}>
-        <NavLinkItems nav={nav} />
-        <NavShowMobileMenu id={showMobileMenuId} onShowMobileMenu={onShowMobileMenu} />
-      </NavProvider>
-    </>
+    <NavContainer id={navId || DEFAULT_NAV_ID}>
+      <NavLinkItems nav={nav} />
+      <div className={styles.mobileMenuIcon}>
+        <BtnShowMobileMenu id={showMobileMenuId} onClick={onShowMobileMenu} />
+      </div>
+    </NavContainer>
   );
 }

@@ -1,21 +1,33 @@
-import { truncateText } from "@/utils/global/truncateText";
-import { FeaturedTestPost } from "@/utils/types/posts";
+import {
+  FeaturedPostCategory,
+  FeaturedPostContainer,
+  FeaturedPostContent,
+  FeaturedPostExcerpt,
+  FeaturedPostTitle,
+} from "@/modules/FeaturedPost/components";
 import Link from "next/link";
 
-import PostArticle from "./components/PostArticle";
+import FeaturedPostMore from "./components/FeaturedPostMore";
+import { FeaturedTestPost } from "./types";
 
 /**
- * FeaturedPost
+ * Featured Post
  * @module FeaturedPost
  * @param props
  */
-export default function FeaturedPost(props: FeaturedTestPost) {
+export default function FeaturedPost(props: { post: FeaturedTestPost }) {
   const { post } = props;
-  const getExcerpt = () => truncateText(post.description, 125);
 
   return (
     <Link href={post.href}>
-      <PostArticle />
+      <FeaturedPostContainer>
+        <FeaturedPostContent>
+          <FeaturedPostCategory categoryText="Category" />
+          <FeaturedPostTitle title="Title" />
+          <FeaturedPostExcerpt excerpt="Excerpt" />
+          <FeaturedPostMore moreText="Continue Reading" />
+        </FeaturedPostContent>
+      </FeaturedPostContainer>
     </Link>
   );
 }

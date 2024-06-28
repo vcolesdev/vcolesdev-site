@@ -2,10 +2,15 @@ import useDrawVariants from "@/hooks/animations/useDrawVariants";
 import usePathComponents from "@/hooks/components/usePathComponents";
 import { motion } from "framer-motion";
 
-import SVG from "./SocialSVG";
+import SVG from "./components/SocialSVG";
+import { SocialIcons } from "./types";
 
-type SocialIcons = "brand-github" | "brand-linkedin" | "brand-mastodon" | "message-share";
-
+/**
+ * Social Icon
+ * @component SocialIcon
+ * @param iconName
+ * @param paths
+ */
 export default function SocialIcon({ iconName, paths }: { iconName: SocialIcons; paths: string[] }) {
   const variants = useDrawVariants();
   const component = { paths: paths, variants: variants };

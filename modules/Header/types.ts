@@ -1,6 +1,6 @@
 import { MouseEventHandler, ReactNode } from "react";
 
-export interface HeaderProvider {
+export interface HeaderContainer {
   children: ReactNode | ReactNode[];
   id: string;
 }

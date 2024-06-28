@@ -11,6 +11,11 @@ export const itemVariants = {
   visible,
 };
 
+/**
+ * Layout Fade In
+ * @component LayoutFadeIn
+ * @param children
+ */
 export default function LayoutFadeIn({ children }: { children: ReactChildren }) {
   return (
     <AnimatedLayout layoutGroupOptions={{ id: "page-layout" }}>

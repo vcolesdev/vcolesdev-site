@@ -3,20 +3,12 @@ import type { MobileMenuClose } from "@/modules/MobileMenu/types";
 import { motion } from "framer-motion";
 
 /**
- * MobileMenuClose component
- * @param icon
- * @param onHideMobileMenu
- * @param onHoverStart
- * @param onHoverEnd
- * @param elementRef
+ * Button Mobile Menu Close
+ * @component BtnMobileMenuClose
+ * @param P {MobileMenuClose}
  */
-export default function BtnMobileMenuClose({
-  elementRef,
-  icon,
-  onHideMobileMenu,
-  onHoverStart,
-  onHoverEnd,
-}: MobileMenuClose) {
+export default function BtnMobileMenuClose(P: MobileMenuClose) {
+  const { icon, onHideMobileMenu, onHoverStart, onHoverEnd, elementRef } = P;
   return (
     <motion.button
       className={styles.dialog.closeButton}

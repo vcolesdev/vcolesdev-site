@@ -12,13 +12,11 @@ import { useEffect } from "react";
 
 import { SectionHeaderEyebrowProps } from "./api";
 
-const keyframes = {
-  animate: {},
-  rest: {},
-};
-
-const options = {};
-
+/**
+ * Section Header Eyebrow
+ * @component SectionHeaderEyebrow
+ * @param props
+ */
 export default function SectionHeaderEyebrow(props: SectionHeaderEyebrowProps) {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope);

@@ -1,47 +1,66 @@
 "use client";
 
-import { cardStyles as styles } from "@/modules/FeaturedProjectCard/styles.module";
-import { ReactChildren } from "@/utils/types/layout";
 import Link from "next/link";
 import { ReactNode } from "react";
 
+import styles from "../styles.module";
+
 interface ProjectCardProviderProps {
-  children: ReactChildren;
+  children: ReactNode | ReactNode[];
   url: string;
 }
 
-interface ChildrenProps {
-  children: ReactNode | ReactNode[];
-}
-
-interface TitleProps {
-  title: string;
-}
-
-interface DescProps {
-  description: string;
-}
-
-export function MoreText({ children }: ChildrenProps) {
+/**
+ * Project Card Link
+ * @component ProjectCardLink
+ * @param children
+ */
+export function MoreText({ children }: { children: ReactNode | ReactNode[] }) {
   return <span className={styles.links.span}>{children}</span>;
 }
 
-export function ProjectCardTitle({ title }: TitleProps) {
+/**
+ * Project Card Title
+ * @component ProjectCardTitle
+ * @param title
+ */
+export function ProjectCardTitle({ title }: { title: string }) {
   return <h3 className={styles.project.title}>{title}</h3>;
 }
 
-export function ProjectCardDescription(props: DescProps) {
+/**
+ * Project Card Description
+ * @component ProjectCardDescription
+ * @param props
+ */
+export function ProjectCardDescription(props: { description: string }) {
   return <p className={styles.project.description}>{props.description}</p>;
 }
 
-export function ProjectCardContent({ children }: ChildrenProps) {
+/**
+ * Project Card Content
+ * @component ProjectCardContent
+ * @param children
+ */
+export function ProjectCardContent({ children }: { children: ReactNode | ReactNode[] }) {
   return <div>{children}</div>;
 }
 
-export function ProjectCardFooter({ children }: ChildrenProps) {
+/**
+ * Project Card Footer
+ * @component ProjectCardFooter
+ * @param children
+ */
+export function ProjectCardFooter({ children }: { children: ReactNode | ReactNode[] }) {
   return <footer>{children}</footer>;
 }
 
+/**
+ * Project Card Provider
+ * @component ProjectCardProvider
+ * @param children
+ * @param url
+ */
 export function ProjectCardProvider({ children, url }: ProjectCardProviderProps) {
   return (
     <Link className={styles.project.linkContainer} href={url}>

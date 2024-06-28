@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 import { IconSettings } from "./settings";
 
@@ -19,20 +19,20 @@ export interface FeaturedProjectCardProps {
 }
 
 export interface FeaturedProjectIconProps {
-  children: React.ReactNode;
-  styles: string;
+  children: ReactNode | ReactNode[];
   settings: IconSettings;
+  styles: string;
 }
 
 export interface FeaturedProject {
-  _id: string | number;
   category: string;
   category_slug?: FeaturedProjectCategories | string;
-  slug: string;
-  title: string;
   description: string;
   href: string;
-  tags: string[];
+  id: string | number;
+  slug: string;
+  tags: string | string[];
+  title: string;
 }
 
 export type FeaturedProjectType = FeaturedProject;

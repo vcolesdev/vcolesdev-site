@@ -2,8 +2,8 @@
 
 import { pageStyles } from "@/app/styles.module";
 import LayoutFadeIn from "@/components/Layout/LayoutFadeIn";
-import PageTitle from "@/components/Page/PageTitle";
-import PageWrapper from "@/components/Page/PageWrapper";
+import PageTitle from "@/components/Page/components/PageTitle";
+import PageWrapper from "@/components/Page/components/PageWrapper";
 
 export default function Page() {
   const pageTitle = "Recent Posts";

@@ -1,9 +1,9 @@
 "use client";
 
+import ImageCard from "@/modules/ImageCard";
 import { AnimatePresence } from "framer-motion";
 
 import GalleryContent from "./components/GalleryContent";
-import { useGalleryImages } from "./hooks/useGalleryImages";
 import type { Gallery } from "./types";
 
 /**
@@ -12,10 +12,13 @@ import type { Gallery } from "./types";
  * @param images
  */
 export default function Gallery({ images }: Gallery) {
-  const Gallery = useGalleryImages({ images });
   return (
-    <GalleryContent>
-      <AnimatePresence>{Gallery}</AnimatePresence>
-    </GalleryContent>
+    <AnimatePresence>
+      <GalleryContent>
+        {images.map((image, index) => (
+          <ImageCard key={image} id={`featured-image-${index}`} imgSrc={`/images/featured/${image}`} />
+        ))}
+      </GalleryContent>
+    </AnimatePresence>
   );
 }

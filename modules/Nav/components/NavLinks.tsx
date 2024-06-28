@@ -6,7 +6,8 @@ import type { NavLinkItem, NavLinks } from "../types";
 import NavLink from "./NavLink";
 
 /**
- * NavLinks component
+ * Nav Links
+ * @component NavLinks
  * @param nav
  */
 export default function NavLinks({ nav }: { nav: NavLinks }) {

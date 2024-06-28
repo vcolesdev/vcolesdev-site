@@ -8,22 +8,29 @@ import styles from "@/modules/Nav/styles.module";
  * @param item
  */
 export default function useNavLink(pathname: string, item: NavLinkItem) {
-  const [activelinkColor, setActiveLinkColor] = useState("");
+  const [activeLinkColor, setActiveLinkColor] = useState("");
   const [extraLinkClasses, setExtraLinkClasses] = useState("");
+
+  /**
+   * setActiveLinkColor()
+   * @param color
+   * @todo Set the active link color for the light theme
+   * @todo Update to include active link color for dark theme
+   */
+  function setActiveLink() {
+    setExtraLinkClasses("active");
+    setActiveLinkColor(styles.nav.activeLink);
+  }
 
   useEffect(() => {
     // If the pathname matches the href of the current item, set extra link classes.
     if (pathname === item.href) {
-      setExtraLinkClasses("active");
-
-      // Set the active link color for the light theme
-      // Update to include active link color for dark theme
-      setActiveLinkColor(styles.nav.activeLink);
+      setActiveLink();
     }
   }, [item, pathname, setActiveLinkColor, setExtraLinkClasses]);
 
   return {
-    activelinkColor,
+    activeLinkColor,
     extraLinkClasses,
   };
 }

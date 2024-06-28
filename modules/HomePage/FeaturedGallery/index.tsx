@@ -29,6 +29,11 @@ const GalleryHeaderContainer = SectionHeaderContainer;
 const GalleryHeader = SectionHeaderEyebrow;
 const GalleryCta = FeaturedCta;
 
+/**
+ * Featured Gallery
+ * @module HomePage/FeaturedGallery
+ * @param dir
+ */
 export default async function FeaturedGallery({ dir }: { dir: string }) {
   const images = useFetchFiles(dir);
   return (

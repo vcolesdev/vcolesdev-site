@@ -1,19 +1,29 @@
+import React from "react";
+
 import styles from "../styles.module";
-import type { FeaturedPostProvider, PostCategory, PostContent, PostExcerpt, PostTitle } from "../types";
+import type {
+  FeaturedPostCategory,
+  FeaturedPostContainer,
+  FeaturedPostContent,
+  FeaturedPostExcerpt,
+  FeaturedPostTitle,
+} from "../types";
 
 /**
- * FeaturedPostProvider
+ * Featured Post Container
+ * @component FeaturedPostContainer
  * @param children
  */
-export function FeaturedPostProvider({ children }: FeaturedPostProvider) {
+export function FeaturedPostContainer({ children }: FeaturedPostContainer) {
   return <article className={styles.default}>{children}</article>;
 }
 
 /**
- * PostCategory
+ * Featured Post Category
+ * @component FeaturedPostCategory
  * @param categoryText
  */
-export function PostCategory({ categoryText }: PostCategory) {
+export function FeaturedPostCategory({ categoryText }: FeaturedPostCategory) {
   return (
     <div className={styles.category.styles}>
       <span className={styles.category.content}>{categoryText}</span>
@@ -22,18 +32,20 @@ export function PostCategory({ categoryText }: PostCategory) {
 }
 
 /**
- * PostContent
+ * Featured Post Content
+ * @component FeaturedPostContent
  * @param children
  */
-export function PostContent({ children }: PostContent) {
+export function FeaturedPostContent({ children }: FeaturedPostContent) {
   return <div className={styles.content}>{children}</div>;
 }
 
 /**
- * PostTitle
+ * Featured Post Title
+ * @component FeaturedPostTitle
  * @param title
  */
-export function PostTitle({ title }: PostTitle) {
+export function FeaturedPostTitle({ title }: FeaturedPostTitle) {
   return (
     <h2 className="mt-2">
       <div className={styles.title.styles}>
@@ -44,9 +56,10 @@ export function PostTitle({ title }: PostTitle) {
 }
 
 /**
- * PostExcerpt
+ * Featured Post Excerpt
+ * @component FeaturedPostExcerpt
  * @param excerpt
  */
-export function PostExcerpt({ excerpt }: PostExcerpt) {
+export function FeaturedPostExcerpt({ excerpt }: FeaturedPostExcerpt) {
   return <p className={styles.excerpt}>{excerpt}</p>;
 }

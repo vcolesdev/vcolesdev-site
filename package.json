@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "makeover": "npx prettier --write ./app ./components ./modules ./utils"
+    "makeover": "npx prettier --write ./app ./components ./modules ./utils",
+    "test": "jest"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -16,7 +17,11 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@headlessui/react": "^1.7.19",
+    "@jest/globals": "^29.7.0",
     "@netlify/plugin-nextjs": "^5.2.0",
     "@react-spring/web": "^9.7.3",
     "@tabler/icons-react": "^3.2.0",
@@ -26,11 +31,13 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.19",
+    "babel-jest": "^29.7.0",
     "classnames": "^2.5.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.2",
     "framer-motion": "^11.1.5",
     "i": "^0.3.7",
+    "jest": "^29.7.0",
     "next-themes": "^0.3.0",
     "nextui-cli": "^0.3.1",
     "node-localstorage": "^3.0.5",

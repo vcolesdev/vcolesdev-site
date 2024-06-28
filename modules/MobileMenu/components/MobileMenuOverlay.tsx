@@ -6,7 +6,8 @@ import styles from "../styles.module";
 import type { MobileMenuOverlay } from "../types";
 
 /**
- * MobileMenuOverlay component
+ * Mobile Menu Overlay
+ * @component MobileMenuOverlay
  * @param isActive
  * @param onHideMobileMenu
  * @param activeClass
@@ -17,7 +18,7 @@ export default function MobileMenuOverlay({ isActive, onHideMobileMenu, activeCl
   return (
     <motion.div
       animate={animateVariants}
-      className={styles.dialog.overlay + " " + activeClass}
+      className={`${styles.dialog.overlay} ${activeClass}`}
       exit="hidden"
       id="mobileMenuOverlay"
       initial="hidden"

@@ -1,8 +1,14 @@
 "use client";
 
-import {animate, AnimationScope} from "framer-motion";
-import {useEffect, useState} from "react";
+import { animate, AnimationScope } from "framer-motion";
+import { useEffect, useState } from "react";
 
+/**
+ * Animate the drawing of paths in an SVG element.
+ * @hook useAnimateDrawPaths
+ * @param scope
+ * @param selector
+ */
 export default function useAnimateDrawPaths(
   scope: AnimationScope,
   selector: string = "path"

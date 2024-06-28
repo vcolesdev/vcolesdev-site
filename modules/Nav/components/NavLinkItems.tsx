@@ -3,9 +3,9 @@ import styles from "@/modules/Nav/styles.module";
 import type { NavLinkItem } from "@/modules/Nav/types";
 
 /**
- * NavLinkItems component
+ * Nav Link Items
+ * @component NavLinkItems
  * @param nav
- * @constructor
  */
 export default function NavLinkItems({ nav }: { nav: NavLinkItem[] }) {
   return (

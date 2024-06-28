@@ -3,6 +3,11 @@
 import { SectionHeaderProps } from "./api";
 import { SectionDescription, SectionHeaderContent, SectionHeaderWrapper, SectionTitle } from "./components";
 
+/**
+ * Section Header
+ * @component SectionHeader
+ * @param props
+ */
 export default function SectionHeader(props: SectionHeaderProps) {
   return (
     <SectionHeaderWrapper>

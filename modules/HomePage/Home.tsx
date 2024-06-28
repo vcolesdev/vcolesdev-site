@@ -7,19 +7,23 @@ import FeaturedProjects from "@/modules/HomePage/FeaturedProjects";
 
 import SectionIntro from "./SectionIntro";
 
-const Home = () => (
-  <>
-    {/* Intro Content */}
-    <SectionIntro />
-    {/* Featured About */}
-    <FeaturedAbout />
-    {/* Recent Posts */}
-    <FeaturedPosts posts={testPosts} />
-    {/* Featured Projects */}
-    <FeaturedProjects projects={projects} />
-    {/* Gallery */}
-    <FeaturedGallery dir="public/images/featured" />
-  </>
-);
-
-export default Home;
+/**
+ * Home Page
+ * @module Home
+ */
+export default function Home() {
+  return (
+    <>
+      {/* Intro Content */}
+      <SectionIntro />
+      {/* Featured About */}
+      <FeaturedAbout />
+      {/* Recent Posts */}
+      <FeaturedPosts posts={testPosts} />
+      {/* Featured Projects */}
+      <FeaturedProjects projects={projects} />
+      {/* Gallery */}
+      <FeaturedGallery dir="public/images/featured" />
+    </>
+  );
+}

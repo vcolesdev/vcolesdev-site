@@ -1,3 +1,7 @@
+/**
+ * The animation variants for a drawing animation.
+ * @hook useDrawVariants
+ */
 export default function useDrawVariants() {
   return {
     rest: {pathLength: 0, opacity: 0},

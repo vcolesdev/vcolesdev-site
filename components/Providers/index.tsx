@@ -1,16 +1,12 @@
-import React, { Attributes, ReactNode } from "react";
+import React from "react";
 
-type Props = Attributes;
-type Children = ReactNode[] | ReactNode;
+import { ProviderElement } from "./types";
 
-interface ProviderElement {
-  element: string;
-  children: Children;
-  className?: string;
-  id?: string;
-  [key: string]: any;
-}
-
+/**
+ * Element
+ * @component Element
+ * @param el
+ */
 function Element(el: ProviderElement) {
   return React.createElement(
     el.element,
@@ -23,6 +19,11 @@ function Element(el: ProviderElement) {
   );
 }
 
+/**
+ * Provider
+ * @component Provider
+ * @param el
+ */
 export default function Provider(el: ProviderElement) {
   return <Element {...el}>{el.children}</Element>;
 }

@@ -2,7 +2,7 @@
 
 import { motion, useAnimate } from "framer-motion";
 
-import headerStyles from "../styles.module";
+import styles from "../styles.module";
 import type { HeaderBoxShadow } from "../types";
 
 /**
@@ -11,5 +11,5 @@ import type { HeaderBoxShadow } from "../types";
  */
 export default function HeaderBoxShadow({ id }: HeaderBoxShadow) {
   const [scope] = useAnimate();
-  return <motion.div className={headerStyles.boxShadow} id={id} ref={scope} />;
+  return <motion.div className={styles.boxShadow} id={id} ref={scope} />;
 }

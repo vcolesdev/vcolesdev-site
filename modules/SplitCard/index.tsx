@@ -13,7 +13,7 @@ import {
   SplitCardText,
   SplitCardWrapper,
 } from "./components";
-import { splitCardStyles as styles } from "./styles.module";
+import styles from "./styles.module";
 import type { SplitCard } from "./types";
 
 /**

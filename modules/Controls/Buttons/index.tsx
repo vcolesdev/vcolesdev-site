@@ -7,6 +7,11 @@ import ButtonWrapper from "@/modules/Controls/Buttons/components/ButtonWrapper";
 import useButtonStyles from "@/modules/Controls/Buttons/hooks/useButtonStyles";
 import { LayoutGroup } from "framer-motion";
 
+/**
+ * Button
+ * @component Button
+ * @param btn
+ */
 export default function Button({ ...btn }: DefaultButtonProps) {
   const { component, text, icon } = useButtonStyles();
   return (

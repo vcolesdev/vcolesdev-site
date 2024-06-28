@@ -1,15 +1,14 @@
-import type { NavProvider } from "@/modules/Nav/types";
-
 import styles from "../styles.module";
+import type { NavContainer } from "../types";
 
 /**
- * NavProvider component
+ * Nav Container
+ * @component NavContainer
  * @param children
  * @param id
  * @param props
- * @constructor
  */
-export default function NavProvider({ children, id, ...props }: NavProvider) {
+export default function NavContainer({ children, id, ...props }: NavContainer) {
   return (
     <nav className={styles.nav.styles} aria-label="Global" id={id} {...props}>
       {children}

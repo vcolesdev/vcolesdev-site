@@ -1,12 +1,11 @@
-import { tw } from "@/app/api";
-import { FeaturedProjectCardStyles } from "@/modules/FeaturedProjectCard/api";
 import classNames from "classnames";
+import { ClassNames } from "@/app/api";
 
-const linksContainer = ["mt-4", "inline-flex", "items-center", "gap-x-1"];
+let styles = {} as ClassNames;
 
-const linkContainer = ["motion-project-card", "relative", "flex"];
-
-const linksSpan = [
+const LINKS_CONTAINER = ["mt-4", "inline-flex", "items-center", "gap-x-1"];
+const LINK_CONTAINER = ["motion-project-card", "relative", "flex"];
+const LINKS_SPAN = [
   "text-base",
   "font-medium",
   "text-rosy_brown-400",
@@ -15,8 +14,7 @@ const linksSpan = [
   "dark:group-hover:text-rose-400",
   "dark:group-hover:font-semibold",
 ];
-
-const linksSvg = [
+const LINKS_SVG = [
   "mt-[1px]",
   "size-4",
   "flex-shrink-0",
@@ -27,7 +25,7 @@ const linksSvg = [
   "dark:text-charcoal-800",
 ];
 
-const projectStyles = [
+const PROJECT_STYLES = [
   "group",
   "flex",
   "flex-col",
@@ -46,7 +44,7 @@ const projectStyles = [
   "z-2",
 ];
 
-const projectTitle = [
+const PROJECT_TITLE = [
   "mt-1.5",
   "transition",
   "ease-in-out",
@@ -57,8 +55,7 @@ const projectTitle = [
   "dark:text-charcoal-800/90",
   "dark:group-hover:text-rose-400",
 ];
-
-const projectDescription = [
+const PROJECT_DESCRIPTION = [
   "mt-2",
   "line-clamp-3",
   "text-base/relaxed",
@@ -68,16 +65,17 @@ const projectDescription = [
   "dark:group-hover:text-white",
 ];
 
-export const cardStyles = {
-  links: {
-    container: tw(linksContainer),
-    span: tw(linksSpan),
-    svg: tw(linksSvg),
-  },
-  project: {
-    linkContainer: tw(linkContainer),
-    styles: tw(projectStyles),
-    title: tw(projectTitle),
-    description: tw(projectDescription),
-  },
+styles.links = {
+  container: classNames(LINKS_CONTAINER),
+  span: classNames(LINKS_SPAN),
+  svg: classNames(LINKS_SVG),
 };
+
+styles.project = {
+  description: classNames(PROJECT_DESCRIPTION),
+  linkContainer: classNames(LINK_CONTAINER),
+  styles: classNames(PROJECT_STYLES),
+  title: classNames(PROJECT_TITLE),
+};
+
+export default styles;

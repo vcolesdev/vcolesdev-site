@@ -1,12 +1,14 @@
 "use client";
 
-import { activeAnimation, hoverAnimation, transitionAnimation } from "@/modules/FeaturedProjectCard/animation";
-import { cardStyles as styles } from "@/modules/FeaturedProjectCard/styles.module";
 import { ReactChildren } from "@/utils/types/layout";
 import { motion } from "framer-motion";
 
+import { activeAnimation, hoverAnimation, transitionAnimation } from "../animation";
+import styles from "../styles.module";
+
 /**
- * ProjectCardContainer
+ * Project Card Container
+ * @component ProjectCardContainer
  * @param children
  * @param card
  */
@@ -18,6 +20,7 @@ export default function ProjectCardContainer({ children, ...card }: { children: 
       whileHover={hoverAnimation}
       whileFocus={activeAnimation}
       whileTap={activeAnimation}
+      viewport={{ once: true }}
       {...card}
     >
       {children}

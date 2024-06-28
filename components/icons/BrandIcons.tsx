@@ -8,6 +8,8 @@ import {
   IconServer,
 } from "@tabler/icons-react";
 
+/* Brand Icons */
+
 const IconNextJs = () => <IconBrandNextjs />;
 const IconNodeJs = () => <IconBrandNodejs />;
 const IconPython = () => <IconBrandPython />;

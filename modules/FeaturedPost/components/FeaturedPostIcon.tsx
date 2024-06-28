@@ -1,4 +1,4 @@
-import { FeaturedPostIconProps } from "@/utils/types/posts";
+import { FeaturedPostIconProps } from "../types";
 
 /**
  * PostIcon
@@ -6,7 +6,7 @@ import { FeaturedPostIconProps } from "@/utils/types/posts";
  * @param styles
  * @param settings
  */
-export default function PostIcon({ children, styles, settings }: FeaturedPostIconProps) {
+export default function FeaturedPostIcon({ children, styles, settings }: FeaturedPostIconProps) {
   return (
     <svg
       className={styles}

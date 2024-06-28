@@ -1,8 +1,8 @@
 import { useAnimate } from "framer-motion";
 
 /**
- * useCloseBtnAnimation()
  * Animate the close button on hover.
+ * @hook useCloseBtnAnimation
  */
 export default function useAnimateCloseBtn() {
   const [scope, animate] = useAnimate();
