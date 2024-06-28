@@ -31,7 +31,7 @@ export interface FeaturedProject {
   href: string;
   id: string | number;
   slug: string;
-  tags: string | string[];
+  tags: string[];
   title: string;
 }
 

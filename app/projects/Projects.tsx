@@ -17,7 +17,7 @@ export default function Projects({ projects }: { projects: FeaturedProject[] }) 
         {projects &&
           projects.map((project) => (
             <FeaturedProjectCard
-              key={project._id}
+              key={project.id}
               categorySlug={project["category_slug"]}
               description={project.description || ""}
               title={project.title}

@@ -1,9 +1,10 @@
 import { IconMenu2 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
+import { MouseEventHandler } from "react";
 
 interface BtnMobileMenuOpen {
   id?: string;
-  onClick: () => void;
+  onClick: MouseEventHandler<HTMLButtonElement> | undefined;
 }
 
 /**

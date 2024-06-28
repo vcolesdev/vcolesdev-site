@@ -32,7 +32,7 @@ export default function Project({ href, title, description, tags }: FeaturedProj
         <IconContainer>
           <IconTags height={32} stroke={2} width={32} />
         </IconContainer>
-        <ProjectTags tags={tags!} />
+        <ProjectTags tags={tags} />
       </div>
     </>
   );
