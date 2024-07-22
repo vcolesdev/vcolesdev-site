@@ -37,3 +37,11 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+# Mac files
+.idea/
+../docs/
+../.DS_Store/
+../.idea/dictionaries/
+../.idea/modules.xml
+../storybook/

@@ -1,4 +1,4 @@
-import { defaultColors, customColors, customFonts } from "@/theme";
+import { defaultColors, customColors, customFonts } from "./src/theme";
 
 const lightTheme = {
   bgColor: customColors.melon[800],

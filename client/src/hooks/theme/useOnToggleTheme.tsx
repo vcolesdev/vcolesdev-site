@@ -1,5 +1,5 @@
 import {useEffect, useRef, useState} from "react";
-import {useDarkMode} from "@/app/providers";
+import {useDarkMode} from "@/providers";
 import {useTheme} from "next-themes";
 import HeaderBoxShadow from "@/modules/Header/components/HeaderBoxShadow";
 import useBoxShadow from "@/hooks/theme/useBoxShadow";

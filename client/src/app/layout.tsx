@@ -1,7 +1,7 @@
 import "@/assets/styles/main.css";
 import * as React from "react";
 
-import { Providers } from "./providers";
+import { Providers } from "../providers";
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
